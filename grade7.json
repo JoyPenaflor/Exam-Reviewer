@@ -1,0 +1,17 @@
+[
+    {
+        question: "Which type of tourism involves traveling within the country?",
+        choices: ["Domestic", "Inclusive", "International", "Leisure"],
+        answer: "Domestic"
+    },
+    {
+        question: "Which type of travel combines inclusive and independent arrangements?",
+        choices: ["Tailor-made", "Domestic", "Inclusive", "Leisure"],
+        answer: "Tailor-made"
+    },
+    {
+        question: "What is the key requirement for a food truck manager?",
+        choices: ["High school diploma", "Cooking degree", "Management certificate", "Internship"],
+        answer: "High school diploma"
+    }
+]
