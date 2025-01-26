@@ -1,0 +1,12 @@
+[
+    {
+        "question": "What tool is used to move large amounts of soil efficiently?",
+        "choices": ["Spading Fork", "Shovel", "Hand Trowel", "Water Pail"],
+        "answer": "Shovel"
+    },
+    {
+        "question": "What tool should Maria use to level topsoil and prepare the garden bed for planting?",
+        "choices": ["Crowbar", "Grab Hoe", "Light Hoe", "Hand Fork"],
+        "answer": "Light Hoe"
+    }
+]
