@@ -13,5 +13,240 @@
         "question": "What type of service focuses on modernizing outdated electrical systems?",
         "choices": ["Troubleshooting", "Retrofitting", "Calibration", "Testing"],
         "answer": "Retrofitting"
+    },
+    {
+        "question": "Which renewable energy system uses electronic controllers for optimization?",
+        "choices": ["Diesel generators", "LED lighting", "Solar panels", "Distribution panels"],
+        "answer": "Solar panels"
+    },
+    {
+        "question": "What is a key area of focus in electronics repair services?",
+        "choices": ["High-voltage wiring", "Fixing consumer electronics", "Grounding systems", "Renewable energy installation"],
+        "answer": "Fixing consumer electronics"
+    },
+    {
+        "question": "What service involves ensuring devices meet accuracy standards?",
+        "choices": ["Calibration and testing", "Installation and wiring", "Embedded systems design", "Industrial automation"],
+        "answer": "Calibration and testing"
+    },
+    {
+        "question": "What is the primary function of embedded systems in electronics?",
+        "choices": ["Provide renewable energy", "Maintain transformers", "Control and process specific applications", "Optimize high-voltage systems"],
+        "answer": "Control and process specific applications"
+    },
+    {
+        "question": "Which device is part of the design and development in electronics services?",
+        "choices": ["Distribution panel", "LED bulb", "PCB (Printed Circuit Board)", "Transformer"],
+        "answer": "PCB (Printed Circuit Board)"
+    },
+    {
+        "question": "What is a common service provided for industrial electronics?",
+        "choices": ["Sensor repair", "Wiring residential buildings", "Appliance servicing", "Energy production"],
+        "answer": "Sensor repair"
+    },
+    {
+        "question": "Which field combines electrical systems with electronics like sensors?",
+        "choices": ["Smart grids", "Transportation systems", "Industrial automation", "Healthcare systems"],
+        "answer": "Industrial automation"
+    },
+    {
+        "question": "Which material is commonly used for power transmission in electrical installations?",
+        "choices": ["Steel wires", "Copper wires", "Plastic cables", "Silicone conductors"],
+        "answer": "Copper wires"
+    },
+    {
+        "question": "What is the primary purpose of a circuit breaker?",
+        "choices": ["Prevent overloading", "Increase current flow", "Store electrical energy", "Regulate voltage"],
+        "answer": "Prevent overloading"
+    },
+    {
+        "question": "What type of PCB is used in simple devices like calculators?",
+        "choices": ["Flexible PCB", "Double-Sided PCB", "Single-Sided PCB", "Multilayer PCB"],
+        "answer": "Single-Sided PCB"
+    },
+    {
+        "question": "Which electronic component stores energy and filters signals in a circuit?",
+        "choices": ["Resistor", "Diode", "Inductor", "Capacitor"],
+        "answer": "Capacitor"
+    },
+    {
+        "question": "What type of transformer is used for voltage regulation in electronic devices?",
+        "choices": ["Step-up transformer", "Step-down transformer", "Isolation transformer", "Distribution transformer"],
+        "answer": "Step-down transformer"
+    },
+    {
+        "question": "Which PCB type combines rigid and flexible layers for high-reliability applications?",
+        "choices": ["Multilayer PCB", "Single-Sided PCB", "Rigid-Flex PCB", "Flexible PCB"],
+        "answer": "Rigid-Flex PCB"
+    },
+    {
+        "question": "What is the role of a diode in an electronic circuit?",
+        "choices": ["Store energy", "Convert AC to DC", "Amplify signals", "Filter noise"],
+        "answer": "Convert AC to DC"
+    },
+    {
+        "question": "Which passive component is used for current regulation in circuits?",
+        "choices": ["Resistor", "Transformer", "Diode", "Capacitor"],
+        "answer": "Resistor"
+    },
+    {
+        "question": "What type of PCB is commonly found in smartphones and IoT devices?",
+        "choices": ["Multilayer PCB", "Single-Sided PCB", "Rigid PCB", "Double-Sided PCB"],
+        "answer": "Multilayer PCB"
+    },
+    {
+        "question": "Which grounding material is essential for electrical safety?",
+        "choices": ["Ground rod", "Distribution board", "Insulated cable", "Surge protector"],
+        "answer": "Ground rod"
+    },
+    {
+        "question": "What is the primary function of a bridge rectifier?",
+        "choices": ["Convert AC to DC", "Amplify signals", "Store energy", "Reduce current"],
+        "answer": "Convert AC to DC"
+    },
+    {
+        "question": "Which tool is used to adjust readings to match standard values?",
+        "choices": ["Soldering iron", "Transformer", "Rectifier", "Calibration tool"],
+        "answer": "Calibration tool"
+    },
+    {
+        "question": "What does the color code on a resistor indicate?",
+        "choices": ["Voltage rating", "Component value", "Current flow", "Power supply type"],
+        "answer": "Component value"
+    },
+    {
+        "question": "What is the function of a diode?",
+        "choices": ["Amplify signals", "Store charge", "Conduct in one direction", "Reduce voltage"],
+        "answer": "Conduct in one direction"
+    },
+    {
+        "question": "Which rectifier uses the full AC wave in both positive and negative half cycles?",
+        "choices": ["Half-wave rectifier", "Bridge rectifier", "Pulsating rectifier", "Full-wave rectifier"],
+        "answer": "Full-wave rectifier"
+    },
+    {
+        "question": "What does a fuse do when the current exceeds the maximum value?",
+        "choices": ["Amplifies the current", "Stores energy", "Increases voltage", "Melts or breaks"],
+        "answer": "Melts or breaks"
+    },
+    {
+        "question": "What is the small undesirable flow of current through an insulator called?",
+        "choices": ["Rectification", "Leakage", "Short circuit", "Calibration"],
+        "answer": "Leakage"
+    },
+    {
+        "question": "What type of energy does a light-emitting diode (LED) convert electric energy into?",
+        "choices": ["Mechanical energy", "Thermal energy", "Electromagnetic radiation", "Acoustic waves"],
+        "answer": "Electromagnetic radiation"
+    },
+    {
+        "question": "Which component delivers current, voltage, or power to a load?",
+        "choices": ["Output terminal", "Input terminal", "Transformer primary", "Rectifier"],
+        "answer": "Output terminal"
+    },
+    {
+        "question": "What is the primary winding of a transformer connected to?",
+        "choices": ["Load", "Secondary winding", "Diode circuit", "Power source"],
+        "answer": "Power source"
+    },
+    {
+        "question": "What does PCB stand for in electronics?",
+        "choices": ["Printed Circuit Board", "Power Control Board", "Primary Control Box", "Pulse Circuit Base"],
+        "answer": "Printed Circuit Board"
+    },
+    {
+        "question": "What is the process of converting alternating current to direct current?",
+        "choices": ["Rectification", "Calibration", "Amplification", "Insulation"],
+        "answer": "Rectification"
+    },
+    {
+        "question": "What is a power supply that maintains constant voltage under varying loads called?",
+        "choices": ["Rectifier power supply", "Constant current supply", "Regulated power supply", "DC transformer"],
+        "answer": "Regulated power supply"
+    },
+    {
+        "question": "What type of switch uses a rotating shaft to connect terminals?",
+        "choices": ["Toggle switch", "Rotary switch", "Push-button switch", "Slide switch"],
+        "answer": "Rotary switch"
+    },
+    {
+        "question": "What is a schematic diagram used for?",
+        "choices": ["Insulate components", "Visualize electrical circuits", "Increase circuit efficiency", "Reduce resistance"],
+        "answer": "Visualize electrical circuits"
+    },
+    {
+        "question": "What is the secondary winding of a transformer connected to?",
+        "choices": ["Rectifier", "Power source", "Load", "Primary winding"],
+        "answer": "Load"
+    },
+    {
+        "question": "What is the term for a low-resistance connection causing excessive current?",
+        "choices": ["Leakage", "Rectification", "Voltage drop", "Short circuit"],
+        "answer": "Short circuit"
+    },
+    {
+        "question": "What is solder primarily used for in electronics?",
+        "choices": ["Insulate connections", "Join metal surfaces", "Amplify signals", "Prevent corrosion"],
+        "answer": "Join metal surfaces"
+    },
+    {
+        "question": "Which tool is used to heat and melt solder?",
+        "choices": ["Multimeter", "Diode tester", "Calibrator", "Soldering iron"],
+        "answer": "Soldering iron"
+    },
+    {
+        "question": "What is a volt-ohm-milliammeter also known as?",
+        "choices": ["Soldering tool", "Circuit analyzer", "Voltage regulator", "Multitester"],
+        "answer": "Multitester"
+    },
+    {
+        "question": "What is the primary function of a multimeter?",
+        "choices": ["Measure temperature", "Measure voltage, current, and resistance", "Increase signal strength", "Convert AC to DC"],
+        "answer": "Measure voltage, current, and resistance"
+    },
+    {
+        "question": "What is a key advantage of using LEDs in circuits?",
+        "choices": ["High energy consumption", "Generates heat", "Energy-efficient and long-lasting", "Requires high voltage"],
+        "answer": "Energy-efficient and long-lasting"
+    },
+    {
+        "question": "Which type of capacitor is commonly used for high-frequency applications?",
+        "choices": ["Ceramic capacitor", "Electrolytic capacitor", "Paper capacitor", "Film capacitor"],
+        "answer": "Ceramic capacitor"
+    },
+    {
+        "question": "What is the role of a relay in an electrical circuit?",
+        "choices": ["Store electrical energy", "Control a circuit using a low-power signal", "Increase the current", "Decrease the voltage"],
+        "answer": "Control a circuit using a low-power signal"
+    },
+    {
+        "question": "What type of resistor has a variable resistance value?",
+        "choices": ["Fixed resistor", "Wirewound resistor", "Variable resistor (Potentiometer)", "Carbon film resistor"],
+        "answer": "Variable resistor (Potentiometer)"
+    },
+    {
+        "question": "What is the purpose of an oscilloscope?",
+        "choices": ["Measure resistance", "Display voltage waveforms over time", "Generate electrical signals", "Control current flow"],
+        "answer": "Display voltage waveforms over time"
+    },
+    {
+        "question": "Which device is used to protect circuits from voltage spikes?",
+        "choices": ["Fuse", "Surge protector", "Diode", "Capacitor"],
+        "answer": "Surge protector"
+    },
+    {
+        "question": "What is the primary material used in the manufacturing of semiconductors?",
+        "choices": ["Copper", "Aluminum", "Silicon", "Iron"],
+        "answer": "Silicon"
+    },
+    {
+        "question": "What does an inductor store in an electronic circuit?",
+        "choices": ["Electrical energy", "Magnetic energy", "Thermal energy", "Mechanical energy"],
+        "answer": "Magnetic energy"
+    },
+    {
+        "question": "What is the primary purpose of a transistor in a circuit?",
+        "choices": ["Resist current flow", "Amplify or switch electrical signals", "Store electrical charge", "Provide insulation"],
+        "answer": "Amplify or switch electrical signals"
     }
 ]
