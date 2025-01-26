@@ -13,5 +13,40 @@
         "question": "What is the key requirement for a food truck manager?",
         "choices": ["High school diploma", "Cooking degree", "Management certificate", "Internship"],
         "answer": "High school diploma"
+    },
+    {
+        "question": "What is a primary responsibility of a catering manager?",
+        "choices": ["Planning tours", "Training chefs", "Designing menus", "Booking venues"],
+        "answer": "Designing menus"
+    },
+    {
+        "question": "What is the most important skill for exceptional customer service?",
+        "choices": ["Communication", "Creativity", "Technology", "Marketing"],
+        "answer": "Communication"
+    },
+    {
+        "question": "What is a major issue caused by labor shortages?",
+        "choices": ["Increased competition", "Limited hospitality expansion", "Declining guest expectations", "Poor advertising strategies"],
+        "answer": "Limited hospitality expansion"
+    },
+    {
+        "question": "Which factor influences globalization in hospitality?",
+        "choices": ["Limited guest services", "Declining technology", "International travel trends", "Local regulations"],
+        "answer": "International travel trends"
+    },
+    {
+        "question": "What is the primary goal of HACCP?",
+        "choices": ["Ensure tasty food", "Control food hazards", "Train kitchen staff", "Improve kitchen design"],
+        "answer": "Control food hazards"
+    },
+    {
+        "question": "What is the danger zone for bacterial growth?",
+        "choices": ["30°F to 100°F", "40°F to 140°F", "50°F to 150°F", "60°F to 160°F"],
+        "answer": "40°F to 140°F"
+    },
+    {
+        "question": "Which is an example of cross-contamination?",
+        "choices": ["Washing vegetables", "Using a single cutting board for meat and vegetables", "Cooking food thoroughly", "Storing cooked food in airtight containers"],
+        "answer": "Using a single cutting board for meat and vegetables"
     }
 ]
