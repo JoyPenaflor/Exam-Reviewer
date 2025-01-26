@@ -13,5 +13,240 @@
         "question": "What is a key benefit of wellness services?",
         "choices": ["Weight gain", "Increased workload", "Improved technology", "Stress reduction"],
         "answer": "Stress reduction"
+    },
+    {
+        "question": "Which beauty care service primarily deals with hair styling?",
+        "choices": ["Manicure", "Pedicure", "Hairdressing", "Facial massage"],
+        "answer": "Hairdressing"
+    },
+    {
+        "question": "What is an example of a holistic wellness service?",
+        "choices": ["Haircut", "Makeup application", "Meditation", "Manicure"],
+        "answer": "Meditation"
+    },
+    {
+        "question": "What is the hard, outermost layer of the skin?",
+        "choices": ["Epidermis", "Dermis", "Hypodermis", "Sebum"],
+        "answer": "Epidermis"
+    },
+    {
+        "question": "Which part of the nail is responsible for its growth?",
+        "choices": ["Nail bed", "Cuticle", "Matrix", "Lunula"],
+        "answer": "Matrix"
+    },
+    {
+        "question": "What is the protein that makes up the hair and nails?",
+        "choices": ["Keratin", "Collagen", "Elastin", "Melanin"],
+        "answer": "Keratin"
+    },
+    {
+        "question": "Which layer of the skin contains sweat glands and hair follicles?",
+        "choices": ["Epidermis", "Dermis", "Hypodermis", "Sebaceous layer"],
+        "answer": "Dermis"
+    },
+    {
+        "question": "What is the visible part of the nail called?",
+        "choices": ["Nail plate", "Nail bed", "Lunula", "Cuticle"],
+        "answer": "Nail plate"
+    },
+    {
+        "question": "Which career involves providing customized skin treatments?",
+        "choices": ["Hair stylist", "Massage therapist", "Esthetician", "Nail technician"],
+        "answer": "Esthetician"
+    },
+    {
+        "question": "What business opportunity focuses on providing relaxation and therapeutic treatments?",
+        "choices": ["Hair salon", "Nail care", "Spa services", "Makeup artistry"],
+        "answer": "Spa services"
+    },
+    {
+        "question": "Which beauty care career specializes in creating hairstyles?",
+        "choices": ["Esthetician", "Hairdresser", "Aromatherapist", "Massage therapist"],
+        "answer": "Hairdresser"
+    },
+    {
+        "question": "What business opportunity involves selling beauty products to consumers?",
+        "choices": ["Spa services", "Retail store", "Fitness center", "Massage clinic"],
+        "answer": "Retail store"
+    },
+    {
+        "question": "Which wellness career focuses on improving muscle relaxation and relieving stress?",
+        "choices": ["Nail technician", "Massage therapist", "Fitness trainer", "Makeup artist"],
+        "answer": "Massage therapist"
+    },
+    {
+        "question": "What is the primary purpose of sanitation regulations in beauty care?",
+        "choices": ["Prevent infections", "Increase sales", "Enhance advertising", "Improve product quality"],
+        "answer": "Prevent infections"
+    },
+    {
+        "question": "Which government body typically oversees safety standards in beauty care?",
+        "choices": ["Education Department", "Finance Department", "Health Department", "Trade Department"],
+        "answer": "Health Department"
+    },
+    {
+        "question": "What is required for a beauty care professional to legally offer services?",
+        "choices": ["Sales permit", "Business loan", "Professional license", "Training certificate"],
+        "answer": "Professional license"
+    },
+    {
+        "question": "What challenge do beauty care professionals face due to advancements in technology?",
+        "choices": ["Declining client expectations", "Reduced service demand", "Decreased marketing opportunities", "Adapting to new tools"],
+        "answer": "Adapting to new tools"
+    },
+    {
+        "question": "Which wellness trend focuses on addressing mental health and well-being?",
+        "choices": ["Meditation practices", "Cosmetic enhancements", "Anti-aging treatments", "Hair styling techniques"],
+        "answer": "Meditation practices"
+    },
+    {
+        "question": "What is a common challenge in providing personalized beauty care services?",
+        "choices": ["High product costs", "Understanding client preferences", "Limited business hours", "Lack of technology"],
+        "answer": "Understanding client preferences"
+    },
+    {
+        "question": "Which tool is commonly used for trimming nails?",
+        "choices": ["Pumice stone", "Nail clipper", "Hairbrush", "Tweezer"],
+        "answer": "Nail clipper"
+    },
+    {
+        "question": "Which material is commonly used to disinfect tools in a beauty care setting?",
+        "choices": ["Alcohol", "Nail polish", "Hair gel", "Moisturizer"],
+        "answer": "Alcohol"
+    },
+    {
+        "question": "What is the primary purpose of sanitizing tools and equipment in beauty care?",
+        "choices": ["Prevent infections", "Improve appearance", "Increase efficiency", "Enhance durability"],
+        "answer": "Prevent infections"
+    },
+    {
+        "question": "What is the best way to store sanitized tools and equipment?",
+        "choices": ["In a plastic bag with used materials", "On an open countertop", "Inside a drawer with other items", "In a clean, covered container"],
+        "answer": "In a clean, covered container"
+    },
+    {
+        "question": "What is the primary goal of Occupational Safety and Health (OSH) practices in the workplace?",
+        "choices": ["Enhance product packaging", "Increase sales and revenue", "Improve marketing strategies", "Ensure the safety of employees and clients"],
+        "answer": "Ensure the safety of employees and clients"
+    },
+    {
+        "question": "Which action promotes safe handling of beauty care tools and equipment?",
+        "choices": ["Storing tools in open areas", "Sharing tools among staff members", "Regular inspection and maintenance", "Cleaning tools weekly"],
+        "answer": "Regular inspection and maintenance"
+    },
+    {
+        "question": "What practice minimizes the risk of chemical exposure in beauty care services?",
+        "choices": ["Proper ventilation", "Frequent use of hand sanitizer", "Using disposable tools", "Wearing fashionable uniforms"],
+        "answer": "Proper ventilation"
+    },
+    {
+        "question": "What is an important step in maintaining the cleanliness of a foot spa machine?",
+        "choices": ["Rinse thoroughly with water", "Apply a disinfectant after each use", "Store in a dry area", "Use only on dry feet"],
+        "answer": "Apply a disinfectant after each use"
+    },
+    {
+        "question": "Which tool is used to remove unwanted facial or body hair?",
+        "choices": ["Hairbrush", "Facial steamer", "Tweezer", "Nail buffer"],
+        "answer": "Tweezer"
+    },
+    {
+        "question": "What is a current trend in beauty care focused on environmental sustainability?",
+        "choices": ["Intensive chemical treatments", "Single-use plastics", "Synthetic cosmetics", "Use of organic products"],
+        "answer": "Use of organic products"
+    },
+    {
+        "question": "What workplace practice ensures sanitation and maintenance standards are consistently met?",
+        "choices": ["Regular cleaning schedules", "Hiring more staff", "Using disposable materials only", "Increasing service prices"],
+        "answer": "Regular cleaning schedules"
+    },
+    {
+        "question": "Which legal document ensures that beauty care establishments follow safety protocols?",
+        "choices": ["Health permit", "Tax declaration", "Client agreement", "Business proposal"],
+        "answer": "Health permit"
+    },
+    {
+        "question": "What is a key requirement for compliance with OSH standards in beauty care?",
+        "choices": ["Offering discounts to clients", "Expanding the service menu", "Investing in high-end decor", "Providing safety training for employees"],
+        "answer": "Providing safety training for employees"
+    },
+    {
+        "question": "What implement is used to shape and smoothen the nails?",
+        "choices": ["Scissors", "Nail file", "Hair straightener", "Callus remover"],
+        "answer": "Nail file"
+    },
+    {
+        "question": "What equipment is used to dry and style hair?",
+        "choices": ["Hair curler", "Foot spa machine", "Hairdryer", "Straight razor"],
+        "answer": "Hairdryer"
+    },
+    {
+        "question": "What is the importance of wearing personal protective equipment (PPE) in beauty care?",
+        "choices": ["Reduce product costs", "Improve client trust", "Enhance customer service skills", "Prevent injuries and contamination"],
+        "answer": "Prevent injuries and contamination"
+    },
+    {
+        "question": "What is a primary consideration when selecting beauty care products?",
+        "choices": ["Fragrance", "Ingredients", "Packaging", "Popularity"],
+        "answer": "Ingredients"
+    },
+    {
+        "question": "What process involves exfoliating the skin to remove dead cells?",
+        "choices": ["Cleansing", "Scrubbing", "Toning", "Moisturizing"],
+        "answer": "Scrubbing"
+    },
+    {
+        "question": "Which technique is used in massages to relieve muscle tension?",
+        "choices": ["Kneading", "Tapping", "Rubbing", "Stroking"],
+        "answer": "Kneading"
+    },
+    {
+        "question": "What is the primary function of a cuticle remover?",
+        "choices": ["Softening cuticles", "Polishing nails", "Strengthening nails", "Removing nail polish"],
+        "answer": "Softening cuticles"
+    },
+    {
+        "question": "Which type of comb is best for detangling wet hair?",
+        "choices": ["Wide-tooth comb", "Fine-tooth comb", "Tail comb", "Round comb"],
+        "answer": "Wide-tooth comb"
+    },
+    {
+        "question": "What is the purpose of a toner in skincare?",
+        "choices": ["Cleansing the skin", "Hydrating the skin", "Balancing skin pH", "Exfoliating dead cells"],
+        "answer": "Balancing skin pH"
+    },
+    {
+        "question": "Which ingredient is commonly used in facial masks for oily skin?",
+        "choices": ["Clay", "Shea butter", "Honey", "Aloe vera"],
+        "answer": "Clay"
+    },
+    {
+        "question": "What is a common side effect of over-exfoliating the skin?",
+        "choices": ["Improved hydration", "Increased sensitivity", "Darker skin tone", "Reduced acne"],
+        "answer": "Increased sensitivity"
+    },
+    {
+        "question": "What is the role of SPF in skincare products?",
+        "choices": ["Moisturizing the skin", "Protecting against UV rays", "Brightening the skin", "Reducing wrinkles"],
+        "answer": "Protecting against UV rays"
+    },
+    {
+        "question": "Which tool is used to apply makeup evenly?",
+        "choices": ["Blender sponge", "Tweezers", "Hairbrush", "Cuticle pusher"],
+        "answer": "Blender sponge"
+    },
+    {
+        "question": "What is the ideal water temperature for washing hair?",
+        "choices": ["Hot", "Cold", "Warm", "Room temperature"],
+        "answer": "Warm"
+    },
+    {
+        "question": "Which nail shape is best for minimizing breakage?",
+        "choices": ["Square", "Round", "Stiletto", "Almond"],
+        "answer": "Round"
+    },
+    {
+        "question": "What is a common benefit of using argan oil in beauty care?",
+        "choices": ["Strengthens hair", "Lightens skin tone", "Prevents sweating", "Cleanses pores"],
+        "answer": "Strengthens hair"
     }
 ]
