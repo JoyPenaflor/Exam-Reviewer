@@ -49,8 +49,8 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h1>TLE Quarter 3 EXAM review</h1>
-        <h2>Directions: Write your name, Select Grade Level, Start the Quiz, Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
+        <h1>TLE Quarter 3 EXAM reviewer</h1>
+        <h2>Directions: Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
         <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">15</span> minutes</div>        
         <form id="quizForm">
             <div id="nameInput" style="text-align: center;">
@@ -137,35 +137,36 @@
         }
 
         async function startQuiz() {
-            console.log("Start Quiz function triggered");
-            
-            const gradeLevel = document.getElementById("gradeLevel").value;
-            const fullName = document.getElementById("fullName").value;
+    console.log("Start Quiz function triggered");
+    
+    const gradeLevel = document.getElementById("gradeLevel").value;
+    examTakerName = document.getElementById("fullName").value.trim();
 
-            if (fullName.trim() === "") {
-                alert("Please enter your full name.");
-                return;
-            }
+    if (examTakerName === "") {
+        alert("Please enter your full name.");
+        return;
+    }
 
-            const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
+    const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
 
-            if (allQuestions.length === 0) {
-                alert("No questions available. Please check the source file.");
-                return;
-            }
+    if (allQuestions.length === 0) {
+        alert("No questions available. Please check the source file.");
+        return;
+    }
 
-            shuffleArray(allQuestions);
-            selectedQuestions = allQuestions.slice(0, 5);
+    shuffleArray(allQuestions);
+    selectedQuestions = allQuestions.slice(0, 5);
 
-            document.getElementById("nameInput").style.display = "none";
-            document.getElementById("quizSection").style.display = "block";
+    document.getElementById("nameInput").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
 
-            const timeInMinutes = 5;
-            const display = document.querySelector("#countdown");
-            startTimer(timeInMinutes * 60, display);
+    const timeInMinutes = 15;
+    const display = document.querySelector("#countdown");
+    startTimer(timeInMinutes * 60, display);
 
-            displayQuestion();
-        }
+    displayQuestion();
+}
+
 
         function startTimer(duration, display) {
             let timer = duration;
@@ -228,37 +229,39 @@
         }
 
         function calculateScore() {
-            clearInterval(timerInterval);
-            saveAnswer();
-            let score = 0;
+    clearInterval(timerInterval);
+    saveAnswer();
+    let score = 0;
 
-            selectedQuestions.forEach((question, index) => {
-                if (userAnswers[index] === question.answer) {
-                    score++;
-                }
-            });
-
-            const scoreDisplay = document.getElementById("score");
-            const messageDisplay = document.getElementById("message");
-            scoreDisplay.textContent = `Your score: ${score} out of ${selectedQuestions.length}`;
-
-            if (score === selectedQuestions.length) {
-                const passVideo = document.getElementById("passVideo");
-                passVideo.style.display = "block";
-                passVideo.play().catch(() => console.log("Pass video playback failed."));
-                document.getElementById("failVideo").style.display = "none";
-                messageDisplay.textContent = "Congratulations! You passed this level.";
-            } else {
-                const failVideo = document.getElementById("failVideo");
-                failVideo.style.display = "block";
-                failVideo.play().catch(() => console.log("Fail video playback failed."));
-                document.getElementById("passVideo").style.display = "none";
-                messageDisplay.textContent = "You failed. Please try again.";
-            }
-
-            document.getElementById("results").style.display = "block";
-            document.getElementById("quizSection").style.display = "none";
+    selectedQuestions.forEach((question, index) => {
+        if (userAnswers[index] === question.answer) {
+            score++;
         }
+    });
+
+    const scoreDisplay = document.getElementById("score");
+    const messageDisplay = document.getElementById("message");
+
+    scoreDisplay.textContent = `${examTakerName}, your score: ${score} out of ${selectedQuestions.length}`;
+
+    if (score === selectedQuestions.length) {
+        const passVideo = document.getElementById("passVideo");
+        passVideo.style.display = "block";
+        passVideo.play().catch(() => console.log("Pass video playback failed."));
+        document.getElementById("failVideo").style.display = "none";
+        messageDisplay.textContent = `Congratulations, ${examTakerName}! You passed this level.`;
+    } else {
+        const failVideo = document.getElementById("failVideo");
+        failVideo.style.display = "block";
+        failVideo.play().catch(() => console.log("Fail video playback failed."));
+        document.getElementById("passVideo").style.display = "none";
+        messageDisplay.textContent = `Sorry, ${examTakerName}. You failed. Please try again.`;
+    }
+
+    document.getElementById("results").style.display = "block";
+    document.getElementById("quizSection").style.display = "none";
+}
+
 
         async function retakeExam() {
             clearInterval(timerInterval);
