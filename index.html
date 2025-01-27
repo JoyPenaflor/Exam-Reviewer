@@ -156,7 +156,7 @@
     }
 
     shuffleArray(allQuestions);
-    selectedQuestions = allQuestions.slice(0, 5);
+    selectedQuestions = allQuestions.slice(0, 10);
 
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("quizSection").style.display = "block";
@@ -292,7 +292,7 @@
             }
 
             shuffleArray(allQuestions);
-            selectedQuestions = allQuestions.slice(0, 5);
+            selectedQuestions = allQuestions.slice(0, 10);
 
             const timeInMinutes = 5;
             const display = document.querySelector("#countdown");
