@@ -51,7 +51,7 @@
     <div class="quiz-container">
         <h1>TLE Quarter 3 EXAM reviewer</h1>
         <h2>Directions: Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
-        <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">15</span> minutes</div>        
+        <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">5</span> minutes</div>        
         <form id="quizForm">
             <div id="nameInput" style="text-align: center;">
                 <label for="fullName">Enter your full name: </label>
@@ -104,6 +104,7 @@
         let selectedQuestions = [];
         let currentQuestionIndex = 0;
         let timerInterval;
+	let selectedGradeLevel = "";
         let userAnswers = {}; 
 
         document.getElementById("startButton").addEventListener("click", startQuiz);
@@ -139,7 +140,7 @@
         async function startQuiz() {
     console.log("Start Quiz function triggered");
     
-    const gradeLevel = document.getElementById("gradeLevel").value;
+    selectedGradeLevel = document.getElementById("gradeLevel").value;
     examTakerName = document.getElementById("fullName").value.trim();
 
     if (examTakerName === "") {
@@ -147,7 +148,7 @@
         return;
     }
 
-    const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
+    const allQuestions = await loadQuestionsFromGitHub(selectedGradeLevel);
 
     if (allQuestions.length === 0) {
         alert("No questions available. Please check the source file.");
@@ -239,28 +240,30 @@
         }
     });
 
+    const gradeText = selectedGradeLevel.replace(".json", "").replace("grade", "Grade ");
     const scoreDisplay = document.getElementById("score");
     const messageDisplay = document.getElementById("message");
 
-    scoreDisplay.textContent = `${examTakerName}, your score: ${score} out of ${selectedQuestions.length}`;
+    scoreDisplay.textContent = `${examTakerName}, you scored: ${score} out of ${selectedQuestions.length} in ${gradeText}.`;
 
     if (score === selectedQuestions.length) {
         const passVideo = document.getElementById("passVideo");
         passVideo.style.display = "block";
         passVideo.play().catch(() => console.log("Pass video playback failed."));
         document.getElementById("failVideo").style.display = "none";
-        messageDisplay.textContent = `Congratulations, ${examTakerName}! You passed this level.`;
+        messageDisplay.textContent = `Congratulations, ${examTakerName}! You passed the ${gradeText} exam.`;
     } else {
         const failVideo = document.getElementById("failVideo");
         failVideo.style.display = "block";
         failVideo.play().catch(() => console.log("Fail video playback failed."));
         document.getElementById("passVideo").style.display = "none";
-        messageDisplay.textContent = `Sorry, ${examTakerName}. You failed. Please try again.`;
+        messageDisplay.textContent = `Sorry, ${examTakerName}. You did not pass the ${gradeText} exam. Please try again.`;
     }
 
     document.getElementById("results").style.display = "block";
     document.getElementById("quizSection").style.display = "none";
 }
+
 
 
         async function retakeExam() {
@@ -291,9 +294,9 @@
             shuffleArray(allQuestions);
             selectedQuestions = allQuestions.slice(0, 5);
 
-            const timeInMinutes = 15;
+            const timeInMinutes = 5;
             const display = document.querySelector("#countdown");
-            display.textContent = "15:00";
+            display.textContent = "5:00";
             startTimer(timeInMinutes * 60, display);
 
             displayQuestion();
