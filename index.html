@@ -81,13 +81,16 @@
         </form>
 
         <div id="results" style="display: none; text-align: center;">
-            <h2>Your Score:</h2>
-            <p id="score">Score will be displayed here</p>
-            <p id="message"></p>
-            <div class="button-container">
-                <button id="retakeButton">Take Another Exam</button>
-            </div>
-        </div>
+    <h2>Your Score:</h2>
+    <p id="score">Score will be displayed here</p>
+    <p id="message"></p>
+    <p id="timestamp" style="font-size: 1.2em; color: gray;">Date and Time: </p> <!-- Timestamp Placeholder -->
+    <div class="button-container">
+        <button id="retakeButton">Take Another Exam</button>
+    </div>
+</div>
+
+
 
         <video id="passVideo" controls style="display: none;">
             <source src="pass.mp4" type="video/mp4">
@@ -234,6 +237,7 @@
     saveAnswer();
     let score = 0;
 
+    // Calculate the score
     selectedQuestions.forEach((question, index) => {
         if (userAnswers[index] === question.answer) {
             score++;
@@ -244,19 +248,33 @@
     const scoreDisplay = document.getElementById("score");
     const messageDisplay = document.getElementById("message");
 
+    // Capture the current date and time
+    const dateTime = new Date();
+    const formattedDateTime = dateTime.toLocaleString(); // Formats date and time based on user locale
+    const timestampDisplay = document.getElementById("timestamp");
+
+    // Update the results
     scoreDisplay.textContent = `${examTakerName}, you scored: ${score} out of ${selectedQuestions.length} in ${gradeText}.`;
+    timestampDisplay.textContent = `Date and Time: ${formattedDateTime}`;
+
+    const passVideo = document.getElementById("passVideo");
+    const failVideo = document.getElementById("failVideo");
+
+    // Stop and reset both videos before showing the correct one
+    passVideo.pause();
+    failVideo.pause();
+    passVideo.currentTime = 0;
+    failVideo.currentTime = 0;
 
     if (score === selectedQuestions.length) {
-        const passVideo = document.getElementById("passVideo");
         passVideo.style.display = "block";
         passVideo.play().catch(() => console.log("Pass video playback failed."));
-        document.getElementById("failVideo").style.display = "none";
+        failVideo.style.display = "none";
         messageDisplay.textContent = `Congratulations, ${examTakerName}! You passed the ${gradeText} exam.`;
     } else {
-        const failVideo = document.getElementById("failVideo");
         failVideo.style.display = "block";
         failVideo.play().catch(() => console.log("Fail video playback failed."));
-        document.getElementById("passVideo").style.display = "none";
+        passVideo.style.display = "none";
         messageDisplay.textContent = `Sorry, ${examTakerName}. You did not pass the ${gradeText} exam. Please try again.`;
     }
 
@@ -266,41 +284,47 @@
 
 
 
+
+
         async function retakeExam() {
-            clearInterval(timerInterval);
-            currentQuestionIndex = 0;
-            userAnswers = {};
+    clearInterval(timerInterval);
+    currentQuestionIndex = 0;
+    userAnswers = {};
 
-            const passVideo = document.getElementById("passVideo");
-            const failVideo = document.getElementById("failVideo");
+    const passVideo = document.getElementById("passVideo");
+    const failVideo = document.getElementById("failVideo");
 
-            passVideo.style.display = "none";
-            failVideo.style.display = "none";
+    // Stop and reset videos
+    passVideo.pause();
+    failVideo.pause();
+    passVideo.currentTime = 0;
+    failVideo.currentTime = 0;
 
-            passVideo.pause();
-            failVideo.pause();
+    passVideo.style.display = "none";
+    failVideo.style.display = "none";
 
-            document.getElementById("results").style.display = "none";
-            document.getElementById("quizSection").style.display = "block";
+    document.getElementById("results").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
 
-            const gradeLevel = document.getElementById("gradeLevel").value;
-            const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
+    const gradeLevel = document.getElementById("gradeLevel").value;
+    const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
 
-            if (allQuestions.length === 0) {
-                alert("Failed to reload questions. Please check your setup.");
-                return;
-            }
+    if (allQuestions.length === 0) {
+        alert("Failed to reload questions. Please check your setup.");
+        return;
+    }
 
-            shuffleArray(allQuestions);
-            selectedQuestions = allQuestions.slice(0, 10);
+    shuffleArray(allQuestions);
+    selectedQuestions = allQuestions.slice(0, 10);
 
-            const timeInMinutes = 5;
-            const display = document.querySelector("#countdown");
-            display.textContent = "5:00";
-            startTimer(timeInMinutes * 60, display);
+    const timeInMinutes = 5;
+    const display = document.querySelector("#countdown");
+    display.textContent = "5:00";
+    startTimer(timeInMinutes * 60, display);
 
-            displayQuestion();
-        }
+    displayQuestion();
+}
+
     </script>
 </body>
 </html>
