@@ -234,33 +234,56 @@
 
         function calculateScore() {
     clearInterval(timerInterval);
-    saveAnswer();
+    saveAnswer(); // Save the current answer before scoring
     let score = 0;
+    const incorrectQuestions = [];
 
-    // Calculate the score
+    // Calculate the score and collect incorrect questions
     selectedQuestions.forEach((question, index) => {
         if (userAnswers[index] === question.answer) {
             score++;
+        } else {
+            // Add only the question text for incorrect answers
+            incorrectQuestions.push(question.question);
         }
     });
 
     const gradeText = selectedGradeLevel.replace(".json", "").replace("grade", "Grade ");
     const scoreDisplay = document.getElementById("score");
     const messageDisplay = document.getElementById("message");
+    const incorrectDisplay = document.createElement("div");
 
-    // Capture the current date and time
-    const dateTime = new Date();
-    const formattedDateTime = dateTime.toLocaleString(); // Formats date and time based on user locale
-    const timestampDisplay = document.getElementById("timestamp");
-
-    // Update the results
+    // Display the score and exam taker's name with grade level
     scoreDisplay.textContent = `${examTakerName}, you scored: ${score} out of ${selectedQuestions.length} in ${gradeText}.`;
+
+    // Format and display the current date and time
+    const dateTime = new Date();
+    const formattedDateTime = dateTime.toLocaleString(); // Formats based on user locale
+    const timestampDisplay = document.getElementById("timestamp");
     timestampDisplay.textContent = `Date and Time: ${formattedDateTime}`;
 
+    // Display incorrect questions
+    if (incorrectQuestions.length > 0) {
+        incorrectDisplay.innerHTML = `
+            <h3>Hi ${examTakerName}, here are the questions you missed in ${gradeText}:</h3>
+            <ul>
+                ${incorrectQuestions.map(q => `<li>${q}</li>`).join("")}
+            </ul>
+        `;
+    } else {
+        incorrectDisplay.innerHTML = `
+            <h3>Congratulations, ${examTakerName}!</h3>
+            <p>You answered all the questions correctly in ${gradeText}.</p>
+        `;
+    }
+
+    // Append the incorrect questions or success message to the results
+    messageDisplay.innerHTML = ""; // Clear any previous content
+    messageDisplay.appendChild(incorrectDisplay);
+
+    // Handle video display for pass/fail
     const passVideo = document.getElementById("passVideo");
     const failVideo = document.getElementById("failVideo");
-
-    // Stop and reset both videos before showing the correct one
     passVideo.pause();
     failVideo.pause();
     passVideo.currentTime = 0;
@@ -270,17 +293,17 @@
         passVideo.style.display = "block";
         passVideo.play().catch(() => console.log("Pass video playback failed."));
         failVideo.style.display = "none";
-        messageDisplay.textContent = `Congratulations, ${examTakerName}! You passed the ${gradeText} exam.`;
     } else {
         failVideo.style.display = "block";
         failVideo.play().catch(() => console.log("Fail video playback failed."));
         passVideo.style.display = "none";
-        messageDisplay.textContent = `Sorry, ${examTakerName}. You did not pass the ${gradeText} exam. Please try again.`;
     }
 
+    // Show results and hide quiz section
     document.getElementById("results").style.display = "block";
     document.getElementById("quizSection").style.display = "none";
 }
+
 
 
 
