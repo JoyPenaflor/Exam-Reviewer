@@ -1,0 +1,127 @@
+[
+    {
+        "question": "Which one must follow all public health and safety regulations to ensure the protection and well-being of patients?",
+        "choices": ["All health care practitioners", "Client", "People", "Patient"],
+        "answer": "All health care practitioners"
+    },
+    {
+        "question": "What Health and Safety at Work Act number means that employers must, by law, provide a safe working environment for all members of the workforce, including those with disabilities using their premises?",
+        "choices": ["Act of 1973", "Act of 1974", "Act of 1975", "Act of 1976"],
+        "answer": "Act of 1974"
+    },
+    {
+        "question": "What can you say about the guidelines to guarantee the safety of your clients?",
+        "choices": [
+            "Seldom wash hands thoroughly between clients and prior to resuming treatment.",
+            "Wash all linens in soap and cold water. Store and transport them in a sanitary manner.",
+            "Always thoroughly sterilize table, headrest, equipment, and other tools between clients.",
+            "Don’t know all local ordinances and health department regulations regarding the type of clinic you work in."
+        ],
+        "answer": "Always thoroughly sterilize table, headrest, equipment, and other tools between clients."
+    },
+    {
+        "question": "What is your opinion about an endangerment site?",
+        "choices": [
+            "These areas may contain bony projections that are fragile and may be broken.",
+            "These areas are not well protected by muscle or connective tissue and have the potential to be damaged.",
+            "Massage therapists should exercise extreme caution when working in or close to these endangerment areas.",
+            "An endangerment site is a region of the body in which nerves, arteries, or veins lay close to the body's surface."
+        ],
+        "answer": "An endangerment site is a region of the body in which nerves, arteries, or veins lay close to the body's surface."
+    },
+    {
+        "question": "In maintaining health and safety in their place of work, what must be the role of a therapist?",
+        "choices": [
+            "Maintain the highest standards of personal and salon hygiene.",
+            "Do not ignore any hazard or risk; make sure that corrective action is taken.",
+            "Do not report faulty equipment to the person responsible for dealing with these issues.",
+            "Do not keep a record of clients and report any problems that you have identified and cured."
+        ],
+        "answer": "Maintain the highest standards of personal and salon hygiene."
+    },
+    {
+        "question": "Why should you plug the machine into a near and accessible identified socket?",
+        "choices": [
+            "It can be disconnected easily in an emergency.",
+            "It will lessen your time from walking if you unplug it.",
+            "It is easy for you to just reach out to unplug it.",
+            "You can sleep anytime you want, and it is safe."
+        ],
+        "answer": "It can be disconnected easily in an emergency."
+    },
+    {
+        "question": "Why should you follow the correct procedures when using electrical equipment?",
+        "choices": [
+            "To avoid accidents",
+            "To show your expertise",
+            "To play safely",
+            "To boost your capacity to operate the equipment."
+        ],
+        "answer": "To avoid accidents"
+    },
+    {
+        "question": "What do you call the type of drape used to protect the client's hair?",
+        "choices": ["Turban drape", "Gluteal drape", "Breast drape", "Facial drape"],
+        "answer": "Turban drape"
+    },
+    {
+        "question": "What is the technique of using a large towel or sheet to keep you covered while getting a massage?",
+        "choices": ["Bathing", "Cleaning", "Draping", "Massaging"],
+        "answer": "Draping"
+    },
+    {
+        "question": "Which of the following strokes of friction is also known as the heat rub?",
+        "choices": ["Rolling", "Sawing", "Superficial warming", "Wringing"],
+        "answer": "Superficial warming"
+    },
+    {
+        "question": "What is an ancient healing practice that targets specific areas of your body by applying pressure to points on the hands?",
+        "choices": ["Hand Massage", "Foot Reflexology", "Face Reflexology", "Hand Reflexology"],
+        "answer": "Hand Reflexology"
+    },
+    {
+        "question": "What is the primary reason for cooking food?",
+        "choices": ["Enhance taste", "Increase size", "Improve color", "Kill bacteria"],
+        "answer": "Kill bacteria"
+    },
+    {
+        "question": "Which cleaner is best for removing grease buildup?",
+        "choices": ["Detergent", "Acid cleaner", "Abrasive cleaner", "Solvent cleaner"],
+        "answer": "Solvent cleaner"
+    },
+    {
+        "question": "What is the proper storage method for cutting boards?",
+        "choices": ["Store upright in a dry place", "Lay flat on the counter", "Hang with utensils", "Keep in a sealed container"],
+        "answer": "Store upright in a dry place"
+    },
+    {
+        "question": "What strokes in effleurage use the index and middle finger, held together or apart, thus forming a letter 'V' to glide toward one direction and check the proper alignment of muscles and spine?",
+        "choices": ["Nerve stroke", "One-Handed Raking", "Two-Handed Circular", "Two-Handed Heart"],
+        "answer": "One-Handed Raking"
+    },
+    {
+        "question": "Which material is commonly used for baking dishes?",
+        "choices": ["Aluminum", "Cast iron", "Ceramic", "Plastic"],
+        "answer": "Ceramic"
+    },
+    {
+        "question": "What method would be applied when we uncover the back and fold the drape down to the gluteal cleft?",
+        "choices": ["Anterior Leg", "Gluteal Drape", "Posterior Leg", "Breast Drape"],
+        "answer": "Gluteal Drape"
+    },
+    {
+        "question": "Which is an example of kitchen equipment?",
+        "choices": ["Knife", "Spoon", "Fork", "Blender"],
+        "answer": "Blender"
+    },
+    {
+        "question": "Which table napkin fold resembles a boat?",
+        "choices": ["Pyramid", "Candle", "Sailing Boat", "Fan"],
+        "answer": "Sailing Boat"
+    },
+    {
+        "question": "What is the primary goal of sanitizing utensils?",
+        "choices": ["Remove dirt", "Enhance durability", "Improve appearance", "Kill bacteria"],
+        "answer": "Kill bacteria"
+    }
+]
