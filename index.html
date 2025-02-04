@@ -21,7 +21,7 @@
             margin-top: 20px;
         }
         #results, #message {
-            font-size: 2em;
+            font-size: 1.5em;
         }
         label, input[type="text"] {
             font-size: 1.5em;
@@ -160,7 +160,7 @@
     }
 
     shuffleArray(allQuestions);
-    selectedQuestions = allQuestions.slice(0, 10);
+    selectedQuestions = allQuestions.slice(0, 15);
 
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("quizSection").style.display = "block";
@@ -339,7 +339,7 @@
     }
 
     shuffleArray(allQuestions);
-    selectedQuestions = allQuestions.slice(0, 10);
+    selectedQuestions = allQuestions.slice(0, 15);
 
     const timeInMinutes = 5;
     const display = document.querySelector("#countdown");
