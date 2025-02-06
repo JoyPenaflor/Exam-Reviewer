@@ -305,47 +305,45 @@
     document.getElementById("quizSection").style.display = "none";
 }
 
-
-
-
-
-
-        async function retakeExam() {
+async function retakeExam() {
     clearInterval(timerInterval);
     currentQuestionIndex = 0;
     userAnswers = {};
 
+    // Reset UI
+    document.getElementById("results").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
+
+    // Reset the timer display
+    document.getElementById("countdown").textContent = "5:00";
+
+    // Stop and hide videos
     const passVideo = document.getElementById("passVideo");
     const failVideo = document.getElementById("failVideo");
-
-    // Stop and reset videos
     passVideo.pause();
     failVideo.pause();
     passVideo.currentTime = 0;
     failVideo.currentTime = 0;
-
     passVideo.style.display = "none";
     failVideo.style.display = "none";
 
-    document.getElementById("results").style.display = "none";
-    document.getElementById("quizSection").style.display = "block";
-
+    // 🛑 Fix: Reload new questions from GitHub 🛑
     const gradeLevel = document.getElementById("gradeLevel").value;
-    const allQuestions = await loadQuestionsFromGitHub(gradeLevel);
+    const allQuestions = await loadQuestionsFromGitHub(gradeLevel); // Fetch a fresh set of questions
 
     if (allQuestions.length === 0) {
         alert("Failed to reload questions. Please check your setup.");
         return;
     }
 
-    shuffleArray(allQuestions);
-    selectedQuestions = allQuestions.slice(0, 20);
+    shuffleArray(allQuestions); // Randomize the order
+    selectedQuestions = allQuestions.slice(0, 20); // Select a new random set of 20 questions
 
+    // Restart the timer
     const timeInMinutes = 5;
-    const display = document.querySelector("#countdown");
-    display.textContent = "5:00";
-    startTimer(timeInMinutes * 60, display);
+    startTimer(timeInMinutes * 60, document.querySelector("#countdown"));
 
+    // Display the first question
     displayQuestion();
 }
 
