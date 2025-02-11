@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TLE Quarter 3 EXAM reviewer</title>
+    <title>TLE Quarter 3 Exam Retake</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,7 +49,7 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h1>TLE Quarter 3 EXAM reviewer</h1>
+        <h1>TLE Quarter 3 Exam Retake</h1>
         <h2>Directions: Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
         <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">5</span> minutes</div>        
         <form id="quizForm">
@@ -160,7 +160,7 @@
     }
 
     shuffleArray(allQuestions);
-    selectedQuestions = allQuestions.slice(0, 20);
+    selectedQuestions = allQuestions.slice(0, 30);
 
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("quizSection").style.display = "block";
@@ -337,7 +337,7 @@ async function retakeExam() {
     }
 
     shuffleArray(allQuestions); // Randomize the order
-    selectedQuestions = allQuestions.slice(0, 20); // Select a new random set of 20 questions
+    selectedQuestions = allQuestions.slice(0, 30); // Select a new random set of 20 questions
 
     // Restart the timer
     const timeInMinutes = 5;
