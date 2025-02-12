@@ -51,7 +51,7 @@
     <div class="quiz-container">
         <h1>TLE Quarter 3 Exam Retake</h1>
         <h2>Directions: Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
-        <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">5</span> minutes</div>        
+        <div id="timer" style="text-align: center;">Time remaining: <span id="countdown">10</span> minutes</div>        
         <form id="quizForm">
             <div id="nameInput" style="text-align: center;">
                 <label for="fullName">Enter your full name: </label>
@@ -165,7 +165,7 @@
     document.getElementById("nameInput").style.display = "none";
     document.getElementById("quizSection").style.display = "block";
 
-    const timeInMinutes = 5;
+    const timeInMinutes = 10;
     const display = document.querySelector("#countdown");
     startTimer(timeInMinutes * 60, display);
 
@@ -340,7 +340,7 @@ async function retakeExam() {
     selectedQuestions = allQuestions.slice(0, 30); // Select a new random set of 20 questions
 
     // Restart the timer
-    const timeInMinutes = 5;
+    const timeInMinutes = 10;
     startTimer(timeInMinutes * 60, document.querySelector("#countdown"));
 
     // Display the first question
