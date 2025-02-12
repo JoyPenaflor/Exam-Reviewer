@@ -1,127 +1,321 @@
 [
     {
-        "question": "Which one must follow all public health and safety regulations to ensure the protection and well-being of patients?",
+        "question": "Who is required to follow all public health and safety regulations to ensure the protection and well-being of patients?",
         "choices": ["All health care practitioners", "Client", "People", "Patient"],
         "answer": "All health care practitioners"
     },
     {
-        "question": "What Health and Safety at Work Act number means that employers must, by law, provide a safe working environment for all members of the workforce, including those with disabilities using their premises?",
+        "question": "Which Health and Safety at Work Act legally requires employers to provide a safe working environment for all employees, including those with disabilities?",
         "choices": ["Act of 1973", "Act of 1974", "Act of 1975", "Act of 1976"],
         "answer": "Act of 1974"
     },
     {
-        "question": "What can you say about the guidelines to guarantee the safety of your clients?",
+        "question": "Which guideline is essential to ensure the safety of clients in a healthcare or wellness setting?",
         "choices": [
             "Seldom wash hands thoroughly between clients and prior to resuming treatment.",
             "Wash all linens in soap and cold water. Store and transport them in a sanitary manner.",
-            "Always thoroughly sterilize table, headrest, equipment, and other tools between clients.",
-            "Don’t know all local ordinances and health department regulations regarding the type of clinic you work in."
+            "Always thoroughly sterilize tables, headrests, equipment, and other tools between clients.",
+            "Ignore local ordinances and health department regulations regarding the clinic type."
         ],
-        "answer": "Always thoroughly sterilize table, headrest, equipment, and other tools between clients."
+        "answer": "Always thoroughly sterilize tables, headrests, equipment, and other tools between clients."
     },
     {
-        "question": "What is your opinion about an endangerment site?",
+        "question": "What describes an endangerment site in massage therapy?",
         "choices": [
-            "These areas may contain bony projections that are fragile and may be broken.",
-            "These areas are not well protected by muscle or connective tissue and have the potential to be damaged.",
-            "Massage therapists should exercise extreme caution when working in or close to these endangerment areas.",
-            "An endangerment site is a region of the body in which nerves, arteries, or veins lay close to the body's surface."
+            "Areas with fragile bony projections that may break easily.",
+            "Regions not well protected by muscle or connective tissue, making them susceptible to damage.",
+            "Areas where massage therapists must exercise extreme caution due to sensitive structures.",
+            "A site where nerves, arteries, or veins are located close to the body's surface."
         ],
-        "answer": "An endangerment site is a region of the body in which nerves, arteries, or veins lay close to the body's surface."
+        "answer": "A site where nerves, arteries, or veins are located close to the body's surface."
     },
     {
-        "question": "In maintaining health and safety in their place of work, what must be the role of a therapist?",
+        "question": "What is the role of a therapist in maintaining workplace health and safety?",
         "choices": [
             "Maintain the highest standards of personal and salon hygiene.",
-            "Do not ignore any hazard or risk; make sure that corrective action is taken.",
-            "Do not report faulty equipment to the person responsible for dealing with these issues.",
-            "Do not keep a record of clients and report any problems that you have identified and cured."
+            "Ignore workplace hazards and risks without taking corrective action.",
+            "Avoid reporting faulty equipment to the responsible personnel.",
+            "Neglect keeping a record of clients and any problems encountered during treatment."
         ],
         "answer": "Maintain the highest standards of personal and salon hygiene."
     },
     {
-        "question": "Why should you plug the machine into a near and accessible identified socket?",
+        "question": "Why is it important to plug electrical equipment into a nearby and easily accessible socket?",
         "choices": [
-            "It can be disconnected easily in an emergency.",
-            "It will lessen your time from walking if you unplug it.",
-            "It is easy for you to just reach out to unplug it.",
-            "You can sleep anytime you want, and it is safe."
+            "It can be quickly disconnected in case of an emergency.",
+            "It minimizes walking distance when unplugging the machine.",
+            "It allows easy reach when unplugging the equipment.",
+            "It ensures safety when sleeping while the machine is on."
         ],
-        "answer": "It can be disconnected easily in an emergency."
+        "answer": "It can be quickly disconnected in case of an emergency."
     },
     {
-        "question": "Why should you follow the correct procedures when using electrical equipment?",
+        "question": "What is the primary reason for following correct procedures when using electrical equipment?",
         "choices": [
-            "To avoid accidents",
-            "To show your expertise",
-            "To play safely",
-            "To boost your capacity to operate the equipment."
+            "To prevent accidents",
+            "To showcase expertise",
+            "To ensure safe play",
+            "To improve the ability to operate the equipment"
         ],
-        "answer": "To avoid accidents"
+        "answer": "To prevent accidents"
     },
     {
-        "question": "What do you call the type of drape used to protect the client's hair?",
+        "question": "Which type of drape is used to cover and protect a client's hair during a massage?",
         "choices": ["Turban drape", "Gluteal drape", "Breast drape", "Facial drape"],
         "answer": "Turban drape"
     },
     {
-        "question": "What is the technique of using a large towel or sheet to keep you covered while getting a massage?",
+        "question": "What is the process of using a large towel or sheet to cover the body during a massage called?",
         "choices": ["Bathing", "Cleaning", "Draping", "Massaging"],
         "answer": "Draping"
     },
     {
-        "question": "Which of the following strokes of friction is also known as the heat rub?",
-        "choices": ["Rolling", "Sawing", "Superficial warming", "Wringing"],
-        "answer": "Superficial warming"
+        "question": "Which draping technique involves gathering the fabric at the greater trochanter and the ankle?",
+        "choices": ["Anterior Pelvic Drape", "Anterior Leg", "Breast Drape", "Posterior Leg"],
+        "answer": "Posterior Leg"
     },
     {
-        "question": "What is an ancient healing practice that targets specific areas of your body by applying pressure to points on the hands?",
-        "choices": ["Hand Massage", "Foot Reflexology", "Face Reflexology", "Hand Reflexology"],
-        "answer": "Hand Reflexology"
-    },
-    {
-        "question": "What is the primary reason for cooking food?",
-        "choices": ["Enhance taste", "Increase size", "Improve color", "Kill bacteria"],
-        "answer": "Kill bacteria"
-    },
-    {
-        "question": "Which cleaner is best for removing grease buildup?",
-        "choices": ["Detergent", "Acid cleaner", "Abrasive cleaner", "Solvent cleaner"],
-        "answer": "Solvent cleaner"
-    },
-    {
-        "question": "What is the proper storage method for cutting boards?",
-        "choices": ["Store upright in a dry place", "Lay flat on the counter", "Hang with utensils", "Keep in a sealed container"],
-        "answer": "Store upright in a dry place"
-    },
-    {
-        "question": "What strokes in effleurage use the index and middle finger, held together or apart, thus forming a letter 'V' to glide toward one direction and check the proper alignment of muscles and spine?",
-        "choices": ["Nerve stroke", "One-Handed Raking", "Two-Handed Circular", "Two-Handed Heart"],
-        "answer": "One-Handed Raking"
-    },
-    {
-        "question": "Which material is commonly used for baking dishes?",
-        "choices": ["Aluminum", "Cast iron", "Ceramic", "Plastic"],
-        "answer": "Ceramic"
-    },
-    {
-        "question": "What method would be applied when we uncover the back and fold the drape down to the gluteal cleft?",
+        "question": "Which draping method is applied when uncovering the back and folding the drape down to the gluteal cleft?",
         "choices": ["Anterior Leg", "Gluteal Drape", "Posterior Leg", "Breast Drape"],
         "answer": "Gluteal Drape"
     },
     {
-        "question": "Which is an example of kitchen equipment?",
-        "choices": ["Knife", "Spoon", "Fork", "Blender"],
-        "answer": "Blender"
+        "question": "Which of the following statements about draping is FALSE?",
+        "choices": [
+            "Draping allows clients to be completely nude under the sheet while still feeling unsafe, cool, and exposed.",
+            "Using draping, the massage therapist only works on the part of the body that is exposed.",
+            "Clients should be encouraged to wear disposable undergarments to maintain modesty.",
+            "The draping sheet remains in place until the client is moved into a side-lying position."
+        ],
+        "answer": "Draping allows clients to be completely nude under the sheet while still feeling unsafe, cool, and exposed."
     },
     {
-        "question": "Which table napkin fold resembles a boat?",
-        "choices": ["Pyramid", "Candle", "Sailing Boat", "Fan"],
-        "answer": "Sailing Boat"
+        "question": "What is the first step in draping the anterior leg?",
+        "choices": [
+            "Gather the drape at the anterior superior iliac spine (ASIS) and at the ankle.",
+            "Fold the bottom section of the drape at an angle across the opposite leg while holding it at the ASIS.",
+            "Using the lower hand, tuck the drape fold under the opposite thigh.",
+            "Fold the top section of the drape across the belly, keeping the ASIS exposed."
+        ],
+        "answer": "Gather the drape at the anterior superior iliac spine (ASIS) and at the ankle."
     },
     {
-        "question": "What is the primary goal of sanitizing utensils?",
-        "choices": ["Remove dirt", "Enhance durability", "Improve appearance", "Kill bacteria"],
-        "answer": "Kill bacteria"
+        "question": "Which instrument is commonly used to measure temperature?",
+        "choices": ["Thermometer", "Stethoscope", "Sphygmomanometer", "Basin"],
+        "answer": "Thermometer"
+    },
+    {
+        "question": "Which instrument is designed for listening to internal sounds within the body?",
+        "choices": ["Thermometer", "Stethoscope", "Sphygmomanometer", "Massage Bed"],
+        "answer": "Stethoscope"
+    },
+    {
+        "question": "What item is used in wellness massage to wipe and cover the body?",
+        "choices": ["Bed sheets", "Bath towel", "Face towel", "Undergarment"],
+        "answer": "Face towel"
+    },
+    {
+        "question": "Which of the following should be worn by clients during a massage session?",
+        "choices": ["Bath towel", "Face towel/hand towel", "Bed sheets", "Short/disposable undergarment"],
+        "answer": "Short/disposable undergarment"
+    },
+    {
+        "question": "Why is drinking water recommended after a massage?",
+        "choices": [
+            "Because it quenches thirst",
+            "To cleanse the body",
+            "To circulate blood throughout the body",
+            "To hydrate the body and assist in flushing out toxins"
+        ],
+        "answer": "To hydrate the body and assist in flushing out toxins"
+    },
+    {
+        "question": "What is the primary purpose of consultation before a massage?",
+        "choices": [
+            "To introduce yourself and get to know the client.",
+            "To understand the client’s needs and expectations of the treatment.",
+            "To determine the most appropriate treatment and discuss it with the client.",
+            "To explain the treatment, including its process, effects, timing, and frequency."
+        ],
+        "answer": "To understand the client’s needs and expectations of the treatment."
+    },
+    {
+        "question": "Which massage stroke is commonly used as a finishing technique?",
+        "choices": ["Nerve stroke", "One-Handed Raking", "Two-Handed Circular", "Two-Handed Heart"],
+        "answer": "Nerve stroke"
+    },
+    {
+        "question": "Which effleurage stroke uses the index and middle finger to form a 'V' shape and check muscle and spine alignment?",
+        "choices": ["Nerve stroke", "One-Handed Raking", "Two-Handed Circular", "Two-Handed Heart"],
+        "answer": "One-Handed Raking"
+    },
+    {
+        "question": "Which massage technique originates from the French word 'pétrir,' meaning 'to knead'?",
+        "choices": ["Effleurage", "Petrissage", "Percussion", "Vibration"],
+        "answer": "Petrissage"
+    },
+    {
+        "question": "Which type of manipulation involves lifting the tissue away from the bone and pushing and wringing it from side to side?",
+        "choices": ["Kneading", "Picking up", "Skin rolling", "Wringing"],
+        "answer": "Wringing"
+    },
+
+
+
+
+    {
+        "question": "Which of the following massage strokes involves the hands striking the target area?",
+        "choices": ["Effleurage", "Petrissage", "Tapotement", "Vibration"],
+        "answer": "Tapotement"
+    },
+    {
+        "question": "Which stroke in tapotement is also known as the Karate Chop?",
+        "choices": ["Cupping", "Hacking", "Pounding", "Quacking"],
+        "answer": "Hacking"
+    },
+    {
+        "question": "Which massage technique involves curving the palm into a 'C-shape' and striking the client's skin?",
+        "choices": ["Cupping", "Hacking", "Pounding", "Quacking"],
+        "answer": "Cupping"
+    },
+    {
+        "question": "Which of the following strokes is commonly used over the abdominal region and is known as Diffused?",
+        "choices": ["Hacking", "Pounding", "Quacking", "Rambling"],
+        "answer": "Rambling"
+    },
+    {
+        "question": "Which of the following friction strokes is also known as the heat rub?",
+        "choices": ["Rolling", "Sawing", "Superficial warming", "Wringing"],
+        "answer": "Superficial warming"
+    },
+    {
+        "question": "What type of manipulation involves light, brisk, or deep strokes applied by chafing or rubbing?",
+        "choices": ["Effleurage", "Friction", "Tapotement", "Vibration"],
+        "answer": "Friction"
+    },
+    {
+        "question": "Which friction stroke refers to deep transverse friction?",
+        "choices": ["Cross Fiber", "Chucking", "Sawing", "Wringing"],
+        "answer": "Cross Fiber"
+    },
+    {
+        "question": "Which massage stroke involves placing the hand on the target area and applying vibration?",
+        "choices": ["Cupping", "Frictions", "Pounding", "Vibration"],
+        "answer": "Vibration"
+    },
+    {
+        "question": "Which of the following is done with the palm of the hand to determine the balance of hot and cold in the body?",
+        "choices": [
+            "Palpation of hot and cold syndrome",
+            "Palpation of skin tissues and stiff muscles",
+            "Palpating the activities of internal organs through pulse",
+            "Using a banana leaf strip to determine energetic balance"
+        ],
+        "answer": "Palpation of hot and cold syndrome"
+    },
+    {
+        "question": "What is a traditional Asian method of assessing internal organ activity by observing pulse characteristics?",
+        "choices": ["Pagpupulso", "Pagkapa", "Pagsasalat", "Pagsasala/Panghihila"],
+        "answer": "Pagpupulso"
+    },
+    {
+        "question": "Which diagnostic method involves using a banana leaf strip coated in coconut oil and heated over a flame to check energetic balance?",
+        "choices": ["Pagpupulso", "Pagkapa", "Pagsasalat", "Pagsasala/Panghihila"],
+        "answer": "Pagsasala/Panghihila"
+    },
+    {
+        "question": "Which massage stroke involves the hands gliding over the surface of the skin?",
+        "choices": ["Effleurage", "Percussion", "Petrissage", "Vibration"],
+        "answer": "Effleurage"
+    },
+    {
+        "question": "Which technique uses fingertips to assess muscle stiffness and knots?",
+        "choices": ["Pagpupulso", "Pagkapa", "Pagsasalat", "Pagsasala/Panghihila"],
+        "answer": "Pagsasalat"
+    },
+    {
+        "question": "Where on the hand can you find the reflex zone linked to the chest and lungs?",
+        "choices": ["Zone 1", "Zone 2", "Zone 3", "Zone 4"],
+        "answer": "Zone 2"
+    },
+    {
+        "question": "Which reflexology zone of the hand is associated with the head and neck?",
+        "choices": ["Zone 1", "Zone 2", "Zone 3", "Zone 4"],
+        "answer": "Zone 1"
+    },
+    {
+        "question": "Before performing a massage, what should be checked first on the client?",
+        "choices": ["Body temperature/blood pressure", "Pulse Rate", "Weight", "Height"],
+        "answer": "Body temperature/blood pressure"
+    },
+    {
+        "question": "Which ancient healing practice involves applying pressure to specific areas of the hands?",
+        "choices": ["Hand Massage", "Foot Reflexology", "Face Reflexology", "Hand Reflexology"],
+        "answer": "Hand Reflexology"
+    },
+    {
+        "question": "Which of the following is a system enclosed within the skull?",
+        "choices": ["Brain", "Eyes", "Heart", "Lungs"],
+        "answer": "Brain"
+    },
+    {
+        "question": "Why is personal hygiene important in a massage setting?",
+        "choices": [
+            "It helps prevent bacteria and germs from spreading.",
+            "It allows therapists to wear any clothing they prefer.",
+            "It reduces the need for handwashing.",
+            "It eliminates the need for sanitization."
+        ],
+        "answer": "It helps prevent bacteria and germs from spreading."
+    },
+    {
+        "question": "What is the primary benefit of drinking water after a massage?",
+        "choices": [
+            "To quench thirst",
+            "To cleanse the body",
+            "To circulate blood more efficiently",
+            "To hydrate the body and flush out toxins"
+        ],
+        "answer": "To hydrate the body and flush out toxins"
+    },
+    {
+        "question": "Which preparation step ensures a clean and sanitary massage environment?",
+        "choices": [
+            "Using the same linens for multiple clients",
+            "Disinfecting massage tables and tools after each client",
+            "Skipping handwashing if gloves are worn",
+            "Keeping all massage oils and lotions uncovered at all times"
+        ],
+        "answer": "Disinfecting massage tables and tools after each client"
+    },
+    {
+        "question": "Why should massage therapists wear professional attire during sessions?",
+        "choices": [
+            "To impress clients",
+            "To ensure hygiene and professionalism",
+            "To avoid washing clothes frequently",
+            "To reduce costs on work uniforms"
+        ],
+        "answer": "To ensure hygiene and professionalism"
+    },
+    {
+        "question": "Which of the following is an essential part of a wellness massage consultation?",
+        "choices": [
+            "Explaining treatment goals and techniques",
+            "Avoiding any discussion of medical history",
+            "Skipping the consultation to save time",
+            "Choosing a massage style without client input"
+        ],
+        "answer": "Explaining treatment goals and techniques"
+    },
+    {
+        "question": "Which of the following is an important task at the end of a business day in a massage facility?",
+        "choices": [
+            "Deep cleaning and disinfecting bathrooms",
+            "Organizing CDs and office supplies",
+            "Ignoring used towels and linens",
+            "Leaving equipment on for the next shift"
+        ],
+        "answer": "Deep cleaning and disinfecting bathrooms"
     }
 ]
