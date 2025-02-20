@@ -1,17 +1,252 @@
 [
     {
-        "question": "What is the chemical symbol for water?",
-        "choices": ["H2O", "O2", "CO2", "NaCl"],
-        "answer": "H2O"
+        "question": "What is the meaning of the acronym PEC's?",
+        "choices": ["Personal entrepreneurial competencies", "Personal entrepreneur competition", "Professional entrepreneurial competencies", "Professional entrepreneurial commodities"],
+        "answer": "Personal entrepreneurial competencies"
     },
     {
-        "question": "Who wrote 'Romeo and Juliet'?",
-        "choices": ["William Shakespeare", "Charles Dickens", "J.K. Rowling", "Mark Twain"],
-        "answer": "William Shakespeare"
+        "question": "What do we mean by an entrepreneur?",
+        "choices": ["Manages a business for someone else", "Accepts the risk of starting and running a business", "Owns controlling interest in the stock of a major corporation", "Manages a business that operates in more than one country"],
+        "answer": "Accepts the risk of starting and running a business"
     },
     {
-        "question": "What is the speed of light?",
-        "choices": ["300,000 km/s", "150,000 km/s", "299,792 km/s", "200,000 km/s"],
-        "answer": "299,792 km/s"
+        "question": "Which one is an individual who is effective and efficient in communication skills and relates well to people?",
+        "choices": ["Creative", "Profit-oriented", "Confident", "Possesses people skills"],
+        "answer": "Possesses people skills"
+    },
+    {
+        "question": "What do you call a person who is always looking for an opportunity to have/earn income?",
+        "choices": ["Confident", "Socially oriented", "Profit-oriented", "Creative"],
+        "answer": "Profit-oriented"
+    },
+    {
+        "question": "When you always stick to the plan, you possess a characteristic like an entrepreneur. What is it?",
+        "choices": ["Confident", "Hardworking", "Disciplined", "Profit-oriented"],
+        "answer": "Disciplined"
+    },
+    {
+        "question": "If he or she works diligently, what kind of person is he/she?",
+        "choices": ["Hardworking person", "Profit-oriented person", "Confident person", "Creative person"],
+        "answer": "Hardworking person"
+    },
+    {
+        "question": "In what way should an entrepreneur stay in the business to have an edge over other competitors?",
+        "choices": ["Provides services", "Caters to the needs of the customer", "Sells all the products", "Creative and innovative"],
+        "answer": "Creative and innovative"
+    },
+    {
+        "question": "Which one refers to good entrepreneurs who render solid dedication to making the business grow?",
+        "choices": ["Committed", "Hardworking", "Confident", "Creative"],
+        "answer": "Committed"
+    },
+    {
+        "question": "When you own a business, you should cope with and thrive on changes. What do you have?",
+        "choices": ["Disciplined", "Sound decision-maker", "Confident", "Ability to accept change"],
+        "answer": "Ability to accept change"
+    },
+    {
+        "question": "Listed below are the reasons why a self-rating assessment shall be done EXCEPT for:",
+        "choices": ["Used to evaluate an individual's PECs", "Serves as a basis to acquire more wealth in the future", "Helps to detect and analyze strong and weak points", "Useful in strengthening entrepreneurial potential"],
+        "answer": "Serves as a basis to acquire more wealth in the future"
+    },
+    {
+        "question": "Which one is NOT included in the characteristics of a successful entrepreneur?",
+        "choices": ["Hardworking", "Creative", "Lack of persistence", "Profit-oriented"],
+        "answer": "Lack of persistence"
+    },
+    {
+        "question": "What is the most important attitude that an entrepreneur must possess when running a business?",
+        "choices": ["Indifference", "Determination", "Procrastination", "Negligence"],
+        "answer": "Determination"
+    },
+    {
+        "question": "How does being self-confident help an entrepreneur?",
+        "choices": ["Doubt one's own ability", "Take calculated risks", "Depend on luck", "Avoid decision making"],
+        "answer": "Take calculated risks"
+    },
+    {
+        "question": "Which one is an essential entrepreneurial competency that enables an entrepreneur to work well with others?",
+        "choices": ["Risk-taking", "Interpersonal skills", "Persistence", "Decision-making"],
+        "answer": "Interpersonal skills"
+    },
+    {
+        "question": "Which among the following refers to the ability of an entrepreneur to develop and implement new ideas?",
+        "choices": ["Opportunity-seeking", "Creativity", "Self-confidence", "Commitment"],
+        "answer": "Creativity"
+    },
+    {
+        "question": "Which factor contributes to the success of an entrepreneur?",
+        "choices": ["Being lazy", "Ignoring customers' needs", "Strong business ethics", "Lack of discipline"],
+        "answer": "Strong business ethics"
+    },
+    {
+        "question": "Why is goal setting important for entrepreneurs?",
+        "choices": ["To confuse employees", "To provide a clear direction for the business", "To discourage innovation", "To avoid taking risks"],
+        "answer": "To provide a clear direction for the business"
+    },
+    {
+        "question": "Which of the following is an example of opportunity-seeking behavior?",
+        "choices": ["Waiting for opportunities to come", "Actively searching for business trends and customer needs", "Ignoring market changes", "Relying on luck"],
+        "answer": "Actively searching for business trends and customer needs"
+    },
+    {
+        "question": "Which one is the best way to cope with business risks?",
+        "choices": ["Avoid challenges", "Take calculated risks", "Ignore risks", "Depend on luck"],
+        "answer": "Take calculated risks"
+    },
+    {
+        "question": "What is the primary motivation of an entrepreneur in starting a business?",
+        "choices": ["To escape from responsibilities", "To make money and satisfy customer needs", "To avoid hard work", "To rely on luck"],
+        "answer": "To make money and satisfy customer needs"
+    },
+    {
+        "question": "What is the importance of assessing one's PECs before starting a business?",
+        "choices": ["To identify strengths and weaknesses", "To ensure immediate success", "To avoid competition", "To follow trends"],
+        "answer": "To identify strengths and weaknesses"
+    },
+    {
+        "question": "Which one is an example of a good entrepreneurial trait?",
+        "choices": ["Giving up easily", "Taking responsibility for decisions", "Blaming others for mistakes", "Avoiding challenges"],
+        "answer": "Taking responsibility for decisions"
+    },
+    {
+        "question": "Why is decision-making important in business?",
+        "choices": ["It allows entrepreneurs to take responsibility for their choices", "It guarantees success", "It eliminates risks", "It prevents financial loss"],
+        "answer": "It allows entrepreneurs to take responsibility for their choices"
+    },
+    {
+        "question": "What does a market study provide for an entrepreneur?",
+        "choices": ["Information on customer preferences and market trends", "Guaranteed profits", "Elimination of risks", "Avoidance of competitors"],
+        "answer": "Information on customer preferences and market trends"
+    },
+    {
+        "question": "Which of the following is an example of an entrepreneurial opportunity?",
+        "choices": ["Investing in declining industries", "Identifying a growing market need", "Ignoring technological advancements", "Copying existing products"],
+        "answer": "Identifying a growing market need"
+    },
+    {
+        "question": "How can an entrepreneur adapt to changing market trends?",
+        "choices": ["Ignoring new business models", "Continuously learning and innovating", "Avoiding customer feedback", "Following the same business strategy indefinitely"],
+        "answer": "Continuously learning and innovating"
+    },
+    {
+        "question": "What is the role of financial literacy in entrepreneurship?",
+        "choices": ["Helps manage business finances effectively", "Prevents all financial risks", "Guarantees business success", "Eliminates the need for planning"],
+        "answer": "Helps manage business finances effectively"
+    },
+    {
+        "question": "Which of the following factors can impact the success of a business?",
+        "choices": ["Market demand", "Poor time management", "Lack of planning", "Ignoring customer feedback"],
+        "answer": "Market demand"
+    },
+    {
+        "question": "Why is it important to take calculated risks in business?",
+        "choices": ["It ensures complete safety", "It helps entrepreneurs seize opportunities", "It eliminates uncertainty", "It prevents losses"],
+        "answer": "It helps entrepreneurs seize opportunities"
+    },
+    {
+        "question": "How does networking contribute to entrepreneurial success?",
+        "choices": ["Builds valuable relationships and business opportunities", "Guarantees investment returns", "Eliminates business risks", "Reduces competition"],
+        "answer": "Builds valuable relationships and business opportunities"
+    },
+    {
+        "question": "What is the significance of customer feedback in business?",
+        "choices": ["It helps in improving products and services", "It decreases business reputation", "It eliminates the need for marketing", "It reduces customer engagement"],
+        "answer": "It helps in improving products and services"
+    },
+    {
+        "question": "Which of the following is an essential financial practice for entrepreneurs?",
+        "choices": ["Ignoring expenses", "Keeping track of cash flow", "Avoiding investments", "Spending without planning"],
+        "answer": "Keeping track of cash flow"
+    },
+    {
+        "question": "How can an entrepreneur effectively manage risks?",
+        "choices": ["By ignoring potential challenges", "By analyzing and planning ahead", "By avoiding new business opportunities", "By relying solely on luck"],
+        "answer": "By analyzing and planning ahead"
+    },
+    {
+        "question": "Why is innovation important in business?",
+        "choices": ["It ensures that businesses remain competitive", "It prevents business growth", "It discourages creativity", "It reduces product variety"],
+        "answer": "It ensures that businesses remain competitive"
+    },
+    {
+        "question": "What is the benefit of having a business plan?",
+        "choices": ["It provides direction and strategy", "It guarantees business success", "It eliminates financial risks", "It prevents competition"],
+        "answer": "It provides direction and strategy"
+    },
+    {
+        "question": "Which of the following is a key characteristic of a successful entrepreneur?",
+        "choices": ["Adaptability", "Resistance to change", "Procrastination", "Avoiding challenges"],
+        "answer": "Adaptability"
+    },
+    {
+        "question": "Why is time management important in entrepreneurship?",
+        "choices": ["It increases productivity and efficiency", "It reduces business opportunities", "It discourages employee performance", "It increases workload"],
+        "answer": "It increases productivity and efficiency"
+    },
+    {
+        "question": "How does branding impact a business?",
+        "choices": ["It differentiates the business from competitors", "It reduces customer trust", "It discourages customer loyalty", "It limits business growth"],
+        "answer": "It differentiates the business from competitors"
+    },
+    {
+        "question": "Which factor is essential for long-term business growth?",
+        "choices": ["Continuous learning and market research", "Ignoring customer needs", "Avoiding technological advancements", "Lack of financial planning"],
+        "answer": "Continuous learning and market research"
+    },
+    {
+        "question": "Why is customer satisfaction important in business?",
+        "choices": ["It increases customer loyalty and retention", "It reduces business credibility", "It discourages repeat purchases", "It limits customer engagement"],
+        "answer": "It increases customer loyalty and retention"
+    },
+    {
+        "question": "What is the importance of business ethics?",
+        "choices": ["It helps build trust with customers", "It reduces profitability", "It encourages dishonest practices", "It has no impact on success"],
+        "answer": "It helps build trust with customers"
+    },
+    {
+        "question": "Which of the following is a benefit of networking for entrepreneurs?",
+        "choices": ["Increases business opportunities", "Reduces professional connections", "Decreases credibility", "Limits market reach"],
+        "answer": "Increases business opportunities"
+    },
+    {
+        "question": "How does effective leadership impact a business?",
+        "choices": ["Inspires and motivates employees", "Reduces team efficiency", "Discourages teamwork", "Creates workplace conflicts"],
+        "answer": "Inspires and motivates employees"
+    },
+    {
+        "question": "What role does digital marketing play in business success?",
+        "choices": ["Expands market reach", "Reduces brand visibility", "Decreases customer engagement", "Eliminates the need for advertising"],
+        "answer": "Expands market reach"
+    },
+    {
+        "question": "Why is adaptability crucial for entrepreneurs?",
+        "choices": ["It helps them navigate changing markets", "It prevents innovation", "It limits growth opportunities", "It discourages creativity"],
+        "answer": "It helps them navigate changing markets"
+    },
+    {
+        "question": "Which of the following is an example of a competitive advantage?",
+        "choices": ["Offering unique products or services", "Ignoring customer needs", "Copying competitors' strategies", "Reducing product quality"],
+        "answer": "Offering unique products or services"
+    },
+    {
+        "question": "What is the primary purpose of a financial plan in business?",
+        "choices": ["To manage cash flow and expenses", "To avoid financial decisions", "To increase financial uncertainty", "To eliminate competition"],
+        "answer": "To manage cash flow and expenses"
+    },
+    {
+        "question": "How does customer loyalty benefit a business?",
+        "choices": ["Increases repeat purchases", "Reduces brand trust", "Limits market expansion", "Discourages innovation"],
+        "answer": "Increases repeat purchases"
+    },
+    {
+        "question": "Which factor contributes to business sustainability?",
+        "choices": ["Ethical and responsible business practices", "Ignoring environmental concerns", "Avoiding long-term planning", "Focusing only on short-term profits"],
+        "answer": "Ethical and responsible business practices"
+    },
+    {
+        "question": "Why is continuous learning important for entrepreneurs?",
+        "choices": ["Keeps them updated with industry trends", "Limits professional development", "Reduces business innovation", "Discourages strategic thinking"],
+        "answer": "Keeps them updated with industry trends"
     }
 ]
