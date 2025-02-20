@@ -1,17 +1,252 @@
 [
     {
-        "question": "What is the chemical symbol for water?",
-        "choices": ["H2O", "O2", "CO2", "NaCl"],
-        "answer": "H2O"
+        "question": "Which one provides support to people to live well, by addressing the factors that influence their health and well-being?",
+        "choices": ["Wellness Services", "Consultation", "Massage", "Appointment Card"],
+        "answer": "Wellness Services"
     },
     {
-        "question": "Who wrote 'Romeo and Juliet'?",
-        "choices": ["William Shakespeare", "Charles Dickens", "J.K. Rowling", "Mark Twain"],
-        "answer": "William Shakespeare"
+        "question": "What is a very important part of the treatment – sufficient time must be allowed so that it is not rushed?",
+        "choices": ["Interview", "Consultation", "Observe", "Listen"],
+        "answer": "Consultation"
     },
     {
-        "question": "What is the speed of light?",
-        "choices": ["300,000 km/s", "150,000 km/s", "299,792 km/s", "200,000 km/s"],
-        "answer": "299,792 km/s"
+        "question": "What can you say about massage?",
+        "choices": ["It is to promote health and well-being.", "It is the basic way to connect to others.", "It refers to the standards and conduct of behavior of an individual.", "It is a common treatment for sore, stiff muscles, and other body pain."],
+        "answer": "It is a common treatment for sore, stiff muscles, and other body pain."
+    },
+    {
+        "question": "How would you arrange in chronological order the steps on how to Book Clients?",
+        "choices": ["1. Prepare appointment cards, 2. Prepare the Collection Box, 3. Prepare the Instructions, 4. Getting the Appointments", "2. Prepare the Collection Box, 3. Prepare the Instructions, 4. Getting the Appointments, 1. Prepare appointment cards", "3. Prepare the Instructions, 4. Getting the Appointments, 2. Prepare the Collection Box, 1. Prepare appointment cards", "4. Getting the Appointments, 1. Prepare appointment cards, 2. Prepare the Collection Box, 3. Prepare the Instructions"],
+        "answer": "4. Getting the Appointments, 1. Prepare appointment cards, 2. Prepare the Collection Box, 3. Prepare the Instructions"
+    },
+    {
+        "question": "What are the following reasons why detailed consultation is important?",
+        "choices": ["To introduce yourself and get to know the client.", "To identify the client’s needs and expectations of the treatment.", "To disagree the treatment plan, the timing and cost with the client.", "To lose information on the client’s past and present state of mental and physical health."],
+        "answer": "To introduce yourself and get to know the client., To identify the client’s needs and expectations of the treatment."
+    },
+    {
+        "question": "Why is it important to book first before going to the spa?",
+        "choices": ["It ensures that you make the best use of your time.", "It illustrates to others that you value your own time.", "Be to accomplish key goals such as improving punctuality.", "Ensuring that you have adequate time for planning."],
+        "answer": "It ensures that you make the best use of your time., It illustrates to others that you value your own time., Be to accomplish key goals such as improving punctuality., Ensuring that you have adequate time for planning."
+    },
+    {
+        "question": "What would happen if you don’t have a proper schedule in your clinic?",
+        "choices": ["Become a chaotic", "Unorganized mess.", "Raises stress on your clientele", "Raises stress of your staff."],
+        "answer": "Become a chaotic, Unorganized mess., Raises stress on your clientele, Raises stress of your staff."
+    },
+    {
+        "question": "Which one is defined as simply the exchange of messages by human beings?",
+        "choices": ["Communication Process", "Miscommunication", "Communication Standards", "Communication Problem"],
+        "answer": "Communication Process"
+    },
+    {
+        "question": "What is the pleasant tone of voice in a telephone conversation?",
+        "choices": ["Shout", "Speak clearly", "Speak in a very low", "Speak very soft."],
+        "answer": "Speak clearly"
+    },
+    {
+        "question": "Before picking up the receiver, what should you do to other conversations?",
+        "choices": ["Continue", "Halt", "Discontinue", "Disregard."],
+        "answer": "Halt"
+    },
+    {
+        "question": "What are the things that you are going to prepare when you answer the phone?",
+        "choices": ["Information form", "Calendar", "Pen & message slip", "Tissue paper"],
+        "answer": "Pen & message slip"
+    },
+    {
+        "question": "When you smile to the world, and the world smiles with __? When you cry to the world, you cry alone.",
+        "choices": ["Us", "Others", "You", "Me"],
+        "answer": "You"
+    },
+    {
+        "question": "In the principles of listening, which of the following is number one?",
+        "choices": ["Stop talking", "Listen to the tone", "Prepare yourself to listen.", "Listen to ideas - not just words."],
+        "answer": "Stop talking"
+    },
+    {
+        "question": "How would you classify the consist of human communication?",
+        "choices": ["91% body language while only 7% of communication consists of words themselves.", "92% body language while only 5% of communication consists of words themselves.", "93% body language while only 10% of communication consists of words themselves.", "94% body language while only 20% of communication consists of words themselves."],
+        "answer": "93% body language while only 10% of communication consists of words themselves."
+    },
+    {
+        "question": "What is the strong bond between two or more people?",
+        "choices": ["Friendliness", "Interpersonal relationship", "Good Hygiene", "Professionalism"],
+        "answer": "Interpersonal relationship"
+    },
+    {
+        "question": "Which one refers to a little genuine praise that goes a long way to developing good working relationships?",
+        "choices": ["Active Listening", "Be Positive", "Respect", "Show appreciation"],
+        "answer": "Show appreciation"
+    },
+    {
+        "question": "The following are forms of interpersonal relationships; which one refers to (Love, Marriage)?",
+        "choices": ["Relationship between friends", "Relationship between a man and woman", "Relationship family and relatives", "Relationship of a child with parents"],
+        "answer": "Relationship between a man and woman"
+    },
+    {
+        "question": "The following are qualities of a good massage therapist: EXCEPT.",
+        "choices": ["Bad hygiene habits", "Empathy, physical stamina", "Communication skills, decision making skills", "Friendliness, professionalism"],
+        "answer": "Bad hygiene habits"
+    },
+    {
+        "question": "Which of the following statement is TRUE?",
+        "choices": ["A massage can be as short as 5–10 minutes or could last more than 1 hour.", "A massage can be as short as 5–10 minutes or could last more than 2 hours.", "A massage can be as short as 5–10 minutes or could last more than 3 hours.", "A massage can be as short as 5–10 minutes or could last more than 4 hours."],
+        "answer": "A massage can be as short as 5–10 minutes or could last more than 1 hour."
+    },
+    {
+        "question": "Why do we need to build a strong and positive relationship at work?",
+        "choices": ["We need to build a strong and positive relationship at work to be less creative.", "We need to build a strong and positive relationship at work to have less opportunities.", "We need to build a strong and positive relationship at work to have a negative relationship.", "We need to build a strong and positive relationship at work to become happier and productive."],
+        "answer": "We need to build a strong and positive relationship at work to become happier and productive."
+    },
+    {
+        "question": "What is the key benefit of active listening in communication?",
+        "choices": ["Improves multitasking", "Reduces misunderstandings", "Increases speech speed", "Eliminates pauses"],
+        "answer": "Reduces misunderstandings"
+    },
+    {
+        "question": "Which element is essential for professional communication?",
+        "choices": ["Speaking loudly", "Using jargon", "Maintaining eye contact", "Interrupting frequently"],
+        "answer": "Maintaining eye contact"
+    },
+    {
+        "question": "What is the primary purpose of customer service?",
+        "choices": ["To sell products", "To assist customers and address their needs", "To increase employee workload", "To reduce company expenses"],
+        "answer": "To assist customers and address their needs"
+    },
+    {
+        "question": "Which method is most effective for resolving workplace conflicts?",
+        "choices": ["Avoiding discussion", "Encouraging open communication", "Blaming others", "Ignoring the issue"],
+        "answer": "Encouraging open communication"
+    },
+    {
+        "question": "What is a common barrier to effective communication?",
+        "choices": ["Active listening", "Noise and distractions", "Clear articulation", "Maintaining focus"],
+        "answer": "Noise and distractions"
+    },
+    {
+        "question": "Which practice helps build trust in professional relationships?",
+        "choices": ["Providing constructive feedback", "Criticizing openly", "Keeping information confidential", "Both A and C"],
+        "answer": "Both A and C"
+    },
+    {
+        "question": "What is the role of empathy in workplace communication?",
+        "choices": ["Ignoring others' concerns", "Understanding and addressing coworkers' emotions", "Avoiding difficult conversations", "Being overly critical"],
+        "answer": "Understanding and addressing coworkers' emotions"
+    },
+    {
+        "question": "What is the purpose of non-verbal communication cues such as body language?",
+        "choices": ["To emphasize verbal messages", "To confuse the listener", "To replace spoken words entirely", "To increase workplace distractions"],
+        "answer": "To emphasize verbal messages"
+    },
+    {
+        "question": "Which factor enhances the effectiveness of a presentation?",
+        "choices": ["Speaking in monotone", "Engaging with the audience", "Avoiding eye contact", "Ignoring audience feedback"],
+        "answer": "Engaging with the audience"
+    },
+    {
+        "question": "How can employees improve workplace communication?",
+        "choices": ["Avoiding discussions", "Encouraging teamwork and feedback", "Using technical jargon excessively", "Interrupting frequently"],
+        "answer": "Encouraging teamwork and feedback"
+    },
+    {
+        "question": "What is the importance of teamwork in the workplace?",
+        "choices": ["Increases conflict", "Reduces efficiency", "Enhances collaboration", "Lowers motivation"],
+        "answer": "Enhances collaboration"
+    },
+    {
+        "question": "Which factor improves employee engagement?",
+        "choices": ["Lack of communication", "Recognition and appreciation", "Limited feedback", "Micromanagement"],
+        "answer": "Recognition and appreciation"
+    },
+    {
+        "question": "What is a key characteristic of effective leadership?",
+        "choices": ["Authoritarianism", "Empathy and vision", "Lack of direction", "Avoiding responsibility"],
+        "answer": "Empathy and vision"
+    },
+    {
+        "question": "Why is workplace diversity important?",
+        "choices": ["Reduces innovation", "Encourages creativity and inclusivity", "Limits employee growth", "Increases workplace tension"],
+        "answer": "Encourages creativity and inclusivity"
+    },
+    {
+        "question": "Which practice enhances workplace motivation?",
+        "choices": ["Lack of incentives", "Providing growth opportunities", "Ignoring employee needs", "Increasing workload"],
+        "answer": "Providing growth opportunities"
+    },
+    {
+        "question": "What is the main advantage of setting goals in the workplace?",
+        "choices": ["Creates confusion", "Reduces productivity", "Provides direction and focus", "Limits career advancement"],
+        "answer": "Provides direction and focus"
+    },
+    {
+        "question": "Which factor is crucial for maintaining a positive workplace environment?",
+        "choices": ["Negative reinforcement", "Open and respectful communication", "Ignoring team input", "Promoting workplace conflicts"],
+        "answer": "Open and respectful communication"
+    },
+    {
+        "question": "How does time management contribute to workplace success?",
+        "choices": ["Increases stress", "Reduces efficiency", "Enhances productivity and organization", "Encourages procrastination"],
+        "answer": "Enhances productivity and organization"
+    },
+    {
+        "question": "What is the significance of continuous learning in a professional setting?",
+        "choices": ["Limits career advancement", "Keeps skills and knowledge updated", "Reduces adaptability", "Discourages personal growth"],
+        "answer": "Keeps skills and knowledge updated"
+    },
+    {
+        "question": "Why is conflict resolution important in the workplace?",
+        "choices": ["Encourages workplace disputes", "Promotes teamwork and understanding", "Increases misunderstandings", "Reduces collaboration"],
+        "answer": "Promotes teamwork and understanding"
+    },
+    {
+        "question": "What is an essential component of workplace ethics?",
+        "choices": ["Ignoring responsibilities", "Accountability and integrity", "Engaging in office gossip", "Avoiding teamwork"],
+        "answer": "Accountability and integrity"
+    },
+    {
+        "question": "Which of the following best describes professional behavior?",
+        "choices": ["Being punctual and respectful", "Ignoring deadlines", "Avoiding collaboration", "Not following workplace policies"],
+        "answer": "Being punctual and respectful"
+    },
+    {
+        "question": "How can employees contribute to workplace safety?",
+        "choices": ["Ignoring safety procedures", "Following safety guidelines and reporting hazards", "Not wearing protective gear", "Overlooking workplace risks"],
+        "answer": "Following safety guidelines and reporting hazards"
+    },
+    {
+        "question": "What is a key factor in building strong workplace relationships?",
+        "choices": ["Effective communication and trust", "Avoiding colleagues", "Being indifferent", "Disregarding feedback"],
+        "answer": "Effective communication and trust"
+    },
+    {
+        "question": "Which of the following statements is TRUE about professionalism?",
+        "choices": ["Professionalism includes respecting workplace policies and maintaining a positive attitude.", "Professionalism is only required for managerial roles.", "It is acceptable to disregard workplace ethics if it benefits you.", "Professionalism does not impact workplace culture."],
+        "answer": "Professionalism includes respecting workplace policies and maintaining a positive attitude."
+    },
+    {
+        "question": "How does constructive feedback benefit workplace performance?",
+        "choices": ["Helps employees improve and grow", "Demotivates employees", "Creates misunderstandings", "Encourages negativity"],
+        "answer": "Helps employees improve and grow"
+    },
+    {
+        "question": "Why is adaptability important in the workplace?",
+        "choices": ["It allows employees to handle change effectively", "It reduces employee efficiency", "It discourages innovation", "It limits career opportunities"],
+        "answer": "It allows employees to handle change effectively"
+    },
+    {
+        "question": "What is the purpose of a workplace code of conduct?",
+        "choices": ["To establish ethical and behavioral standards", "To limit employee freedom", "To create workplace conflict", "To ignore company values"],
+        "answer": "To establish ethical and behavioral standards"
+    },
+    {
+        "question": "Which of the following improves workplace efficiency?",
+        "choices": ["Effective time management", "Procrastination", "Ignoring deadlines", "Avoiding responsibility"],
+        "answer": "Effective time management"
+    },
+    {
+        "question": "How does a positive attitude impact workplace success?",
+        "choices": ["Enhances motivation and productivity", "Reduces teamwork", "Increases workplace conflicts", "Discourages innovation"],
+        "answer": "Enhances motivation and productivity"
     }
 ]
