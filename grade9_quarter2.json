@@ -1,17 +1,202 @@
 [
     {
-        "question": "Who painted the Mona Lisa?",
-        "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-        "answer": "Leonardo da Vinci"
+        "question": "What is the primary function of a residential plumbing system?",
+        "choices": ["Cooling", "Drainage", "Heating", "Ventilation"],
+        "answer": "Drainage"
     },
     {
-        "question": "What is the powerhouse of the cell?",
-        "choices": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
-        "answer": "Mitochondria"
+        "question": "Which of the following is a key component of a residential plumbing system?",
+        "choices": ["Sink", "Flooring", "Roof", "Windows"],
+        "answer": "Sink"
     },
     {
-        "question": "What is the freezing point of water?",
-        "choices": ["0°C", "100°C", "32°C", "212°F"],
-        "answer": "0°C"
+        "question": "What feature is found in a residential floor plan for plumbing layout?",
+        "choices": ["Electrical outlets", "Water pipes", "Furniture arrangement", "Lighting"],
+        "answer": "Water pipes"
+    },
+    {
+        "question": "The placement of which component is essential in a plumbing layout?",
+        "choices": ["Pipes", "Walls", "Doors", "Windows"],
+        "answer": "Pipes"
+    },
+    {
+        "question": "Which room typically requires the most plumbing fixtures in a house?",
+        "choices": ["Kitchen", "Living room", "Bathroom", "Bedroom"],
+        "answer": "Bathroom"
+    },
+    {
+        "question": "What is the first step in drafting a floor plan with plumbing layout?",
+        "choices": ["Sketch", "Color", "Measure", "Label"],
+        "answer": "Sketch"
+    },
+    {
+        "question": "What should be marked on a plumbing floor plan to indicate water flow?",
+        "choices": ["Squares", "Circles", "Arrows", "Dashes"],
+        "answer": "Arrows"
+    },
+    {
+        "question": "Where are water pipes typically placed in a floor plan?",
+        "choices": ["Above ceiling", "Along walls", "In closets", "Under floors"],
+        "answer": "Along walls"
+    },
+    {
+        "question": "Which tool is essential for drafting a plumbing layout?",
+        "choices": ["Pencil", "Eraser", "Ruler", "Calculator"],
+        "answer": "Ruler"
+    },
+    {
+        "question": "Which symbol represents a sink on a plumbing layout?",
+        "choices": ["Rectangle", "Square", "Circle", "Triangle"],
+        "answer": "Rectangle"
+    },
+    {
+        "question": "What is the symbol for a toilet in plumbing diagrams?",
+        "choices": ["X", "O", "T", "P"],
+        "answer": "T"
+    },
+    {
+        "question": "Which component is symbolized by a rectangle in a plumbing layout?",
+        "choices": ["Bathtub", "Shower", "Toilet", "Sink"],
+        "answer": "Bathtub"
+    },
+    {
+        "question": "What does a dashed line typically represent in a plumbing floor plan?",
+        "choices": ["Electrical wiring", "Drainage", "Gas lines", "Water pipes"],
+        "answer": "Drainage"
+    },
+    {
+        "question": "What is the symbol for a valve in plumbing plans?",
+        "choices": ["V", "W", "X", "O"],
+        "answer": "V"
+    },
+    {
+        "question": "What is necessary to mark on a plumbing layout alongside fixtures?",
+        "choices": ["Appliances", "Dimensions", "Furniture", "Colors"],
+        "answer": "Dimensions"
+    },
+    {
+        "question": "What is important when labeling a plumbing layout?",
+        "choices": ["Accuracy", "Size", "Style", "Color"],
+        "answer": "Accuracy"
+    },
+    {
+        "question": "What must be included in the plumbing layout dimensions?",
+        "choices": ["Weight", "Depth", "Length and width", "Height"],
+        "answer": "Length and width"
+    },
+    {
+        "question": "Where are measurements placed on a floor plan?",
+        "choices": ["Above the fixtures", "In the corners", "Beside the walls", "Below the layout"],
+        "answer": "Beside the walls"
+    },
+    {
+        "question": "Which of the following needs to be labeled with dimensions on a plumbing layout?",
+        "choices": ["Windows", "Water supply lines", "Doors", "Furniture"],
+        "answer": "Water supply lines"
+    },
+    {
+        "question": "Why is labeling dimensions important on a plumbing layout?",
+        "choices": ["To estimate costs", "To improve design", "For future reference", "To ensure accuracy"],
+        "answer": "To ensure accuracy"
+    },
+    {
+        "question": "Which material should be stored safely in a plumbing workshop?",
+        "choices": ["Paint", "Wood", "Chemicals", "Tools"],
+        "answer": "Chemicals"
+    },
+    {
+        "question": "What is essential for safely handling plumbing consumables?",
+        "choices": ["Gloves", "Helmet", "Apron", "Mask"],
+        "answer": "Gloves"
+    },
+    {
+        "question": "Which consumable is used for sealing plumbing joints?",
+        "choices": ["Sealant", "Tape", "Grease", "Glue"],
+        "answer": "Sealant"
+    },
+    {
+        "question": "Where should plumbing consumables be stored?",
+        "choices": ["In open containers", "In the refrigerator", "On shelves", "In a toolbox"],
+        "answer": "On shelves"
+    },
+    {
+        "question": "What safety equipment is required when handling plumbing consumables?",
+        "choices": ["Helmet", "Boots", "Face shield", "Gloves"],
+        "answer": "Gloves"
+    },
+    {
+        "question": "What is essential when installing pipes?",
+        "choices": ["Gloves", "Measuring tape", "Cutting machine", "Correct tools"],
+        "answer": "Correct tools"
+    },
+    {
+        "question": "What is the first step in installing pipes?",
+        "choices": ["Cutting", "Connecting", "Sealing", "Measuring"],
+        "answer": "Measuring"
+    },
+    {
+        "question": "What is important to wear when installing pipes?",
+        "choices": ["Helmet", "Safety glasses", "Apron", "Gloves"],
+        "answer": "Safety glasses"
+    },
+    {
+        "question": "What should be checked after installing pipes?",
+        "choices": ["Plumbing pressure", "Light fixtures", "Connections", "Paint"],
+        "answer": "Connections"
+    },
+    {
+        "question": "What tool is commonly used in pipe installation?",
+        "choices": ["Wrench", "Hammer", "Screwdriver", "Pliers"],
+        "answer": "Wrench"
+    },
+    {
+        "question": "What is tested during pipeline testing?",
+        "choices": ["Speed", "Temperature", "Pressure", "Color"],
+        "answer": "Pressure"
+    },
+    {
+        "question": "What should be done before testing a pipeline?",
+        "choices": ["Paint", "Clean", "Lubricate", "Seal"],
+        "answer": "Clean"
+    },
+    {
+        "question": "What tool is used to test pipeline pressure?",
+        "choices": ["Thermometer", "Wrench", "Gauge", "Hammer"],
+        "answer": "Gauge"
+    },
+    {
+        "question": "What is the primary goal of pipeline troubleshooting?",
+        "choices": ["Inspect fixtures", "Measure pressure", "Fix leaks", "Clean pipes"],
+        "answer": "Fix leaks"
+    },
+    {
+        "question": "What is essential during pipeline troubleshooting?",
+        "choices": ["Force", "Speed", "Safety precautions", "Precision"],
+        "answer": "Safety precautions"
+    },
+    {
+        "question": "What should be calculated in repair services?",
+        "choices": ["Materials", "Time", "Labor", "Cost"],
+        "answer": "Cost"
+    },
+    {
+        "question": "What factor affects repair service costs?",
+        "choices": ["Location", "Weather", "Materials", "Time"],
+        "answer": "Materials"
+    },
+    {
+        "question": "Which tool helps compute repair service cost?",
+        "choices": ["Wrench", "Pencil", "Ruler", "Calculator"],
+        "answer": "Calculator"
+    },
+    {
+        "question": "What is the primary concern in repair cost calculation?",
+        "choices": ["Time", "Materials", "Accuracy", "Speed"],
+        "answer": "Accuracy"
+    },
+    {
+        "question": "What must be considered when pricing a repair service?",
+        "choices": ["Customer satisfaction", "Time and materials", "Reputation", "Quality"],
+        "answer": "Time and materials"
     }
 ]
