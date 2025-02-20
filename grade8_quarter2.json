@@ -1,17 +1,202 @@
 [
     {
-        "question": "Who painted the Mona Lisa?",
-        "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-        "answer": "Leonardo da Vinci"
+        "question": "What does aquaculture primarily involve?",
+        "choices": ["Ocean mining", "Deep-sea diving", "Fish farming", "Boat fishing"],
+        "answer": "Fish farming"
     },
     {
-        "question": "What is the powerhouse of the cell?",
-        "choices": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
-        "answer": "Mitochondria"
+        "question": "What is a key relation between aquaculture and fisheries?",
+        "choices": ["Water skiing", "Eco-tourism", "Sports activity", "Food production"],
+        "answer": "Food production"
     },
     {
-        "question": "What is the freezing point of water?",
-        "choices": ["0°C", "100°C", "32°C", "212°F"],
-        "answer": "0°C"
+        "question": "Which sector offers career opportunities in aquaculture?",
+        "choices": ["Forestry", "Marketing", "Aviation", "Medicine"],
+        "answer": "Marketing"
+    },
+    {
+        "question": "Which phase of fish culture involves breeding?",
+        "choices": ["Harvesting", "Hatchery", "Storing", "Feeding"],
+        "answer": "Hatchery"
+    },
+    {
+        "question": "What is the last phase of fish culture?",
+        "choices": ["Hatchery", "Sorting", "Harvesting", "Feeding"],
+        "answer": "Harvesting"
+    },
+    {
+        "question": "Which fish lives in freshwater?",
+        "choices": ["Tuna", "Tilapia", "Grouper", "Sardine"],
+        "answer": "Tilapia"
+    },
+    {
+        "question": "What is RA 10654 about?",
+        "choices": ["Land reform", "Air safety", "Fisheries law", "Mining policy"],
+        "answer": "Fisheries law"
+    },
+    {
+        "question": "Which fish is native to the Philippines?",
+        "choices": ["Salmon", "Halibut", "Mackerel", "Bangus"],
+        "answer": "Bangus"
+    },
+    {
+        "question": "What is the habitat of a mudfish?",
+        "choices": ["Ocean", "Swamps", "Mountains", "Coral reefs"],
+        "answer": "Swamps"
+    },
+    {
+        "question": "Which habitat is best for sardines?",
+        "choices": ["Reservoirs", "Swamps", "Open sea", "Freshwater"],
+        "answer": "Open sea"
+    },
+    {
+        "question": "Which fish species thrives in brackish water?",
+        "choices": ["Tilapia", "Bangus", "Sardine", "Tuna"],
+        "answer": "Bangus"
+    },
+    {
+        "question": "What is the process of breeding, rearing, and harvesting fish in controlled environments called?",
+        "choices": ["Fishing", "Aquaculture", "Marine Biology", "Agriculture"],
+        "answer": "Aquaculture"
+    },
+    {
+        "question": "Which method is commonly used for catching fish in open waters?",
+        "choices": ["Fish farming", "Net fishing", "Line fishing", "Handpicking"],
+        "answer": "Net fishing"
+    },
+    {
+        "question": "What is the importance of fish hatcheries?",
+        "choices": ["To overfish the ocean", "To produce young fish for restocking", "To eliminate natural breeding", "To reduce fish population"],
+        "answer": "To produce young fish for restocking"
+    },
+    {
+        "question": "Which Philippine law focuses on the protection and conservation of fisheries resources?",
+        "choices": ["RA 10654", "RA 9003", "RA 7277", "RA 7160"],
+        "answer": "RA 10654"
+    },
+    {
+        "question": "Which practice helps maintain sustainability in fisheries?",
+        "choices": ["Overfishing", "Illegal fishing", "Proper resource management", "Dumping waste in the ocean"],
+        "answer": "Proper resource management"
+    },
+    {
+        "question": "Which fish species is commonly raised in fish pens and cages in the Philippines?",
+        "choices": ["Tilapia", "Salmon", "Catfish", "Shark"],
+        "answer": "Tilapia"
+    },
+    {
+        "question": "Which tool is used to measure water quality in fish farming?",
+        "choices": ["Thermometer", "pH meter", "Weighing scale", "Microscope"],
+        "answer": "pH meter"
+    },
+    {
+        "question": "Which factor is essential for the successful growth of fish in an aquaculture system?",
+        "choices": ["Clean water", "Overcrowding", "Lack of oxygen", "Contaminated feed"],
+        "answer": "Clean water"
+    },
+    {
+        "question": "What is the practice of growing fish and plants together in a symbiotic environment called?",
+        "choices": ["Fish farming", "Hydroponics", "Aquaponics", "Horticulture"],
+        "answer": "Aquaponics"
+    },
+    {
+        "question": "What is the best way to prevent overfishing?",
+        "choices": ["Increase fishing quotas", "Implement sustainable fishing methods", "Allow unlimited fishing", "Ignore fishing regulations"],
+        "answer": "Implement sustainable fishing methods"
+    },
+    {
+        "question": "Which aquaculture method involves raising fish in large enclosed areas in open water?",
+        "choices": ["Recirculating aquaculture systems", "Pond culture", "Cage culture", "Indoor tank farming"],
+        "answer": "Cage culture"
+    },
+    {
+        "question": "Which fish species is commonly raised in freshwater fish farms?",
+        "choices": ["Tuna", "Salmon", "Tilapia", "Sardine"],
+        "answer": "Tilapia"
+    },
+    {
+        "question": "Which factor is crucial in maintaining the health of fish in aquaculture?",
+        "choices": ["Providing clean water", "Overcrowding tanks", "Feeding contaminated food", "Ignoring water quality"],
+        "answer": "Providing clean water"
+    },
+    {
+        "question": "What is the process of removing and sorting fish from the farm for market sale called?",
+        "choices": ["Breeding", "Feeding", "Harvesting", "Hatching"],
+        "answer": "Harvesting"
+    },
+    {
+        "question": "Which tool is essential for monitoring oxygen levels in fish ponds?",
+        "choices": ["Thermometer", "pH meter", "Dissolved oxygen meter", "Weighing scale"],
+        "answer": "Dissolved oxygen meter"
+    },
+    {
+        "question": "What is the role of filtration systems in aquaculture?",
+        "choices": ["To remove impurities and maintain water quality", "To increase fish population", "To reduce fish growth", "To replace feeding systems"],
+        "answer": "To remove impurities and maintain water quality"
+    },
+    {
+        "question": "Which factor negatively affects fish farming?",
+        "choices": ["Regular monitoring of fish health", "Maintaining optimal water temperature", "Overcrowding and poor water quality", "Providing balanced fish feed"],
+        "answer": "Overcrowding and poor water quality"
+    },
+    {
+        "question": "Which Philippine agency is responsible for overseeing fisheries and aquatic resources?",
+        "choices": ["Department of Health (DOH)", "Department of Agriculture (DA)", "Bureau of Fisheries and Aquatic Resources (BFAR)", "Department of Environment and Natural Resources (DENR)"],
+        "answer": "Bureau of Fisheries and Aquatic Resources (BFAR)"
+    },
+    {
+        "question": "What is the benefit of using artificial breeding techniques in aquaculture?",
+        "choices": ["To increase fish population and improve breeding efficiency", "To decrease fish production", "To eliminate the need for hatcheries", "To reduce fish variety"],
+        "answer": "To increase fish population and improve breeding efficiency"
+    },
+    {
+        "question": "What is the best method to ensure sustainability in fish farming?",
+        "choices": ["Overstocking fish", "Implementing responsible aquaculture practices", "Eliminating all fishing activities", "Using unregulated fishing techniques"],
+        "answer": "Implementing responsible aquaculture practices"
+    },
+    {
+        "question": "Which of the following is a common challenge in aquaculture?",
+        "choices": ["Plenty of natural fish stock", "Water pollution and disease outbreaks", "Unlimited supply of fish feed", "Overpopulation of fish in the wild"],
+        "answer": "Water pollution and disease outbreaks"
+    },
+    {
+        "question": "Which water parameter is most critical for fish survival in aquaculture?",
+        "choices": ["Salinity", "Oxygen levels", "Water color", "Turbidity"],
+        "answer": "Oxygen levels"
+    },
+    {
+        "question": "What is the primary advantage of recirculating aquaculture systems (RAS)?",
+        "choices": ["Eliminates the need for water changes", "Provides sustainable and controlled water conditions", "Requires no filtration system", "Reduces fish growth rates"],
+        "answer": "Provides sustainable and controlled water conditions"
+    },
+    {
+        "question": "Which type of feed is most suitable for larval fish?",
+        "choices": ["Pelleted feed", "Live feed", "Dry grains", "Kitchen scraps"],
+        "answer": "Live feed"
+    },
+    {
+        "question": "What is one major environmental impact of improper fish farming?",
+        "choices": ["Increase in marine biodiversity", "Water pollution from excess nutrients", "Stronger natural fish populations", "Reduction in oxygen availability for fish"],
+        "answer": "Water pollution from excess nutrients"
+    },
+    {
+        "question": "What is the primary function of aerators in fish farming?",
+        "choices": ["To increase oxygen levels in the water", "To clean fish tanks", "To reduce the number of fish", "To feed fish automatically"],
+        "answer": "To increase oxygen levels in the water"
+    },
+    {
+        "question": "Which fish species is commonly used in integrated aquaculture systems?",
+        "choices": ["Tilapia", "Shark", "Salmon", "Sardines"],
+        "answer": "Tilapia"
+    },
+    {
+        "question": "Why is disease management crucial in aquaculture?",
+        "choices": ["To increase fish mortality rates", "To prevent disease outbreaks and losses", "To reduce water temperature", "To increase feeding rates"],
+        "answer": "To prevent disease outbreaks and losses"
+    },
+    {
+        "question": "What is the role of biofilters in aquaculture?",
+        "choices": ["To remove waste and harmful substances from water", "To increase fish growth speed", "To reduce fish competition", "To eliminate the need for water changes"],
+        "answer": "To remove waste and harmful substances from water"
     }
 ]
