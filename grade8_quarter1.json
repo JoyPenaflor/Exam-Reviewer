@@ -1,0 +1,17 @@
+[
+    {
+        "question": "What is the capital of Japan?",
+        "choices": ["Tokyo", "Beijing", "Seoul", "Bangkok"],
+        "answer": "Tokyo"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "choices": ["Oxygen", "Hydrogen", "Carbon", "Nitrogen"],
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What is the largest continent?",
+        "choices": ["Africa", "Asia", "Europe", "Australia"],
+        "answer": "Asia"
+    }
+]

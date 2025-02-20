@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Who painted the Mona Lisa?",
+        "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "choices": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+        "answer": "Mitochondria"
+    },
+    {
+        "question": "What is the freezing point of water?",
+        "choices": ["0°C", "100°C", "32°C", "212°F"],
+        "answer": "0°C"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "question": "What is the chemical symbol for water?",
+        "choices": ["H2O", "O2", "CO2", "NaCl"],
+        "answer": "H2O"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "choices": ["William Shakespeare", "Charles Dickens", "J.K. Rowling", "Mark Twain"],
+        "answer": "William Shakespeare"
+    },
+    {
+        "question": "What is the speed of light?",
+        "choices": ["300,000 km/s", "150,000 km/s", "299,792 km/s", "200,000 km/s"],
+        "answer": "299,792 km/s"
+    }
+]
