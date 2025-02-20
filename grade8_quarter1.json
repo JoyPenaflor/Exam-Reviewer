@@ -1,17 +1,193 @@
 [
     {
-        "question": "What is the capital of Japan?",
-        "choices": ["Tokyo", "Beijing", "Seoul", "Bangkok"],
-        "answer": "Tokyo"
+        "question": "What type of pencils are very helpful in making designs and artwork of assorted kinds?",
+        "choices": ["Hard pencils", "Medium pencils", "Soft pencils", "Regular pencil"],
+        "answer": "Soft pencils"
     },
     {
-        "question": "Which element has the atomic number 1?",
-        "choices": ["Oxygen", "Hydrogen", "Carbon", "Nitrogen"],
-        "answer": "Hydrogen"
+        "question": "What is the most popular type of measuring tool, usually 6 or 12 inches in length?",
+        "choices": ["Compass", "Divider", "Ruler", "Protractor"],
+        "answer": "Ruler"
     },
     {
-        "question": "What is the largest continent?",
-        "choices": ["Africa", "Asia", "Europe", "Australia"],
-        "answer": "Asia"
+        "question": "John is planning to sketch his drawing layout; he only prepares a drawing paper. What do you think did John forget to prepare, which is considered the most important tool in drawing?",
+        "choices": ["Masking Tape", "Pencil", "Eraser", "Erasing Shield"],
+        "answer": "Pencil"
+    },
+    {
+        "question": "Karen notices that her pencil shows a sign of dullness. What do you think she will use to sharpen her pencil?",
+        "choices": ["Eraser", "Drawing Pencil", "Pencil Sharpener", "Hard Pencil"],
+        "answer": "Pencil Sharpener"
+    },
+    {
+        "question": "When drawing graphs, diagrams, and charts, what type of pencils would you use when extreme accuracy is needed?",
+        "choices": ["Hard pencils", "Medium pencils", "Soft pencils", "Regular pencils"],
+        "answer": "Hard pencils"
+    },
+    {
+        "question": "Which of the following statements below best describes a compass?",
+        "choices": ["Compass is used when drawing angles.", "Compass is used when drawing arcs and circles.", "Compass is used when drawing a line.", "Compass is a semi-circular instrument."],
+        "answer": "Compass is used when drawing arcs and circles."
+    },
+    {
+        "question": "How is an eraser used?",
+        "choices": ["It is used to clean the dirt off the drawing.", "It is used to clean unnecessary smudges.", "It is used to protect the drawing.", "It is used to remove smudges."],
+        "answer": "It is used to remove smudges."
+    },
+    {
+        "question": "How would you classify a T-square?",
+        "choices": ["It is used in drawing horizontal lines.", "It is used in drawing vertical lines.", "A tool used for clearing up smudges.", "A tool used to enlarge drawings."],
+        "answer": "It is used in drawing horizontal lines."
+    },
+    {
+        "question": "What department is in charge of unloading, unpacking of incoming materials, checking, and identifying goods received?",
+        "choices": ["Accounting department", "Receiving department", "Budget department", "Sales department"],
+        "answer": "Receiving department"
+    },
+    {
+        "question": "Which of the following printed document forms is used in making a request?",
+        "choices": ["Delivery receipt", "Purchase order", "Requisition slip", "Inventory form"],
+        "answer": "Requisition slip"
+    },
+    {
+        "question": "What contains information about name, purchase information, and cost of goods displayed on a balance sheet?",
+        "choices": ["Delivery receipt", "Inventory form", "Borrower’s slip", "Requisition slip form"],
+        "answer": "Inventory form"
+    },
+    {
+        "question": "Which of the following forms shows proof or receipt of goods or services?",
+        "choices": ["Purchase order form", "Requisition slip form", "Delivery receipt form", "Inventory form"],
+        "answer": "Delivery receipt form"
+    },
+    {
+        "question": "What form is used to request tools needed in a particular job?",
+        "choices": ["Borrower’s slip", "Delivery receipt", "Requisition slip", "Inventory form"],
+        "answer": "Requisition slip"
+    },
+    {
+        "question": "In cleaning/storing drafting measuring tools, what would you do?",
+        "choices": ["Be sure to inspect tools after using them.", "Do not oil the movable parts of the measuring tools.", "Be sure to check and then clean tools before and after using them.", "Abuse or misuse any piece of drawing instruments."],
+        "answer": "Be sure to check and then clean tools before and after using them."
+    },
+    {
+        "question": "When lost equipment is identified, what action should you take?",
+        "choices": ["Report to the teacher", "Report to the principal office", "Report to the property custodian", "Report to the accounting office"],
+        "answer": "Report to the property custodian"
+    },
+    {
+        "question": "When damaged equipment is identified after the activity, what should be the second action you take?",
+        "choices": ["Report to the teacher", "Report to the principal office", "Report to the property custodian", "Report to the accounting office"],
+        "answer": "Report to the property custodian"
+    },
+    {
+        "question": "Which of the following are the objectives and purposes of inspection?",
+        "choices": ["To rate the quality of the product", "To determine if the process is changing", "To distinguish good products from bad products", "To determine if the process is approaching the specification limits."],
+        "answer": "To rate the quality of the product, To determine if the process is changing, To distinguish good products from bad products, To determine if the process is approaching the specification limits."
+    },
+    {
+        "question": "In the procedures on inspection/inventory of report, what is the first thing to do?",
+        "choices": ["Identify all the items by stock card details.", "Separate each item/tools/equipment according to function/uses.", "Enumerate the items according to function/uses into the inventory forms if not presented.", "Account each item with their corresponding status based on the pre-checking method conducted by the students and teacher, and create another table of data specifying the Malfunction, for repair, for replacement, and lost tools."],
+        "answer": "Identify all the items by stock card details."
+    },
+    {
+        "question": "How is a triangular scale used?",
+        "choices": ["Reduced drawing", "Enlarged drawing", "Estimate drawing", "Enlarged and reduced drawing"],
+        "answer": "Enlarged and reduced drawing"
+    },
+    {
+        "question": "Which of the following triangles are a good combination?",
+        "choices": ["45° and 30°x 60°", "45° x 20° and 30°", "30° x 15° and 28°", "25° x 25° and 15°"],
+        "answer": "45° and 30°x 60°"
+    },
+    {
+        "question": "Which one is used to draw vertical lines and more convenient when used with a T-square?",
+        "choices": ["Compass", "Eraser", "Erasing shield", "Triangle"],
+        "answer": "Triangle"
+    },
+    {
+        "question": "In setting angles, what instrument would you use?",
+        "choices": ["Divider", "Protractor", "Ruler", "Pencil"],
+        "answer": "Protractor"
+    },
+    {
+        "question": "Which one is a system of linear measurement where it is based on the standard foot and originated in England?",
+        "choices": ["Metric system", "English system"],
+        "answer": "English system"
+    },
+    {
+        "question": "What can you say about an obtuse angle?",
+        "choices": ["An angle of exactly 90° degrees", "An angle less than 90°", "An angle of exactly 180° degrees", "An angle of greater than 90° and less than 180°"],
+        "answer": "An angle of greater than 90° and less than 180°"
+    },
+    {
+        "question": "If you convert ¼ to decimal, what is the equivalent?",
+        "choices": ["0.25", "0.50", "0.75"],
+        "answer": "0.25"
+    },
+    {
+        "question": "If you convert 0.75 into fractions, what would be the result?",
+        "choices": ["75/100", "75/1000"],
+        "answer": "75/100"
+    },
+    {
+        "question": "Which of the following is a thick line that represents the visible edges or outline of the object?",
+        "choices": ["Visible line", "Hidden line", "Center line", "Section line"],
+        "answer": "Visible line"
+    },
+    {
+        "question": "What line is used to show the limits of a dimension?",
+        "choices": ["Extension line", "Object line", "Center line", "Dimension line"],
+        "answer": "Dimension line"
+    },
+[
+    {
+        "question": "How many principal sides or views are there in a simple work piece?",
+        "choices": ["Two", "Four", "Six", "Eight"],
+        "answer": "Six"
+    },
+    {
+        "question": "Which of the following are the common views used in multi-view drawing?",
+        "choices": ["Front, top, and sides", "Front, sides and rear", "Front, rear, and sides", "Front, top and rear"],
+        "answer": "Front, top, and sides"
+    },
+    {
+        "question": "Which one is a drawing that shows a side of an object viewed directly from 90 degrees?",
+        "choices": ["Orthographic View", "Pictorial drawing", "Multi-view drawing", "Isometric drawing"],
+        "answer": "Orthographic View"
+    },
+    {
+        "question": "What is a system of orthographic projection used by European countries which places the object on the First quadrant?",
+        "choices": ["First-Angle Projection (ISO Standard)", "Frontal plane", "Third-Angle Projection (ANSI)", "Profile plane"],
+        "answer": "First-Angle Projection (ISO Standard)"
+    },
+    {
+        "question": "Which of the following drawings shows the likeness (shapes) of an object as viewed by the observer?",
+        "choices": ["Isometric drawing", "Trimetric drawing", "Pictorial drawing", "Dimetric drawing"],
+        "answer": "Pictorial drawing"
+    },
+    {
+        "question": "Which one is an oblique drawing in which the depth axis lines are drawn one-half scale?",
+        "choices": ["Cabinet Oblique", "Cavalier Oblique", "General Oblique", "Oblique Perspective"],
+        "answer": "Cabinet Oblique"
+    },
+    {
+        "question": "What do you call a perspective drawing using one vanishing point, where the front view is drawn in its true shape in full?",
+        "choices": ["Parallel perspective", "Angular perspective", "Oblique perspective", "General Oblique"],
+        "answer": "Parallel perspective"
+    },
+    {
+        "question": "Which of the following is a pictorial drawing showing the three surfaces of the object tilted 30 degrees?",
+        "choices": ["Dimetric drawing", "Isometric drawing", "Trimetric drawing", "Cabinet oblique"],
+        "answer": "Isometric drawing"
+    },
+    {
+        "question": "How would you classify angular perspective?",
+        "choices": ["Angular perspective having one vanishing point", "Angular perspective having two vanishing points", "Angular perspective having three vanishing points", "Angular perspective having four vanishing points"],
+        "answer": "Angular perspective having two vanishing points"
+    },
+    {
+        "question": "What is a cross-disciplinary area concerned with protecting the safety, health, and welfare of people engaged in work or employment?",
+        "choices": ["Occupational safety and health", "Occupational labor code", "Department of Labor and Employment", "Department of Trade and Industry"],
+        "answer": "Occupational safety and health"
     }
 ]
