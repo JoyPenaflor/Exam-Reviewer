@@ -1,8 +1,8 @@
 // Global settings for the exam
 const settings = {
-    numberOfItems: 30, // Number of questions to display in the exam
-    passingScorePercentage: 70, // Percentage score required to pass the exam
-    timeInMinutes: 10, // Time allowed for the exam
+    numberOfItems: 40, // Number of questions to display in the exam
+    passingScorePercentage: 75, // Percentage score required to pass the exam
+    timeInMinutes: 15, // Time allowed for the exam
     remedial: {
         numberOfItems: 40, // Number of questions for the remedial exam
         passingScorePercentage: 75, // Percentage score required to pass the remedial exam
@@ -14,7 +14,7 @@ const settings = {
         quarter2: true,
         quarter3: true,
         quarter4: true,
-        remedial: true
+        remedial: false
     }
 };
 
