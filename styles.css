@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    background-image: url('school_logo.png'); /* Path to your logo image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: yellow !important; /* Change text color for better visibility on dark background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Stronger outline for better contrast */
+}
+
+.review-container, .name-container, .exam-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for readability */
+    border-radius: 10px;
+    color: white; /* Adjust color for better visibility */
+}
+
+.results-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 10px;
+    color: black !important; /* Ensure text is visible */
+}
+
+#score, #message, #timestamp {
+    color: black !important; /* Force black text */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#results, #message {
+    font-size: 1.5rem;
+}
+
+label, input[type="text"], select {
+    font-size: 1.5rem;
+}
+
+button, input[type="button"] {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+video {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#timer {
+    font-size: 2rem;
+    color: white; /* Adjust color for better visibility */
+}
+
+select {
+    max-width: 300px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.center-text {
+    text-align: center;
+    color: white; /* Restore original text color */
+}
+
+.hidden-video {
+    display: none;
+}
+
+.question-container {
+    font-size: 2rem;
+    color: white; /* Adjust color for better visibility */
+}
+
+.timestamp {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-content {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    white-space: pre-wrap; /* Preserve formatting with line breaks */
+}
