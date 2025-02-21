@@ -1,0 +1,56 @@
+Grade 9 - Quarter 3 Review
+
+- Calibration and testing ensures devices meet accuracy standards.  
+- Circuit breakers ensure safe distribution of electrical power in buildings.  
+- Copper wires are commonly used for power transmission in electrical installations.  
+- Electromagnetic radiation is the energy emitted by an LED (light-emitting diode).  
+- Embedded systems function to control and process specific applications.  
+- Industrial automation combines electrical systems with sensors.  
+- IoT devices are not used for safe power distribution in buildings.  
+- Multitester is also known as a volt-ohm-milliammeter.  
+- Output terminal delivers current, voltage, or power to a load.  
+- Preventive maintenance is the primary purpose of electrical maintenance services.  
+- Printed Circuit Board (PCB) is used in design and development of electronic devices.  
+- Rectification is the process of converting AC to DC.  
+- Regulated power supply maintains constant voltage under varying loads.  
+- Retrofitting focuses on modernizing outdated electrical systems.  
+- Rotary switch uses a rotating shaft to connect terminals.  
+- Short circuit is a low-resistance connection causing excessive current.  
+- Schematic diagram is used to visualize electrical circuits.  
+- Solder is used to join metal surfaces in electronics.  
+- Soldering iron is used to heat and melt solder.  
+- Solar panels use electronic controllers for optimization.  
+- Transformer primary winding is connected to the power source.  
+- Transformer secondary winding is connected to the load.  
+
+ Components and Circuitry
+- Bridge rectifier converts AC to DC using the full AC wave.  
+- Capacitor stores energy and filters signals in a circuit.  
+- Circuit breaker prevents overloading in electrical systems.  
+- Component value is indicated by resistor color codes.  
+- Diode conducts current in one direction.  
+- Diode in circuits is used to convert AC to DC.  
+- Fuse melts or breaks when current exceeds the maximum value.  
+- Ground rod is essential for electrical safety grounding.  
+- Inductor is not used for current regulation in circuits.  
+- Leakage is a small undesirable flow of current through an insulator.  
+- Load is connected to the secondary winding of a transformer.  
+- Multilayer PCB is commonly found in smartphones and IoT devices.  
+- Power supply type is not determined by resistor color codes.  
+- Primary control box is not the meaning of PCB in electronics.  
+- Resistor is a passive component used for current regulation in circuits.  
+- Step-down transformer is used for voltage regulation in electronic devices.  
+- Toggles, push-buttons, and rotary switches are all types of switches.  
+
+ Testing and Troubleshooting
+- Accuracy is critical when calibrating and testing devices.  
+- Bridge rectifier converts AC to DC efficiently.  
+- Calibration tool is used to adjust readings to match standard values.  
+- Checking connections is essential after installing electrical systems.  
+- Full-wave rectifier uses both positive and negative AC half cycles.  
+- Gauge is used to test pipeline pressure in electrical installations.  
+- Leakage current is undesirable and should be minimized.  
+- Pipeline troubleshooting primarily aims to fix leaks.  
+- Precision is crucial when troubleshooting circuits.  
+- Rectifier power supply is not a constant current supply.  
+- Short circuits result in excessive current flow and damage.  
