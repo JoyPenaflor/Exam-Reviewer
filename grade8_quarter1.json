@@ -139,7 +139,6 @@
         "choices": ["Extension line", "Object line", "Center line", "Dimension line"],
         "answer": "Dimension line"
     },
-[
     {
         "question": "How many principal sides or views are there in a simple work piece?",
         "choices": ["Two", "Four", "Six", "Eight"],
