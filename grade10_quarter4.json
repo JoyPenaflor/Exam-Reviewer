@@ -1,17 +1,202 @@
 [
     {
-        "question": "What is the chemical symbol for water?",
-        "choices": ["H2O", "O2", "CO2", "NaCl"],
-        "answer": "H2O"
+        "question": "Maria is interested in starting a business related to agriculture. She is particularly passionate about technology and its application in food production. Which agricultural career should Maria consider?",
+        "choices": ["Farm Worker", "Agricultural Equipment Technician", "Research Scientist", "Sales Representative"],
+        "answer": "Research Scientist"
     },
     {
-        "question": "Who wrote 'Romeo and Juliet'?",
-        "choices": ["William Shakespeare", "Charles Dickens", "J.K. Rowling", "Mark Twain"],
-        "answer": "William Shakespeare"
+        "question": "A local community is experiencing challenges in crop production due to outdated farming methods. They are considering upgrading their techniques to increase yield. Which agricultural career could best assist this community in improving their farming practices?",
+        "choices": ["Environmental Engineer", "Crop Manager", "Grain Elevator Operator", "Sales Representative"],
+        "answer": "Crop Manager"
     },
     {
-        "question": "What is the speed of light?",
-        "choices": ["300,000 km/s", "150,000 km/s", "299,792 km/s", "200,000 km/s"],
-        "answer": "299,792 km/s"
+        "question": "John wants to pursue a career where he can directly help in the day-to-day operations of a farm, including taking care of animals and maintaining equipment. Which career path should John follow?",
+        "choices": ["Purchasing Agent", "Farm Worker", "Agriculture Specialist", "Feed Mill Manager"],
+        "answer": "Farm Worker"
+    },
+    {
+        "question": "A company needs someone to manage their grain storage and ensure the quality of their grains is maintained. Which agricultural job is best suited for this role?",
+        "choices": ["Farm Warehouse Manager", "Agricultural Equipment Technician", "Grain Elevator Operator", "Crop Manager"],
+        "answer": "Grain Elevator Operator"
+    },
+    {
+        "question": "A new farm is looking to hire someone who can take charge of all activities related to storing, shipping, and receiving agricultural materials. Which position should the farm hire for?",
+        "choices": ["Sales Representative", "Farm Warehouse Manager", "Crop Manager", "Environmental Engineer"],
+        "answer": "Farm Warehouse Manager"
+    },
+    {
+        "question": "Lisa is skilled in repairing and maintaining agricultural machinery. She wants a job that allows her to use these skills on a daily basis. Which career should Lisa pursue?",
+        "choices": ["Grower", "Agricultural Equipment Technician", "Farm Warehouse Manager", "Purchasing Agent"],
+        "answer": "Agricultural Equipment Technician"
+    },
+    {
+        "question": "A farm company is looking to improve its sales by hiring professionals who can connect with potential customers and increase sales. Which job role should the company focus on hiring?",
+        "choices": ["Sales Representative", "Grain Elevator Operator", "Research Scientist", "Agriculture Specialist"],
+        "answer": "Sales Representative"
+    },
+    {
+        "question": "An agricultural business is facing challenges in managing their crop production due to unpredictable weather conditions. Which agricultural career could help them develop strategies to overcome these challenges?",
+        "choices": ["Feed Mill Manager", "Environmental Engineer", "Farm Worker", "Purchasing Agent"],
+        "answer": "Environmental Engineer"
+    },
+    {
+        "question": "Carlos is preparing to dig a canal for irrigation on his farm. He needs a tool that can break hard topsoil and help with the digging process. Which tool should Carlos use?",
+        "choices": ["Bolo", "Pick-Mattock", "Shovel", "Spade"],
+        "answer": "Pick-Mattock"
+    },
+    {
+        "question": "Maria is tasked with leveling the topsoil and preparing the garden bed for planting. She needs a tool that can assist with these tasks. Which tool is most appropriate for Maria’s needs?",
+        "choices": ["Crowbar", "Grab Hoe", "Light Hoe", "Hand Fork"],
+        "answer": "Light Hoe"
+    },
+    {
+        "question": "What is the best tool for cutting tall grasses and weeds?",
+        "choices": ["Bolo", "Spade", "Hand Fork", "Pick-Mattock"],
+        "answer": "Bolo"
+    },
+    {
+        "question": "Which of the following tools is used for transplanting seedlings?",
+        "choices": ["Trowel", "Crowbar", "Rake", "Shovel"],
+        "answer": "Trowel"
+    },
+    {
+        "question": "John is working on removing large stones from the farm field. Which tool would be most useful?",
+        "choices": ["Rake", "Shovel", "Crowbar", "Hand Fork"],
+        "answer": "Crowbar"
+    },
+    {
+        "question": "A farmer needs to break up compacted soil in preparation for planting. Which tool should be used?",
+        "choices": ["Hand Fork", "Pick-Mattock", "Bolo", "Spade"],
+        "answer": "Pick-Mattock"
+    },
+    {
+        "question": "Which tool is most effective for gathering leaves and small debris?",
+        "choices": ["Spade", "Rake", "Bolo", "Trowel"],
+        "answer": "Rake"
+    },
+    {
+        "question": "Which tool is commonly used for digging and lifting soil?",
+        "choices": ["Rake", "Spade", "Pick-Mattock", "Trowel"],
+        "answer": "Spade"
+    },
+    {
+        "question": "What is the best tool for loosening the soil around small plants?",
+        "choices": ["Grab Hoe", "Light Hoe", "Hand Fork", "Shovel"],
+        "answer": "Hand Fork"
+    },
+    {
+        "question": "Which tool is primarily used for digging and moving loose soil?",
+        "choices": ["Shovel", "Trowel", "Crowbar", "Rake"],
+        "answer": "Shovel"
+    },
+    {
+        "question": "What tool is used to break hard soil and cut roots?",
+        "choices": ["Pick-Mattock", "Spade", "Light Hoe", "Hand Fork"],
+        "answer": "Pick-Mattock"
+    },
+    {
+        "question": "Which tool is best for mixing compost or soil in a garden bed?",
+        "choices": ["Rake", "Spade", "Trowel", "Hand Fork"],
+        "answer": "Rake"
+    },
+    {
+        "question": "Which tool is used for cutting branches and stems?",
+        "choices": ["Pruning Shears", "Trowel", "Hand Fork", "Rake"],
+        "answer": "Pruning Shears"
+    },
+    {
+        "question": "What tool is best for digging small holes for planting?",
+        "choices": ["Shovel", "Trowel", "Pick-Mattock", "Spade"],
+        "answer": "Trowel"
+    },
+    {
+        "question": "Which tool is essential for spreading and leveling soil?",
+        "choices": ["Spade", "Rake", "Bolo", "Crowbar"],
+        "answer": "Rake"
+    },
+    {
+        "question": "A farmer needs to break up hard ground before planting. Which tool should be used?",
+        "choices": ["Light Hoe", "Hand Fork", "Pick-Mattock", "Trowel"],
+        "answer": "Pick-Mattock"
+    },
+    {
+        "question": "Which tool is used to scoop and move soil or compost?",
+        "choices": ["Spade", "Hand Fork", "Trowel", "Bolo"],
+        "answer": "Spade"
+    },
+    {
+        "question": "Which tool is best for aerating the soil around plants?",
+        "choices": ["Rake", "Hand Fork", "Trowel", "Shovel"],
+        "answer": "Hand Fork"
+    },
+    {
+        "question": "What tool is used to remove weeds and unwanted plants from a garden?",
+        "choices": ["Weeding Knife", "Shovel", "Pick-Mattock", "Rake"],
+        "answer": "Weeding Knife"
+    },
+    {
+        "question": "Which tool is commonly used for lifting and moving heavy soil?",
+        "choices": ["Shovel", "Rake", "Trowel", "Hand Fork"],
+        "answer": "Shovel"
+    },
+    {
+        "question": "Which tool is best for trimming hedges and shrubs?",
+        "choices": ["Pruning Shears", "Hand Fork", "Trowel", "Spade"],
+        "answer": "Pruning Shears"
+    },
+    {
+        "question": "What tool is primarily used for chopping wood and clearing thick vegetation?",
+        "choices": ["Bolo", "Pick-Mattock", "Trowel", "Hand Fork"],
+        "answer": "Bolo"
+    },
+    {
+        "question": "What tool is used for shaping and sharpening other tools?",
+        "choices": ["Grindstone", "Trowel", "Hand Fork", "Shovel"],
+        "answer": "Grindstone"
+    },
+    {
+        "question": "Which tool is essential for marking straight lines in soil for planting?",
+        "choices": ["String Line", "Pick-Mattock", "Bolo", "Spade"],
+        "answer": "String Line"
+    },
+    {
+        "question": "What is the best tool for watering plants evenly?",
+        "choices": ["Sprinkler", "Shovel", "Rake", "Weeding Knife"],
+        "answer": "Sprinkler"
+    },
+    {
+        "question": "Which tool is used to measure distances on a farm?",
+        "choices": ["Measuring Tape", "Pruning Shears", "Trowel", "Hand Fork"],
+        "answer": "Measuring Tape"
+    },
+    {
+        "question": "A farmer needs to transport compost and fertilizers across the field. What tool should be used?",
+        "choices": ["Wheelbarrow", "Bolo", "Pick-Mattock", "Spade"],
+        "answer": "Wheelbarrow"
+    },
+    {
+        "question": "Which tool is commonly used to secure plants to stakes for support?",
+        "choices": ["Twine", "Hand Fork", "Shovel", "Rake"],
+        "answer": "Twine"
+    },
+    {
+        "question": "What is the best tool for mixing soil and compost before planting?",
+        "choices": ["Spade", "Trowel", "Hand Fork", "Rake"],
+        "answer": "Rake"
+    },
+    {
+        "question": "Which tool is best for removing small weeds between plants?",
+        "choices": ["Weeding Knife", "Bolo", "Spade", "Hand Fork"],
+        "answer": "Weeding Knife"
+    },
+    {
+        "question": "Which tool is essential for harvesting crops like rice or wheat?",
+        "choices": ["Sickle", "Shovel", "Pruning Shears", "Trowel"],
+        "answer": "Sickle"
+    },
+    {
+        "question": "What tool is commonly used to create small furrows in soil for planting seeds?",
+        "choices": ["Dibber", "Trowel", "Hand Fork", "Spade"],
+        "answer": "Dibber"
     }
 ]
