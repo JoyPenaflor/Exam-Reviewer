@@ -1,17 +1,202 @@
 [
     {
-        "question": "What is the chemical symbol for water?",
-        "choices": ["H2O", "O2", "CO2", "NaCl"],
-        "answer": "H2O"
+        "question": "What is hospitality primarily focused on?",
+        "choices": ["Guest care", "Food services", "Ticketing", "Recreation"],
+        "answer": "Guest care"
     },
     {
-        "question": "Who wrote 'Romeo and Juliet'?",
-        "choices": ["William Shakespeare", "Charles Dickens", "J.K. Rowling", "Mark Twain"],
-        "answer": "William Shakespeare"
+        "question": "Which type of tourism involves traveling within the country?",
+        "choices": ["Domestic", "Inclusive", "International", "Leisure"],
+        "answer": "Domestic"
     },
     {
-        "question": "What is the speed of light?",
-        "choices": ["300,000 km/s", "150,000 km/s", "299,792 km/s", "200,000 km/s"],
-        "answer": "299,792 km/s"
+        "question": "What is the act of providing needed convenience for guests?",
+        "choices": ["Hospitality", "Tourism", "Accommodation", "Recreation"],
+        "answer": "Accommodation"
+    },
+    {
+        "question": "Which type of travel combines inclusive and independent arrangements?",
+        "choices": ["Tailor-made", "Domestic", "Inclusive", "Leisure"],
+        "answer": "Tailor-made"
+    },
+    {
+        "question": "What are food and beverage services focused on?",
+        "choices": ["Meal preparation", "Event planning", "Ticket booking", "Room cleaning"],
+        "answer": "Meal preparation"
+    },
+    {
+        "question": "What is the key requirement for a food truck manager?",
+        "choices": ["High school diploma", "Cooking degree", "Management certificate", "Internship"],
+        "answer": "High school diploma"
+    },
+    {
+        "question": "What skill is essential for managing financial resources?",
+        "choices": ["Financial literacy", "Time management", "Customer service", "Strategic planning"],
+        "answer": "Financial literacy"
+    },
+    {
+        "question": "What is a primary responsibility of a catering manager?",
+        "choices": ["Planning tours", "Training chefs", "Designing menus", "Booking venues"],
+        "answer": "Designing menus"
+    },
+    {
+        "question": "Which role involves organizing staff for a smooth guest experience?",
+        "choices": ["Tour guide", "Activity manager", "Spa manager", "Guest services manager"],
+        "answer": "Guest services manager"
+    },
+    {
+        "question": "What is the most important skill for exceptional customer service?",
+        "choices": ["Communication", "Creativity", "Technology", "Marketing"],
+        "answer": "Communication"
+    },
+    {
+        "question": "What does 'green hospitality' prioritize?",
+        "choices": ["People and planet", "Profits only", "Advertising costs", "Digital marketing"],
+        "answer": "People and planet"
+    },
+    {
+        "question": "What is a major issue caused by labor shortages?",
+        "choices": ["Increased competition", "Limited hospitality expansion", "Declining guest expectations", "Poor advertising strategies"],
+        "answer": "Limited hospitality expansion"
+    },
+    {
+        "question": "What drives increased competition in the hospitality sector?",
+        "choices": ["High prices", "Overbuilt communities", "Low labor costs", "Reduced regulations"],
+        "answer": "Overbuilt communities"
+    },
+    {
+        "question": "Which factor influences globalization in hospitality?",
+        "choices": ["Limited guest services", "Declining technology", "International travel trends", "Local regulations"],
+        "answer": "International travel trends"
+    },
+    {
+        "question": "What is a key benefit of yield management?",
+        "choices": ["Reduced staff costs", "Maximized revenue", "Improved room design", "Simplified booking systems"],
+        "answer": "Maximized revenue"
+    },
+    {
+        "question": "Which kitchen layout uses three walls or counters?",
+        "choices": ["U-shaped", "L-shaped", "Island", "G-shaped"],
+        "answer": "U-shaped"
+    },
+    {
+        "question": "What is the danger zone for bacterial growth?",
+        "choices": ["30°F to 100°F", "40°F to 140°F", "50°F to 150°F", "60°F to 160°F"],
+        "answer": "40°F to 140°F"
+    },
+    {
+        "question": "What type of food service is primarily non-profit?",
+        "choices": ["Commercial", "Institutional", "Catering", "Fast food"],
+        "answer": "Institutional"
+    },
+    {
+        "question": "Which is an example of cross-contamination?",
+        "choices": ["Washing vegetables", "Using a single cutting board for meat and vegetables", "Cooking food thoroughly", "Storing cooked food in airtight containers"],
+        "answer": "Using a single cutting board for meat and vegetables"
+    },
+    {
+    "question": "What is the main purpose of a table napkin?",
+    "choices": ["Decoration", "Protect clothing", "Wipe tables", "Clean utensils"],
+    "answer": "Protect clothing"
+    },
+    {
+        "question": "What is the main purpose of a table napkin?",
+        "choices": ["Decoration", "Protect clothing", "Wipe tables", "Clean utensils"],
+        "answer": "Protect clothing"
+    },
+    {
+        "question": "Which table napkin fold resembles a boat?",
+        "choices": ["Pyramid", "Candle", "Sailing Boat", "Fan"],
+        "answer": "Sailing Boat"
+    },
+    {
+        "question": "What layout feature is essential in a kitchen?",
+        "choices": ["Aesthetic appeal", "Ample preparation space", "Expensive counters", "Bright lighting"],
+        "answer": "Ample preparation space"
+    },
+    {
+        "question": "Which fold is the easiest for beginners to learn?",
+        "choices": ["Bishop’s Hat", "Artichoke", "Candle", "Banana"],
+        "answer": "Banana"
+    },
+    {
+        "question": "What symbolizes the culmination of napkin folding skills?",
+        "choices": ["Perfect symmetry", "Creative output", "Clean edges", "Formal dining setup"],
+        "answer": "Creative output"
+    },
+    {
+        "question": "What is the process of choosing which foods to consume?",
+        "choices": ["Cooking", "Preparation", "Food selection", "Preservation"],
+        "answer": "Food selection"
+    },
+    {
+        "question": "Which heat transfer method involves direct contact?",
+        "choices": ["Radiation", "Evaporation", "Convection", "Conduction"],
+        "answer": "Conduction"
+    },
+    {
+        "question": "What is the primary reason for cooking food?",
+        "choices": ["Enhance taste", "Increase size", "Improve color", "Kill bacteria"],
+        "answer": "Kill bacteria"
+    },
+    {
+        "question": "What is a dry cooking method?",
+        "choices": ["Boiling", "Steaming", "Baking", "Poaching"],
+        "answer": "Baking"
+    },
+    {
+        "question": "What does seasoning primarily improve?",
+        "choices": ["Color", "Texture", "Shape", "Flavor"],
+        "answer": "Flavor"
+    },
+    {
+        "question": "What does food safety ensure?",
+        "choices": ["Good flavor", "Reduced waste", "Risk reduction", "Longer shelf life"],
+        "answer": "Risk reduction"
+    },
+    {
+        "question": "Which is an example of kitchen equipment?",
+        "choices": ["Knife", "Spoon", "Fork", "Blender"],
+        "answer": "Blender"
+    },
+    {
+        "question": "What is the primary purpose of proper maintenance of kitchen tools?",
+        "choices": ["Save time", "Reduce costs", "Prolong usage", "Improve taste"],
+        "answer": "Prolong usage"
+    },
+    {
+        "question": "What material is commonly used for baking dishes?",
+        "choices": ["Aluminum", "Cast iron", "Ceramic", "Plastic"],
+        "answer": "Ceramic"
+    },
+    {
+        "question": "What is used to sanitize kitchen utensils effectively?",
+        "choices": ["Cold water", "Mild detergent", "Chemical solutions", "Dish scrubber"],
+        "answer": "Chemical solutions"
+    },
+    {
+        "question": "What is the first step in maintaining food preparation tools?",
+        "choices": ["Drying", "Sanitizing", "Storing", "Cleaning"],
+        "answer": "Cleaning"
+    },
+    {
+        "question": "What is the primary goal of sanitizing utensils?",
+        "choices": ["Remove dirt", "Enhance durability", "Improve appearance", "Kill bacteria"],
+        "answer": "Kill bacteria"
+    },
+    {
+        "question": "Which cleaner is best for removing grease buildup?",
+        "choices": ["Detergent", "Acid cleaner", "Abrasive cleaner", "Solvent cleaner"],
+        "answer": "Solvent cleaner"
+    },
+    {
+        "question": "What is the proper storage method for cutting boards?",
+        "choices": ["Store upright in a dry place", "Lay flat on the counter", "Hang with utensils", "Keep in a sealed container"],
+        "answer": "Store upright in a dry place"
+    },
+    {
+        "question": "What is a key benefit of proper maintenance of kitchen tools?",
+        "choices": ["Reduced cooking time", "Better presentation", "Improved food flavor", "Longer tool lifespan"],
+        "answer": "Longer tool lifespan"
     }
 ]
