@@ -99,7 +99,6 @@
         "choices": ["Rake", "Spade", "Trowel", "Hand Fork"],
         "answer": "Rake"
     },
-[
     {
         "question": "Which tool is used for cutting branches and stems?",
         "choices": ["Pruning Shears", "Trowel", "Hand Fork", "Rake"],
