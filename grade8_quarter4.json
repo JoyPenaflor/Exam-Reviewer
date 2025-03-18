@@ -1,212 +1,202 @@
 [
     {
-        "question": "What quantity does an ohmmeter measure?",
-        "choices": ["Resistance", "Current", "Voltage", "Power"],
-        "answer": "Resistance"
+        "question": "Which symbol is used to represent a ground connection in electrical diagrams?",
+        "choices": ["Three lines", "Triangle", "Circle", "Square"],
+        "answer": "Three lines"
     },
     {
-        "question": "Which type of manual provides safety guidelines?",
-        "choices": ["Instruction", "Safety", "Training", "Equipment"],
-        "answer": "Safety"
+        "question": "What does the lightning bolt symbol in automotive diagrams typically represent?",
+        "choices": ["Fuse", "Battery", "Alternator", "Motor"],
+        "answer": "Battery"
     },
     {
-        "question": "Why is it essential to select the correct multimeter setting when diagnosing electrical issues?",
-        "choices": [
-            "The display shows all data automatically.",
-            "The pointer ensures digital accuracy.",
-            "The selector knob determines resistance.",
-            "Test probes ensure circuit connectivity."
-        ],
-        "answer": "The selector knob determines resistance."
+        "question": "How is a resistor typically represented in electronic diagrams?",
+        "choices": ["Zigzag line", "Square", "Triangle", "Circle"],
+        "answer": "Zigzag line"
     },
     {
-        "question": "What is another term for a volt-ohm meter (VOM)?",
-        "choices": ["Ammeter", "Oscilloscope", "Multimeter", "Voltmeter"],
-        "answer": "Multimeter"
+        "question": "In construction blueprints, how is a simple switch typically depicted?",
+        "choices": ["Circle", "Line break", "Triangle", "Square"],
+        "answer": "Line break"
     },
     {
-        "question": "Which government agency is responsible for enforcing traffic regulations?",
-        "choices": ["LTO", "DPWH", "DTI", "BFP"],
-        "answer": "LTO"
+        "question": "In electrical services, what does 'GND' stand for?",
+        "choices": ["Wire", "Ground", "Voltage", "Circuit"],
+        "answer": "Ground"
     },
     {
-        "question": "Plumbing is classified under which field?",
-        "choices": ["Electrical", "Automotive", "Construction", "Electronics"],
-        "answer": "Construction"
+        "question": "What is the name of the manual that provides repair instructions for equipment?",
+        "choices": ["Service manual", "User manual", "Installation manual", "Safety manual"],
+        "answer": "Service manual"
     },
     {
-        "question": "What is the final step in the 5S workplace organization system?",
-        "choices": ["Sustain", "Order", "Shine", "Sort"],
-        "answer": "Sustain"
+        "question": "What is the primary purpose of a parts manual?",
+        "choices": ["Repairs", "Troubleshooting", "Ordering parts", "Safety"],
+        "answer": "Ordering parts"
     },
     {
-        "question": "Which tool is commonly used to diagnose automotive engine issues?",
-        "choices": ["Jack", "Scanner", "Socket", "Wrench"],
-        "answer": "Scanner"
+        "question": "Which type of manual is essential for setting up a machine correctly?",
+        "choices": ["Repair manual", "Safety manual", "Installation manual", "Parts manual"],
+        "answer": "Installation manual"
     },
     {
-        "question": "What material is most commonly used in masonry work?",
-        "choices": ["Bricks", "Wood", "Wiring", "Metal"],
-        "answer": "Bricks"
+        "question": "In which manual would troubleshooting steps typically be found?",
+        "choices": ["Service manual", "Parts manual", "Installation manual", "User manual"],
+        "answer": "Service manual"
     },
     {
-        "question": "What is the primary function of traffic signs?",
-        "choices": ["Provide warnings", "Create obstacles", "Give directions", "Enforce laws"],
-        "answer": "Give directions"
+        "question": "What is the main purpose of a user manual?",
+        "choices": ["Safety", "Operations", "Maintenance", "Troubleshooting"],
+        "answer": "Operations"
     },
     {
-        "question": "What is one benefit of performing regular maintenance?",
-        "choices": ["Saves time", "Reduces friction", "Lowers cost", "Reduces weight"],
-        "answer": "Lowers cost"
+        "question": "What consumable is required for the welding process?",
+        "choices": ["Electrode", "Wrench", "Steel plate", "Hammer"],
+        "answer": "Electrode"
     },
     {
-        "question": "What force does a torque wrench apply?",
-        "choices": ["Heat", "Torque", "Speed", "Voltage"],
-        "answer": "Torque"
+        "question": "In which field is paint typically considered a consumable?",
+        "choices": ["Electronics", "Automotive", "Electrical", "Carpentry"],
+        "answer": "Automotive"
     },
     {
-        "question": "What issue does lubrication prevent?",
-        "choices": ["Rust", "Overheating", "Water absorption", "Short circuits"],
-        "answer": "Overheating"
+        "question": "What is considered a consumable in plumbing?",
+        "choices": ["PVC pipe", "Sealant", "Wrench", "Cutter"],
+        "answer": "Sealant"
     },
     {
-        "question": "What type of signal does an oscilloscope display?",
-        "choices": ["Digital signals", "Current flow", "Voltage waveforms", "Amperage"],
-        "answer": "Voltage waveforms"
+        "question": "Which activity typically requires the use of sandpaper?",
+        "choices": ["Plumbing", "Painting", "Carpentry", "Electronics"],
+        "answer": "Carpentry"
     },
     {
-        "question": "How does a digital instrument present measurements?",
-        "choices": ["Pointer", "Numbers", "Dial", "Needles"],
-        "answer": "Numbers"
+        "question": "What consumable is necessary for the soldering process?",
+        "choices": ["Screwdriver", "Wrench", "Drill", "Flux"],
+        "answer": "Flux"
     },
     {
-        "question": "In the 5S system, what does 'Sort' refer to?",
-        "choices": ["Arranging items", "Removing unnecessary items", "Labeling", "Cleaning"],
-        "answer": "Removing unnecessary items"
+        "question": "A stator is a component of which device?",
+        "choices": ["Switch", "Battery", "Fuse", "Motor"],
+        "answer": "Motor"
     },
     {
-        "question": "Which tool operates using hydraulic pressure?",
-        "choices": ["Electric sander", "Pneumatic drill", "Multimeter", "Hydraulic jack"],
-        "answer": "Hydraulic jack"
+        "question": "Which engine component converts fuel into mechanical motion?",
+        "choices": ["Clutch", "Wire", "Spark plug", "Piston"],
+        "answer": "Piston"
     },
     {
-        "question": "What type of service does TESDA primarily provide?",
-        "choices": ["Loans", "Certification", "Skills training", "Diplomas"],
-        "answer": "Skills training"
+        "question": "A circuit breaker is categorized under which type of service?",
+        "choices": ["Electronics", "Automotive", "Electrical", "Carpentry"],
+        "answer": "Electrical"
     },
     {
-        "question": "What is the function of the zero adjuster on an analog multimeter?",
-        "choices": ["Adjusts the scale", "Sets the range", "Moves the needle", "Calibrates the needle"],
-        "answer": "Calibrates the needle"
+        "question": "A rotor is the moving part of which device?",
+        "choices": ["Transformer", "Motor", "Circuit", "Battery"],
+        "answer": "Motor"
     },
     {
-        "question": "What is the primary function of an oscilloscope?",
-        "choices": ["Weighing objects", "Analyzing signals", "Drilling holes", "Cutting materials"],
-        "answer": "Analyzing signals"
+        "question": "Which component is responsible for storing electrical charge?",
+        "choices": ["Diode", "Capacitor", "Switch", "Relay"],
+        "answer": "Capacitor"
     },
     {
-        "question": "What does a permit grant?",
-        "choices": ["Approval", "Ownership", "Payment authorization", "Citizenship"],
-        "answer": "Approval"
-    },
-    {
-        "question": "What is typically checked during equipment maintenance?",
-        "choices": ["Expiration dates", "Brand logos", "Machine parts", "New tools"],
-        "answer": "Machine parts"
-    },
-    {
-        "question": "Which law governs building codes in the Philippines?",
-        "choices": ["RA 9514", "RA 7920", "RA 9003", "RA 6541"],
-        "answer": "RA 6541"
-    },
-    {
-        "question": "Which tool is specifically designed for spreading mortar?",
-        "choices": ["Wrench", "Hacksaw", "Measuring tape", "Trowel"],
-        "answer": "Trowel"
-    },
-    {
-        "question": "What is the purpose of the range knob on a multimeter?",
-        "choices": ["Adjusts the pointer", "Changes display settings", "Measures voltage", "Selects measurement functions"],
-        "answer": "Selects measurement functions"
-    },
-    {
-        "question": "What does the troubleshooting process involve?",
-        "choices": ["Buying new parts", "Identifying problems", "Disposing of faulty equipment", "Conducting repairs"],
-        "answer": "Identifying problems"
-    },
-    {
-        "question": "Which law established the National Building Code of the Philippines?",
-        "choices": ["RA 9003", "RA 7920", "RA 6541", "RA 9514"],
-        "answer": "RA 6541"
-    },
-    {
-        "question": "How are hand tools typically powered?",
-        "choices": ["Manually", "Electrically", "Using air pressure", "With batteries"],
-        "answer": "Manually"
-    },
-    {
-        "question": "What is the primary objective of maintenance?",
-        "choices": ["Cleaning equipment", "Preserving functionality", "Painting surfaces", "Replacing parts"],
-        "answer": "Preserving functionality"
-    },
-    {
-        "question": "Where should tools be properly stored?",
-        "choices": ["Cabinets", "On the floor", "Near machines", "Anywhere convenient"],
-        "answer": "Cabinets"
-    },
-    {
-        "question": "What is the primary function of a soldering iron?",
-        "choices": ["Joining metal parts", "Cutting materials", "Measuring resistance", "Drilling holes"],
-        "answer": "Joining metal parts"
-    },
-    {
-        "question": "Which tool should be checked regularly for frayed wires?",
-        "choices": ["Hammer", "Power drill", "Paintbrush", "Chisel"],
-        "answer": "Power drill"
-    },
-    {
-        "question": "What electrical property does a voltmeter measure?",
-        "choices": ["Resistance", "Power", "Current", "Voltage"],
+        "question": "What does a multimeter measure?",
+        "choices": ["Voltage", "Wires", "Pipes", "Paint"],
         "answer": "Voltage"
     },
     {
-        "question": "What does Industrial Arts primarily focus on?",
-        "choices": ["Science", "Literature", "Practical skills", "Music"],
-        "answer": "Practical skills"
+        "question": "What should be checked first when a circuit is not functioning?",
+        "choices": ["Fuse", "Battery", "Switch", "Bulb"],
+        "answer": "Fuse"
     },
     {
-        "question": "Which material is the most fire-resistant?",
-        "choices": ["Fireproof insulation", "Plastic", "Wood", "Glass"],
-        "answer": "Fireproof insulation"
+        "question": "If an engine fails to start, what should be checked first?",
+        "choices": ["Oil", "Fuel", "Air filter", "Wires"],
+        "answer": "Fuel"
     },
     {
-        "question": "Which tool is commonly used to tighten bolts?",
-        "choices": ["Saw", "Ruler", "Wrench", "Chisel"],
-        "answer": "Wrench"
+        "question": "Fuel pressure is measured using which instrument?",
+        "choices": ["Wrench", "Multimeter", "Gauge", "Screwdriver"],
+        "answer": "Gauge"
     },
     {
-        "question": "Before measuring resistance in a live circuit, what must be done to avoid damaging the multimeter?",
-        "choices": ["Increase voltage to prevent overheating", "Allow the meter to adjust automatically", "Disconnect the test probes", "Turn off the power"],
-        "answer": "Turn off the power"
+        "question": "What does black smoke from a car engine typically indicate?",
+        "choices": ["Overheating", "Excess fuel", "No fuel", "Weak battery"],
+        "answer": "Excess fuel"
     },
     {
-        "question": "Why is it essential to understand the scale of an analog multimeter?",
-        "choices": [
-            "Logarithmic scales are outdated",
-            "Only linear scales provide accurate data",
-            "The scale type does not affect results",
-            "Different scales impact measurement accuracy"
-        ],
-        "answer": "Different scales impact measurement accuracy"
+        "question": "If a light does not turn on, what should be checked first?",
+        "choices": ["Switch", "Wiring", "Fuse", "Bulb"],
+        "answer": "Bulb"
     },
     {
-        "question": "Which instrument is used to measure speed?",
-        "choices": ["Ohmmeter", "Ammeter", "Tachometer", "Speedometer"],
-        "answer": "Tachometer"
+        "question": "What action should be taken if an electric motor overheats?",
+        "choices": ["Tighten wires", "Add oil", "Stop using it", "Increase the load"],
+        "answer": "Stop using it"
     },
     {
-        "question": "What electrical property does an ohmmeter measure?",
-        "choices": ["Capacitance", "Current", "Voltage", "Resistance"],
-        "answer": "Resistance"
+        "question": "What should be checked first if an engine overheats?",
+        "choices": ["Fan belt", "Battery", "Coolant", "Oil"],
+        "answer": "Coolant"
+    },
+    {
+        "question": "What is a common cause of a flickering light?",
+        "choices": ["Dead fuse", "Broken bulb", "Loose wire", "Overheating"],
+        "answer": "Loose wire"
+    },
+    {
+        "question": "What is the best tool to use for checking a car battery?",
+        "choices": ["Gauge", "Multimeter", "Screwdriver", "Hammer"],
+        "answer": "Multimeter"
+    },
+    {
+        "question": "What is the first step in estimating repair costs?",
+        "choices": ["Approval", "Quotation", "Payment", "Diagnosis"],
+        "answer": "Quotation"
+    },
+    {
+        "question": "Which factor has the greatest impact on labor costs?",
+        "choices": ["Client request", "Tool type", "Material used", "Time spent"],
+        "answer": "Time spent"
+    },
+    {
+        "question": "Which item is typically included in a repair estimate?",
+        "choices": ["Technician's age", "Customer name", "Invoice number", "Parts cost"],
+        "answer": "Parts cost"
+    },
+    {
+        "question": "Which expense is classified as part of overhead costs?",
+        "choices": ["Rent", "Materials", "Labor", "Tools"],
+        "answer": "Rent"
+    },
+    {
+        "question": "What document details the charges for repair services?",
+        "choices": ["Invoice", "Blueprint", "Work permit", "Receipt"],
+        "answer": "Invoice"
+    },
+    {
+        "question": "Which factor has the greatest impact on material costs?",
+        "choices": ["Supplier", "Technician", "Quality", "Warranty"],
+        "answer": "Quality"
+    },
+    {
+        "question": "What should a repair estimate always be?",
+        "choices": ["Unclear", "Delayed", "Expensive", "Accurate"],
+        "answer": "Accurate"
+    },
+    {
+        "question": "What must be obtained before starting repair work?",
+        "choices": ["Warranty", "Billing", "Shipping", "Approval"],
+        "answer": "Approval"
+    },
+    {
+        "question": "Which cost is typically added to labor and material costs?",
+        "choices": ["Overhead", "Discount", "Warranty", "Tax"],
+        "answer": "Overhead"
+    },
+    {
+        "question": "What determines the final service cost?",
+        "choices": ["Advertising", "Worker count", "Tool type", "Total cost"],
+        "answer": "Total cost"
     }
 ]
