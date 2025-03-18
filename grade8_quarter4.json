@@ -1,17 +1,212 @@
 [
     {
-        "question": "What is the capital of Japan?",
-        "choices": ["Tokyo", "Beijing", "Seoul", "Bangkok"],
-        "answer": "Tokyo"
+        "question": "What quantity does an ohmmeter measure?",
+        "choices": ["Resistance", "Current", "Voltage", "Power"],
+        "answer": "Resistance"
     },
     {
-        "question": "Which element has the atomic number 1?",
-        "choices": ["Oxygen", "Hydrogen", "Carbon", "Nitrogen"],
-        "answer": "Hydrogen"
+        "question": "Which type of manual provides safety guidelines?",
+        "choices": ["Instruction", "Safety", "Training", "Equipment"],
+        "answer": "Safety"
     },
     {
-        "question": "What is the largest continent?",
-        "choices": ["Africa", "Asia", "Europe", "Australia"],
-        "answer": "Asia"
+        "question": "Why is it essential to select the correct multimeter setting when diagnosing electrical issues?",
+        "choices": [
+            "The display shows all data automatically.",
+            "The pointer ensures digital accuracy.",
+            "The selector knob determines resistance.",
+            "Test probes ensure circuit connectivity."
+        ],
+        "answer": "The selector knob determines resistance."
+    },
+    {
+        "question": "What is another term for a volt-ohm meter (VOM)?",
+        "choices": ["Ammeter", "Oscilloscope", "Multimeter", "Voltmeter"],
+        "answer": "Multimeter"
+    },
+    {
+        "question": "Which government agency is responsible for enforcing traffic regulations?",
+        "choices": ["LTO", "DPWH", "DTI", "BFP"],
+        "answer": "LTO"
+    },
+    {
+        "question": "Plumbing is classified under which field?",
+        "choices": ["Electrical", "Automotive", "Construction", "Electronics"],
+        "answer": "Construction"
+    },
+    {
+        "question": "What is the final step in the 5S workplace organization system?",
+        "choices": ["Sustain", "Order", "Shine", "Sort"],
+        "answer": "Sustain"
+    },
+    {
+        "question": "Which tool is commonly used to diagnose automotive engine issues?",
+        "choices": ["Jack", "Scanner", "Socket", "Wrench"],
+        "answer": "Scanner"
+    },
+    {
+        "question": "What material is most commonly used in masonry work?",
+        "choices": ["Bricks", "Wood", "Wiring", "Metal"],
+        "answer": "Bricks"
+    },
+    {
+        "question": "What is the primary function of traffic signs?",
+        "choices": ["Provide warnings", "Create obstacles", "Give directions", "Enforce laws"],
+        "answer": "Give directions"
+    },
+    {
+        "question": "What is one benefit of performing regular maintenance?",
+        "choices": ["Saves time", "Reduces friction", "Lowers cost", "Reduces weight"],
+        "answer": "Lowers cost"
+    },
+    {
+        "question": "What force does a torque wrench apply?",
+        "choices": ["Heat", "Torque", "Speed", "Voltage"],
+        "answer": "Torque"
+    },
+    {
+        "question": "What issue does lubrication prevent?",
+        "choices": ["Rust", "Overheating", "Water absorption", "Short circuits"],
+        "answer": "Overheating"
+    },
+    {
+        "question": "What type of signal does an oscilloscope display?",
+        "choices": ["Digital signals", "Current flow", "Voltage waveforms", "Amperage"],
+        "answer": "Voltage waveforms"
+    },
+    {
+        "question": "How does a digital instrument present measurements?",
+        "choices": ["Pointer", "Numbers", "Dial", "Needles"],
+        "answer": "Numbers"
+    },
+    {
+        "question": "In the 5S system, what does 'Sort' refer to?",
+        "choices": ["Arranging items", "Removing unnecessary items", "Labeling", "Cleaning"],
+        "answer": "Removing unnecessary items"
+    },
+    {
+        "question": "Which tool operates using hydraulic pressure?",
+        "choices": ["Electric sander", "Pneumatic drill", "Multimeter", "Hydraulic jack"],
+        "answer": "Hydraulic jack"
+    },
+    {
+        "question": "What type of service does TESDA primarily provide?",
+        "choices": ["Loans", "Certification", "Skills training", "Diplomas"],
+        "answer": "Skills training"
+    },
+    {
+        "question": "What is the function of the zero adjuster on an analog multimeter?",
+        "choices": ["Adjusts the scale", "Sets the range", "Moves the needle", "Calibrates the needle"],
+        "answer": "Calibrates the needle"
+    },
+    {
+        "question": "What is the primary function of an oscilloscope?",
+        "choices": ["Weighing objects", "Analyzing signals", "Drilling holes", "Cutting materials"],
+        "answer": "Analyzing signals"
+    },
+    {
+        "question": "What does a permit grant?",
+        "choices": ["Approval", "Ownership", "Payment authorization", "Citizenship"],
+        "answer": "Approval"
+    },
+    {
+        "question": "What is typically checked during equipment maintenance?",
+        "choices": ["Expiration dates", "Brand logos", "Machine parts", "New tools"],
+        "answer": "Machine parts"
+    },
+    {
+        "question": "Which law governs building codes in the Philippines?",
+        "choices": ["RA 9514", "RA 7920", "RA 9003", "RA 6541"],
+        "answer": "RA 6541"
+    },
+    {
+        "question": "Which tool is specifically designed for spreading mortar?",
+        "choices": ["Wrench", "Hacksaw", "Measuring tape", "Trowel"],
+        "answer": "Trowel"
+    },
+    {
+        "question": "What is the purpose of the range knob on a multimeter?",
+        "choices": ["Adjusts the pointer", "Changes display settings", "Measures voltage", "Selects measurement functions"],
+        "answer": "Selects measurement functions"
+    },
+    {
+        "question": "What does the troubleshooting process involve?",
+        "choices": ["Buying new parts", "Identifying problems", "Disposing of faulty equipment", "Conducting repairs"],
+        "answer": "Identifying problems"
+    },
+    {
+        "question": "Which law established the National Building Code of the Philippines?",
+        "choices": ["RA 9003", "RA 7920", "RA 6541", "RA 9514"],
+        "answer": "RA 6541"
+    },
+    {
+        "question": "How are hand tools typically powered?",
+        "choices": ["Manually", "Electrically", "Using air pressure", "With batteries"],
+        "answer": "Manually"
+    },
+    {
+        "question": "What is the primary objective of maintenance?",
+        "choices": ["Cleaning equipment", "Preserving functionality", "Painting surfaces", "Replacing parts"],
+        "answer": "Preserving functionality"
+    },
+    {
+        "question": "Where should tools be properly stored?",
+        "choices": ["Cabinets", "On the floor", "Near machines", "Anywhere convenient"],
+        "answer": "Cabinets"
+    },
+    {
+        "question": "What is the primary function of a soldering iron?",
+        "choices": ["Joining metal parts", "Cutting materials", "Measuring resistance", "Drilling holes"],
+        "answer": "Joining metal parts"
+    },
+    {
+        "question": "Which tool should be checked regularly for frayed wires?",
+        "choices": ["Hammer", "Power drill", "Paintbrush", "Chisel"],
+        "answer": "Power drill"
+    },
+    {
+        "question": "What electrical property does a voltmeter measure?",
+        "choices": ["Resistance", "Power", "Current", "Voltage"],
+        "answer": "Voltage"
+    },
+    {
+        "question": "What does Industrial Arts primarily focus on?",
+        "choices": ["Science", "Literature", "Practical skills", "Music"],
+        "answer": "Practical skills"
+    },
+    {
+        "question": "Which material is the most fire-resistant?",
+        "choices": ["Fireproof insulation", "Plastic", "Wood", "Glass"],
+        "answer": "Fireproof insulation"
+    },
+    {
+        "question": "Which tool is commonly used to tighten bolts?",
+        "choices": ["Saw", "Ruler", "Wrench", "Chisel"],
+        "answer": "Wrench"
+    },
+    {
+        "question": "Before measuring resistance in a live circuit, what must be done to avoid damaging the multimeter?",
+        "choices": ["Increase voltage to prevent overheating", "Allow the meter to adjust automatically", "Disconnect the test probes", "Turn off the power"],
+        "answer": "Turn off the power"
+    },
+    {
+        "question": "Why is it essential to understand the scale of an analog multimeter?",
+        "choices": [
+            "Logarithmic scales are outdated",
+            "Only linear scales provide accurate data",
+            "The scale type does not affect results",
+            "Different scales impact measurement accuracy"
+        ],
+        "answer": "Different scales impact measurement accuracy"
+    },
+    {
+        "question": "Which instrument is used to measure speed?",
+        "choices": ["Ohmmeter", "Ammeter", "Tachometer", "Speedometer"],
+        "answer": "Tachometer"
+    },
+    {
+        "question": "What electrical property does an ohmmeter measure?",
+        "choices": ["Capacitance", "Current", "Voltage", "Resistance"],
+        "answer": "Resistance"
     }
 ]
