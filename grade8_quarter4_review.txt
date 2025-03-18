@@ -4,29 +4,37 @@ Grade 8 - Quarter 4 Review
 - A consumable in plumbing is sealant.  
 - A consumable required for welding is an electrode.  
 - A flickering light is commonly caused by a loose wire.  
+- A fuel injector is responsible for delivering fuel to the engine.  
+- A fuse is the first item to check when a circuit is not functioning.  
+- A gasket prevents fluid leakage in mechanical assemblies.  
 - A multimeter measures voltage.  
 - A motor contains a rotor as its moving part.  
 - A repair estimate should always be accurate.  
+- A resistor is represented by a zigzag line in electronic diagrams.  
 - A service manual provides repair instructions for equipment.  
 - A switch in construction blueprints is typically depicted by a line break.  
+- A thermostat controls temperature regulation in heating and cooling systems.  
+- A torque wrench is used to apply a specific torque to fasteners.  
 - A user manual is primarily used for operations and maintenance.  
+- A voltmeter is used to measure electrical potential difference.  
 - A wrench is required for the welding process.  
 - Add oil to an electric motor that has overheated.  
 - Approval must be obtained before starting repair work.  
 - Black smoke from a car engine typically indicates excess fuel.  
 - Coolant should be checked first if an engine overheats.  
-- The document that details the charges for repair services is an invoice.  
 - Excess fuel in a car engine is indicated by black smoke.  
-- Fuse is the first item to check when a circuit is not functioning.  
 - Fuel pressure is measured using a gauge.  
 - GND in electrical services stands for ground.  
 - In the automotive field, paint is considered a consumable.  
 - In the plumbing field, sealant is considered a consumable.  
-- In electronic diagrams, a resistor is represented by a zigzag line.  
+- It is important to check the battery if an engine fails to start.  
 - It is important to check the fuel if an engine fails to start.  
 - It is important to check the oil if an engine fails to start.  
-- It is important to check the battery if an engine fails to start.  
 - Loose wiring can cause a flickering light.  
+- Overheating in a circuit can be caused by excessive current flow.  
+- Preventive maintenance helps extend the lifespan of electrical components.  
+- Proper grounding prevents electrical hazards.  
+- The document that details the charges for repair services is an invoice.  
 - The manual that provides repair instructions is the service manual.  
 - The necessary consumable for soldering is flux.  
 - The primary action to take when an engine overheats is to stop using it.  
@@ -36,7 +44,8 @@ Grade 8 - Quarter 4 Review
 - The stator is a component of a motor.  
 - The symbol used to represent a ground connection in electrical diagrams is three lines.  
 - The tool used to check a car battery is a multimeter.  
+- The voltage rating of a fuse determines its ability to handle current loads.  
 - Troubleshooting steps are typically found in the service manual.  
+- Voltage fluctuations can damage sensitive electronic devices.  
 - What determines the final service cost is the total cost.  
-- What should be checked first if an engine overheats is the coolant.
-
+- What should be checked first if an engine overheats is the coolant.  
