@@ -1,2 +1,62 @@
 Grade 9 - Quarter 4 Review
+- Accurate costing is essential to avoid financial loss and maintain business profitability.  
+- Annual maintenance contracts help businesses manage repair and servicing costs efficiently.  
+- Budgeting service costs is crucial for managing money effectively and maintaining quality service.  
+- Calculating depreciation is essential for understanding the value reduction of equipment over time.  
+- Checking batteries regularly helps to prevent leaks and ensure optimal performance.  
+- Choosing energy-efficient appliances helps reduce long-term electricity costs.  
+- Cleaning air-conditioning filters regularly helps improve airflow and maintain efficient cooling performance.  
+- Comparing suppliers helps businesses obtain the best quality materials at competitive prices.  
+- Correct refrigerant charging improves system efficiency and prevents compressor failure.  
+- Direct labor includes workers such as plumbers, electricians, and technicians who are directly involved in a service or production process.  
+- Electronic devices should be placed in a dry area away from excessive heat or humidity to prevent damage.  
+- Ensuring proper ventilation around refrigeration units prevents overheating and improves efficiency.  
+- Environmentally friendly refrigerants, such as R-600a and R-290, are used as alternatives to traditional refrigerants.  
+- Equipment downtime due to improper maintenance can result in financial losses and reduced productivity.  
+- Ethical pricing ensures fair business practices and long-term customer trust.  
+- Fair pricing ensures that costs and profit margins are covered without overpricing or underpricing.  
+- Financial planning in service industries helps allocate resources effectively.  
+- Frayed electrical wires can cause sparks, posing a significant fire hazard.  
+- Ignoring labor costs can lead to unpaid workers and financial mismanagement.  
+- Indirect labor refers to support staff who do not directly contribute to the final product but assist in business operations.  
+- Indirect materials include supplies like cleaners and lubricants that support operations but are not directly part of the final product.  
+- Insulating refrigerant pipes minimizes energy loss and improves system performance.  
+- Inventory management helps businesses control material costs and avoid unnecessary stockpiling.  
+- Inverter refrigeration systems commonly use variable-speed compressors to enhance energy efficiency.  
+- Key factors considered in service costing include labor, materials, and overhead expenses.  
+- Labor cost refers to the wages paid to workers for services performed.  
+- Leak detection in refrigeration systems prevents environmental hazards and system inefficiencies.  
+- Life cycle costing considers the total cost of ownership, including maintenance and disposal.  
+- Material cost refers to the expenses associated with purchasing raw materials needed for production or service.  
+- Material costs are directly influenced by supplier pricing and market fluctuations.  
+- Overcharging or undercharging refrigerant can lead to reduced efficiency and potential system failure.  
+- Overtime pay is the additional compensation given to employees for working beyond regular hours.  
+- Predictive maintenance uses data analysis to anticipate failures and reduce unexpected downtime.  
+- Preventive maintenance is conducted to extend the lifespan of equipment and ensure optimal performance.  
+- Proper calibration of thermostats ensures accurate temperature control and energy efficiency.  
+- Proper costing methods help businesses remain profitable by managing expenses efficiently.  
+- Proper grounding of electrical appliances reduces the risk of electrocution and short circuits.  
+- Proper insulation of refrigeration units enhances energy efficiency and cooling performance.  
+- Regular oil changes in compressors extend the lifespan of refrigeration systems.  
+- Regular safety inspections of electrical systems reduce the risk of accidents and equipment failures.  
+- Securing loose electrical connections is most effectively accomplished using a screwdriver.  
+- Service costing is primarily used to calculate expenses related to labor and materials.  
+- The coil responsible for absorbing heat from the interior of a refrigerator is called the evaporator.  
+- The component responsible for compressing and circulating the refrigerant within the refrigeration system is called a compressor.  
+- The cost of labor is influenced by factors such as the number of hours worked and wage rates.  
+- The defrost system in refrigeration units prevents ice buildup.  
+- The evaporator coil is responsible for absorbing heat from the interior of a refrigerator.  
+- The expansion valve controls the flow of refrigerant into the evaporator.  
+- The initial stage in the refrigeration cycle involves the process of compression.  
+- The most important safety precaution before servicing an electrical device is to unplug or turn off the power source.  
+- The primary function of a refrigeration system is to regulate temperature by cooling and preserving stored items.  
+- The primary reason for including a wastage allowance in cost estimates is to account for material losses during production.  
+- The primary reason for regularly cleaning air-conditioning filters is to improve airflow.  
+- The regulation of refrigerant flow into the evaporator is controlled by an expansion valve.  
+- The system that has lower energy consumption in refrigeration is an inverter system.  
+- The thermostat is the electrical component responsible for regulating temperature.  
+- To prevent damage caused by sudden electrical surges, a surge protector should be used.  
+- Total service cost is calculated by adding labor costs, material costs, and other expenses.  
+- Using high-quality lubricants in mechanical components reduces wear and tear, increasing efficiency.  
+- Voltage measurements in electrical systems should be conducted using a tester or multimeter.  
 
