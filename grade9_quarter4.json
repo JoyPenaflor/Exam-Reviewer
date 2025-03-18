@@ -1,17 +1,202 @@
 [
     {
-        "question": "What is the capital of Japan?",
-        "choices": ["Tokyo", "Beijing", "Seoul", "Bangkok"],
-        "answer": "Tokyo"
+        "question": "What is the main function of a refrigeration system?",
+        "choices": ["Cool, Preserve", "Heat, Boil", "Freeze, Burn", "Dry, Bake"],
+        "answer": "Cool, Preserve"
     },
     {
-        "question": "Which element has the atomic number 1?",
-        "choices": ["Oxygen", "Hydrogen", "Carbon", "Nitrogen"],
-        "answer": "Hydrogen"
+        "question": "Which component compresses and circulates the refrigerant?",
+        "choices": ["Condenser", "Thermostat", "Evaporator", "Compressor"],
+        "answer": "Compressor"
     },
     {
-        "question": "What is the largest continent?",
-        "choices": ["Africa", "Asia", "Europe", "Australia"],
-        "answer": "Asia"
+        "question": "Which component regulates the amount of refrigerant entering the evaporator?",
+        "choices": ["Condenser", "Expansion Valve", "Evaporator", "Relay"],
+        "answer": "Expansion Valve"
+    },
+    {
+        "question": "What electrical component regulates temperature?",
+        "choices": ["Fan", "Thermostat", "Relay", "Motor"],
+        "answer": "Thermostat"
+    },
+    {
+        "question": "Which coil is responsible for absorbing heat from inside the refrigerator?",
+        "choices": ["Evaporator", "Condenser", "Compressor", "Expansion Coil"],
+        "answer": "Evaporator"
+    },
+    {
+        "question": "Which refrigerant is eco-friendly?",
+        "choices": ["R-12", "R-22", "R-600a", "R-290"],
+        "answer": "R-600a"
+    },
+    {
+        "question": "Which type of compressor is typically found in an inverter refrigeration system?",
+        "choices": ["Fixed-speed compressor", "Non-inverter compressor", "Variable-speed compressor", "Dual-stage compressor"],
+        "answer": "Variable-speed compressor"
+    },
+    {
+        "question": "Which process occurs first in the refrigeration cycle?",
+        "choices": ["Condensation", "Expansion", "Evaporation", "Compression"],
+        "answer": "Compression"
+    },
+    {
+        "question": "Which system has lower energy consumption?",
+        "choices": ["Conventional", "Hybrid", "Inverter", "Manual"],
+        "answer": "Inverter"
+    },
+    {
+        "question": "What does the defrost system prevent?",
+        "choices": ["Overheating", "High pressure", "Ice buildup", "Low voltage"],
+        "answer": "Ice buildup"
+    },
+    {
+        "question": "What is the purpose of preventive maintenance?",
+        "choices": ["Increase noise", "Extend lifespan", "Waste energy", "Reduce weight"],
+        "answer": "Extend lifespan"
+    },
+    {
+        "question": "What should be used to check voltage in electrical systems?",
+        "choices": ["Pliers", "Wrench", "Tester", "Hammer"],
+        "answer": "Tester"
+    },
+    {
+        "question": "What is the most important safety step before servicing an electrical device?",
+        "choices": ["Unplug or turn off the power source", "Spray water", "Touch wires", "Increase power"],
+        "answer": "Unplug or turn off the power source"
+    },
+    {
+        "question": "Why clean air-conditioning filters regularly?",
+        "choices": ["Improve airflow", "Overheat unit", "Block cooling", "Increase noise"],
+        "answer": "Improve airflow"
+    },
+    {
+        "question": "What tool helps in securing loose electrical connections?",
+        "choices": ["Tape", "Pliers", "Hammer", "Screwdriver"],
+        "answer": "Screwdriver"
+    },
+    {
+        "question": "What can frayed wires cause?",
+        "choices": ["More power", "Extra cooling", "Less heat", "Sparks"],
+        "answer": "Sparks"
+    },
+    {
+        "question": "What prevents damage from sudden electrical spikes?",
+        "choices": ["Wooden box", "Extension cord", "Surge protector", "Extra plug"],
+        "answer": "Surge protector"
+    },
+    {
+        "question": "What should be done to prevent battery leaks?",
+        "choices": ["Regularly check", "Overcharge", "Drain fully", "Ignore usage"],
+        "answer": "Regularly check"
+    },
+    {
+        "question": "Where should electronic devices be placed?",
+        "choices": ["Dry area", "Inside freezer", "Near heat", "Humid area"],
+        "answer": "Dry area"
+    },
+    {
+        "question": "What must be done to avoid electric shocks when working?",
+        "choices": ["Calculate expenses", "Identify trends", "Measure benefits", "Assess satisfaction"],
+        "answer": "Wear gloves"
+    },
+    {
+        "question": "What is the main purpose of service costing?",
+        "choices": ["Expenses", "Trends", "Benefits", "Satisfaction"],
+        "answer": "Expenses"
+    },
+    {
+        "question": "What are the key factors considered in service costing?",
+        "choices": ["Profits", "Feedback", "Revenue", "Labor and Materials"],
+        "answer": "Labor and Materials"
+    },
+    {
+        "question": "What is labor cost?",
+        "choices": ["Materials", "Rentals", "Transport", "Wages"],
+        "answer": "Wages"
+    },
+    {
+        "question": "Which is an example of direct labor?",
+        "choices": ["Manager", "Secretary", "Plumber", "Accountant"],
+        "answer": "Plumber"
+    },
+    {
+        "question": "What is indirect labor?",
+        "choices": ["Direct workers", "Support staff", "Raw materials", "Supplier fees"],
+        "answer": "Support staff"
+    },
+    {
+        "question": "What affects labor cost?",
+        "choices": ["Height", "Weather", "Hours worked", "Uniforms"],
+        "answer": "Hours worked"
+    },
+    {
+        "question": "What is overtime pay?",
+        "choices": ["Extra pay", "Discounted pay", "Weekend cut", "Fixed salary"],
+        "answer": "Extra pay"
+    },
+    {
+        "question": "What is material cost?",
+        "choices": ["Worker pay", "Raw materials", "Transport fees", "Bonuses"],
+        "answer": "Raw materials"
+    },
+    {
+        "question": "Which of the following is considered a direct material?",
+        "choices": ["Raw materials", "Service items", "Uniforms", "Office furniture"],
+        "answer": "Raw materials"
+    },
+    {
+        "question": "Which is an example of indirect materials?",
+        "choices": ["Wires", "Pipes", "Cleaners", "Car parts"],
+        "answer": "Cleaners"
+    },
+    {
+        "question": "What factor directly influences material costs?",
+        "choices": ["Employee training", "Supplier pricing", "Logo design", "Marketing campaigns"],
+        "answer": "Supplier pricing"
+    },
+    {
+        "question": "Why include wastage allowance?",
+        "choices": ["Reduce use", "Cover losses", "Increase speed", "Limit cost"],
+        "answer": "Cover losses"
+    },
+    {
+        "question": "What is total service cost?",
+        "choices": ["Materials", "Labor", "Payment", "Labor, Materials"],
+        "answer": "Labor, Materials"
+    },
+    {
+        "question": "What is the main benefit of accurate costing in a business?",
+        "choices": ["Avoid financial loss", "Retain customers", "Reduce market competition", "Increase material waste"],
+        "answer": "Avoid financial loss"
+    },
+    {
+        "question": "How does costing help business?",
+        "choices": ["Fair prices", "Overpricing", "Higher wages", "Less work"],
+        "answer": "Fair prices"
+    },
+    {
+        "question": "What helps businesses stay profitable?",
+        "choices": ["Low prices", "Ignore labor", "Proper costing", "More waste"],
+        "answer": "Proper costing"
+    },
+    {
+        "question": "Which statement best describes fair pricing?",
+        "choices": ["Extremely low prices", "Pricing that covers costs and profit", "Increased employee wages", "Pricing that results in financial loss"],
+        "answer": "Pricing that covers costs and profit"
+    },
+    {
+        "question": "Why compare suppliers?",
+        "choices": ["Cheapest", "No labor", "No materials", "Best quality"],
+        "answer": "Best quality"
+    },
+    {
+        "question": "What happens if labor cost is ignored?",
+        "choices": ["Overpriced", "Less expenses", "More profits", "Unpaid workers"],
+        "answer": "Unpaid workers"
+    },
+    {
+        "question": "Why budget service costs?",
+        "choices": ["Manage money", "More costs", "Less quality", "Ignore materials"],
+        "answer": "Manage money"
     }
 ]
