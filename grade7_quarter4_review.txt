@@ -1,35 +1,44 @@
 Grade 7 - Quarter 4 Review
 - A digital instrument presents measurements using numbers.  
 - A hydraulic jack operates using hydraulic pressure to lift heavy objects.  
+- A multimeter is used to measure voltage, current, and resistance in electrical circuits.  
 - A permit grants approval to proceed with specific work or tasks.  
 - A power drill should be regularly checked for frayed wires to ensure safety.  
 - A scanner is commonly used to diagnose automotive engine issues.  
 - A soldering iron is used for joining metal parts together.  
+- A spirit level ensures surfaces are perfectly horizontal or vertical.  
 - A tachometer is used to measure the speed of rotating components.  
+- A tape measure is essential for precise measurements in construction and carpentry.  
+- A thermal imaging camera detects heat patterns to identify electrical issues or insulation problems.  
 - A torque wrench applies torque to fasteners for proper tightening.  
 - A trowel is specifically designed for spreading mortar in construction.  
+- An ammeter measures current flow in an electrical circuit.  
 - An ohmmeter measures resistance in an electrical circuit.  
-- An ohmmeter measures resistance in a circuit to determine its continuity.  
 - An oscilloscope displays voltage waveforms to analyze electrical signals.  
 - Bricks are most commonly used in masonry work.  
+- Electrical tape is used to insulate and protect electrical connections.  
 - Fireproof insulation is the most fire-resistant material.  
+- Hand tools are typically powered manually for simplicity and portability.  
+- Lubrication prevents overheating in machinery.  
+- Personal protective equipment (PPE) ensures worker safety in hazardous environments.  
+- Plumbing is classified under the construction field.  
+- Power tools operate using electricity or batteries for efficiency and ease of use.  
+- Proper ventilation in a workshop prevents the accumulation of harmful fumes.  
+- Safety goggles protect eyes from debris and chemical splashes.  
+- Sorting refers to removing unnecessary items from the workspace in the 5S system.  
 - The final step in the 5S workplace organization system is to sustain improvements.  
 - The LTO is the government agency responsible for enforcing traffic regulations.  
-- The National Building Code of the Philippines was established by RA 6541.  
 - The National Building Code of the Philippines is governed by RA 6541.  
-- The primary function of traffic signs is to give directions.  
 - The primary function of an oscilloscope is to analyze electrical signals.  
+- The primary function of traffic signs is to give directions.  
 - The primary objective of maintenance is to preserve the functionality of machines and equipment.  
-- Hand tools are typically powered manually for simplicity and portability.  
 - The range knob on a multimeter selects the measurement functions for voltage, current, or resistance.  
 - The selector knob on a multimeter determines the resistance being measured.  
 - The service manual provides repair instructions for equipment.  
 - The troubleshooting process involves identifying problems and finding solutions.  
-- Tools should be properly stored in cabinets to ensure safety and organization.  
 - The zero adjuster on an analog multimeter calibrates the needle for accurate readings.  
-- Lubrication prevents overheating in machinery.  
-- Plumbing is classified under the construction field.  
-- Sorting refers to removing unnecessary items from the workspace in the 5S system.  
+- Thermal paste is applied to CPUs to improve heat dissipation.  
+- Tools should be properly stored in cabinets to ensure safety and organization.  
 - Understanding the scale of an analog multimeter is essential because different scales impact measurement accuracy.  
-- What is typically checked during equipment maintenance are machine parts for wear and tear.
-
+- Voltage regulators maintain stable voltage levels in electrical circuits.  
+- What is typically checked during equipment maintenance are machine parts for wear and tear.  
