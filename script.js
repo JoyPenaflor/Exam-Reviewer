@@ -111,6 +111,11 @@ async function startExam() {
         return;
     }
 
+    if (!settings.enabledQuarters[selectedQuarter]) {
+        alert("This quarter is disabled and cannot be selected for the exam.");
+        return;
+    }
+
     if (selectedQuarter === "remedial") {
         await fetchRemedialQuestions();
     } else {
