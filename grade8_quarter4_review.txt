@@ -1,3 +1,42 @@
 Grade 8 - Quarter 4 Review
-
+- A capacitor is the component responsible for storing electrical charge.  
+- A circuit breaker is categorized under electrical services.  
+- A consumable in plumbing is sealant.  
+- A consumable required for welding is an electrode.  
+- A flickering light is commonly caused by a loose wire.  
+- A multimeter measures voltage.  
+- A motor contains a rotor as its moving part.  
+- A repair estimate should always be accurate.  
+- A service manual provides repair instructions for equipment.  
+- A switch in construction blueprints is typically depicted by a line break.  
+- A user manual is primarily used for operations and maintenance.  
+- A wrench is required for the welding process.  
+- Add oil to an electric motor that has overheated.  
+- Approval must be obtained before starting repair work.  
+- Black smoke from a car engine typically indicates excess fuel.  
+- Coolant should be checked first if an engine overheats.  
+- The document that details the charges for repair services is an invoice.  
+- Excess fuel in a car engine is indicated by black smoke.  
+- Fuse is the first item to check when a circuit is not functioning.  
+- Fuel pressure is measured using a gauge.  
+- GND in electrical services stands for ground.  
+- In the automotive field, paint is considered a consumable.  
+- In the plumbing field, sealant is considered a consumable.  
+- In electronic diagrams, a resistor is represented by a zigzag line.  
+- It is important to check the fuel if an engine fails to start.  
+- It is important to check the oil if an engine fails to start.  
+- It is important to check the battery if an engine fails to start.  
+- Loose wiring can cause a flickering light.  
+- The manual that provides repair instructions is the service manual.  
+- The necessary consumable for soldering is flux.  
+- The primary action to take when an engine overheats is to stop using it.  
+- The primary purpose of a parts manual is ordering parts.  
+- The primary use of a user manual is for operations and maintenance.  
+- The rotor is the moving part of a motor.  
+- The stator is a component of a motor.  
+- The symbol used to represent a ground connection in electrical diagrams is three lines.  
+- The tool used to check a car battery is a multimeter.  
+- Troubleshooting steps are typically found in the service manual.  
+- What determines the final service cost is the total cost.  
+- What should be checked first if an engine overheats is the coolant.
 
