@@ -1,202 +1,502 @@
 [
     {
-        "question": "Maria is interested in starting a business related to agriculture. She is particularly passionate about technology and its application in food production. Which agricultural career should Maria consider?",
-        "choices": ["Farm Worker", "Agricultural Equipment Technician", "Research Scientist", "Sales Representative"],
-        "answer": "Research Scientist"
+        "question": "Which of the following blood pressure readings falls within the normal range?",
+        "choices": [
+            "100/60 mmHg",
+            "120/80 mmHg",
+            "140/90 mmHg",
+            "160/100 mmHg"
+        ],
+        "answer": "120/80 mmHg"
     },
     {
-        "question": "A local community is experiencing challenges in crop production due to outdated farming methods. They are considering upgrading their techniques to increase yield. Which agricultural career could best assist this community in improving their farming practices?",
-        "choices": ["Environmental Engineer", "Crop Manager", "Grain Elevator Operator", "Sales Representative"],
-        "answer": "Crop Manager"
+        "question": "Which vital sign measures heartbeats per minute?",
+        "choices": [
+            "Pulse rate",
+            "Blood pressure",
+            "Respiration rate",
+            "Body temperature"
+        ],
+        "answer": "Pulse rate"
     },
     {
-        "question": "John wants to pursue a career where he can directly help in the day-to-day operations of a farm, including taking care of animals and maintaining equipment. Which career path should John follow?",
-        "choices": ["Purchasing Agent", "Farm Worker", "Agriculture Specialist", "Feed Mill Manager"],
-        "answer": "Farm Worker"
+        "question": "What is a health history?",
+        "choices": [
+            "A record of a person’s favorite foods",
+            "A record of a person’s daily exercise routine",
+            "A record of a person’s current medications",
+            "A record of a person’s past medical conditions and treatments"
+        ],
+        "answer": "A record of a person’s past medical conditions and treatments"
     },
     {
-        "question": "A company needs someone to manage their grain storage and ensure the quality of their grains is maintained. Which agricultural job is best suited for this role?",
-        "choices": ["Farm Warehouse Manager", "Agricultural Equipment Technician", "Grain Elevator Operator", "Crop Manager"],
-        "answer": "Grain Elevator Operator"
+        "question": "How can a massage therapist identify contraindications for massage therapy?",
+        "choices": [
+            "By performing a full physical exam on the client",
+            "By reviewing the client’s health history and medications",
+            "By testing the client’s muscle strength and range of motion",
+            "By asking about the client’s preferred massage techniques"
+        ],
+        "answer": "By reviewing the client’s health history and medications"
     },
     {
-        "question": "A new farm is looking to hire someone who can take charge of all activities related to storing, shipping, and receiving agricultural materials. Which position should the farm hire for?",
-        "choices": ["Sales Representative", "Farm Warehouse Manager", "Crop Manager", "Environmental Engineer"],
-        "answer": "Farm Warehouse Manager"
+        "question": "Which sacred Hindu book describes the use of shampooing and rubbing to reduce fatigue?",
+        "choices": [
+            "Yoga",
+            "Amma",
+            "Ayur-Veda",
+            "Cong Fau of Tao-Tse"
+        ],
+        "answer": "Ayur-Veda"
     },
     {
-        "question": "Lisa is skilled in repairing and maintaining agricultural machinery. She wants a job that allows her to use these skills on a daily basis. Which career should Lisa pursue?",
-        "choices": ["Grower", "Agricultural Equipment Technician", "Farm Warehouse Manager", "Purchasing Agent"],
-        "answer": "Agricultural Equipment Technician"
+        "question": "Which type of massage is typically used to relieve muscle pain and tension?",
+        "choices": [
+            "Thai massage",
+            "Swedish massage",
+            "Hot stone massage",
+            "Deep tissue massage"
+        ],
+        "answer": "Deep tissue massage"
     },
     {
-        "question": "A farm company is looking to improve its sales by hiring professionals who can connect with potential customers and increase sales. Which job role should the company focus on hiring?",
-        "choices": ["Sales Representative", "Grain Elevator Operator", "Research Scientist", "Agriculture Specialist"],
-        "answer": "Sales Representative"
+        "question": "Which massage product is most commonly used to promote relaxation and reduce stress?",
+        "choices": [
+            "Massage oil",
+            "Massage gel",
+            "Massage cream",
+            "Massage lotion"
+        ],
+        "answer": "Massage oil"
     },
     {
-        "question": "An agricultural business is facing challenges in managing their crop production due to unpredictable weather conditions. Which agricultural career could help them develop strategies to overcome these challenges?",
-        "choices": ["Feed Mill Manager", "Environmental Engineer", "Farm Worker", "Purchasing Agent"],
-        "answer": "Environmental Engineer"
+        "question": "Which statement best describes the philosophy of wellness massage?",
+        "choices": [
+            "It improves flexibility and range of motion",
+            "It is a purely physical technique for muscle tension relief",
+            "It is a holistic approach integrating mind, body, and spirit",
+            "It focuses on manipulating specific pressure points"
+        ],
+        "answer": "It is a holistic approach integrating mind, body, and spirit"
     },
     {
-        "question": "Carlos is preparing to dig a canal for irrigation on his farm. He needs a tool that can break hard topsoil and help with the digging process. Which tool should Carlos use?",
-        "choices": ["Bolo", "Pick-Mattock", "Shovel", "Spade"],
-        "answer": "Pick-Mattock"
+        "question": "A client is experiencing stress and anxiety. Which element would a wellness massage therapist focus on to restore balance?",
+        "choices": [
+            "Air",
+            "Fire",
+            "Earth",
+            "Water"
+        ],
+        "answer": "Water"
     },
     {
-        "question": "Maria is tasked with leveling the topsoil and preparing the garden bed for planting. She needs a tool that can assist with these tasks. Which tool is most appropriate for Maria’s needs?",
-        "choices": ["Crowbar", "Grab Hoe", "Light Hoe", "Hand Fork"],
-        "answer": "Light Hoe"
+        "question": "During a wellness massage session, a client shares personal stories and emotions. How should the massage therapist respond?",
+        "choices": [
+            "Actively listen and provide supportive feedback",
+            "End the session early to avoid emotional discussions",
+            "Politely redirect the conversation back to the massage",
+            "Ignore the client’s emotions and focus solely on the massage"
+        ],
+        "answer": "Actively listen and provide supportive feedback"
     },
     {
-        "question": "What is the best tool for cutting tall grasses and weeds?",
-        "choices": ["Bolo", "Spade", "Hand Fork", "Pick-Mattock"],
-        "answer": "Bolo"
+        "question": "What is the primary difference between traditional and modern massage?",
+        "choices": [
+            "Traditional massage is performed clothed, while modern massage is not",
+            "Traditional massage involves deep tissue work, while modern massage uses lighter strokes",
+            "Traditional massage focuses on spiritual healing, while modern massage emphasizes physical relaxation",
+            "Traditional massage is based on ancient techniques, while modern massage incorporates contemporary research"
+        ],
+        "answer": "Traditional massage is based on ancient techniques, while modern massage incorporates contemporary research"
     },
     {
-        "question": "Which of the following tools is used for transplanting seedlings?",
-        "choices": ["Trowel", "Crowbar", "Rake", "Shovel"],
-        "answer": "Trowel"
+        "question": "What is medical massage?",
+        "choices": [
+            "Massage performed under prescription or in a medical setting",
+            "A treatment commonly found in spas and hair salons",
+            "A general relaxation or stress-reduction massage",
+            "A type of massage designed for athletic preparation"
+        ],
+        "answer": "Massage performed under prescription or in a medical setting"
     },
     {
-        "question": "John is working on removing large stones from the farm field. Which tool would be most useful?",
-        "choices": ["Rake", "Shovel", "Crowbar", "Hand Fork"],
-        "answer": "Crowbar"
+        "question": "Why is it important to update client records regularly?",
+        "choices": [
+            "To maintain a record of client information",
+            "To ensure accuracy and up-to-date details",
+            "To provide data for marketing purposes",
+            "To share client information with other businesses"
+        ],
+        "answer": "To ensure accuracy and up-to-date details"
     },
     {
-        "question": "A farmer needs to break up compacted soil in preparation for planting. Which tool should be used?",
-        "choices": ["Hand Fork", "Pick-Mattock", "Bolo", "Spade"],
-        "answer": "Pick-Mattock"
+        "question": "What is the best way to evaluate a client’s satisfaction after a wellness massage?",
+        "choices": [
+            "Sending a follow-up survey via email",
+            "Asking the client directly after the session",
+            "Not evaluating the client’s satisfaction",
+            "Asking the client’s friend or family member"
+        ],
+        "answer": "Asking the client directly after the session"
     },
     {
-        "question": "Which tool is most effective for gathering leaves and small debris?",
-        "choices": ["Spade", "Rake", "Bolo", "Trowel"],
-        "answer": "Rake"
+        "question": "A client cancels their massage appointment at the last minute due to an emergency. How should you respond?",
+        "choices": [
+            "Refuse to schedule the client in the future",
+            "Inform the client they will be charged a cancellation fee",
+            "Offer to reschedule the appointment",
+            "Waive the cancellation fee if the client reschedules"
+        ],
+        "answer": "Offer to reschedule the appointment"
     },
     {
-        "question": "Which tool is commonly used for digging and lifting soil?",
-        "choices": ["Rake", "Spade", "Pick-Mattock", "Trowel"],
-        "answer": "Spade"
+        "question": "What is defined as the exchange of messages between humans?",
+        "choices": [
+            "Miscommunication",
+            "Communication problem",
+            "Communication process",
+            "Communication standard"
+        ],
+        "answer": "Communication process"
     },
     {
-        "question": "What is the best tool for loosening the soil around small plants?",
-        "choices": ["Grab Hoe", "Light Hoe", "Hand Fork", "Shovel"],
-        "answer": "Hand Fork"
+        "question": "How is human communication classified?",
+        "choices": [
+            "93% body language, 7% words",
+            "94% body language, 6% words",
+            "95% body language, 5% words",
+            "96% body language, 4% words"
+        ],
+        "answer": "93% body language, 7% words"
     },
     {
-        "question": "Which tool is primarily used for digging and moving loose soil?",
-        "choices": ["Shovel", "Trowel", "Crowbar", "Rake"],
-        "answer": "Shovel"
+        "question": "When practicing telephone etiquette, what should you do before answering a call while in another conversation?",
+        "choices": [
+            "Ignore the call",
+            "Leave a voicemail",
+            "Continue the conversation",
+            "Discontinue the conversation"
+        ],
+        "answer": "Discontinue the conversation"
     },
     {
-        "question": "What tool is used to break hard soil and cut roots?",
-        "choices": ["Pick-Mattock", "Spade", "Light Hoe", "Hand Fork"],
-        "answer": "Pick-Mattock"
+        "question": "What is considered a pleasant tone of voice in a telephone conversation?",
+        "choices": [
+            "Shouting",
+            "Speaking clearly",
+            "Speaking very softly",
+            "Speaking in a very low voice"
+        ],
+        "answer": "Speaking clearly"
     },
     {
-        "question": "Which tool is best for mixing compost or soil in a garden bed?",
-        "choices": ["Rake", "Spade", "Trowel", "Hand Fork"],
-        "answer": "Rake"
+        "question": "What refers to a strong bond between two or more people?",
+        "choices": [
+            "Emotion",
+            "Communication",
+            "Telephone etiquette",
+            "Interpersonal relationship"
+        ],
+        "answer": "Interpersonal relationship"
     },
     {
-        "question": "Which tool is used for cutting branches and stems?",
-        "choices": ["Pruning Shears", "Trowel", "Hand Fork", "Rake"],
-        "answer": "Pruning Shears"
+        "question": "What is the most basic and powerful way to connect with another person?",
+        "choices": [
+            "Talking",
+            "Listening",
+            "Smiling",
+            "Complaining"
+        ],
+        "answer": "Listening"
     },
     {
-        "question": "What tool is best for digging small holes for planting?",
-        "choices": ["Shovel", "Trowel", "Pick-Mattock", "Spade"],
-        "answer": "Trowel"
+        "question": "What term refers to the transfer of information using body language, including eye contact, facial expressions, gestures, tone of voice, and posture?",
+        "choices": [
+            "Telephone etiquette",
+            "Communication barriers",
+            "Non-verbal communication",
+            "Interpersonal communication"
+        ],
+        "answer": "Non-verbal communication"
     },
     {
-        "question": "Which tool is essential for spreading and leveling soil?",
-        "choices": ["Spade", "Rake", "Bolo", "Crowbar"],
-        "answer": "Rake"
+        "question": "Which of the following contributes to security, satisfaction, enjoyment, and contentment in relationships?",
+        "choices": [
+            "Friendliness",
+            "Professionalism",
+            "Communication skills",
+            "Good interpersonal relationships"
+        ],
+        "answer": "Good interpersonal relationships"
     },
     {
-        "question": "A farmer needs to break up hard ground before planting. Which tool should be used?",
-        "choices": ["Light Hoe", "Hand Fork", "Pick-Mattock", "Trowel"],
-        "answer": "Pick-Mattock"
+        "question": "Why should a machine be plugged into a nearby, accessible, identified socket?",
+        "choices": [
+            "So it can be easily unplugged when needed",
+            "To allow for quick disconnection in an emergency",
+            "To ensure safe and uninterrupted use",
+            "To reduce the time spent walking to unplug it"
+        ],
+        "answer": "To allow for quick disconnection in an emergency"
     },
     {
-        "question": "Which tool is used to scoop and move soil or compost?",
-        "choices": ["Spade", "Hand Fork", "Trowel", "Bolo"],
-        "answer": "Spade"
+        "question": "Why is it important to maintain accurate client records?",
+        "choices": [
+            "It is required by law",
+            "It ensures client confidentiality",
+            "It helps maintain client trust",
+            "It allows for targeted marketing campaigns"
+        ],
+        "answer": "It ensures client confidentiality"
     },
     {
-        "question": "Which tool is best for aerating the soil around plants?",
-        "choices": ["Rake", "Hand Fork", "Trowel", "Shovel"],
-        "answer": "Hand Fork"
+        "question": "Which device is used to manipulate the heels, toes, and ankles?",
+        "choices": [
+            "Foot massager",
+            "Massage lubricant",
+            "Powered massager",
+            "Aromatherapy candles/oils"
+        ],
+        "answer": "Foot massager"
     },
     {
-        "question": "What tool is used to remove weeds and unwanted plants from a garden?",
-        "choices": ["Weeding Knife", "Shovel", "Pick-Mattock", "Rake"],
-        "answer": "Weeding Knife"
+        "question": "Which portable device is used for head massage?",
+        "choices": [
+            "Massage bed",
+            "Massage belt",
+            "Massage oils",
+            "Head massager"
+        ],
+        "answer": "Head massager"
     },
     {
-        "question": "Which tool is commonly used for lifting and moving heavy soil?",
-        "choices": ["Shovel", "Rake", "Trowel", "Hand Fork"],
-        "answer": "Shovel"
+        "question": "What is applied to the therapist’s hands before a massage to prevent bacterial contamination?",
+        "choices": [
+            "Herbs",
+            "Lotion",
+            "Alcohol",
+            "Massage oil"
+        ],
+        "answer": "Alcohol"
     },
     {
-        "question": "Which tool is best for trimming hedges and shrubs?",
-        "choices": ["Pruning Shears", "Hand Fork", "Trowel", "Spade"],
-        "answer": "Pruning Shears"
+        "question": "What indicates that customers are satisfied with a company's product?",
+        "choices": [
+            "Customer needs",
+            "Customer wants",
+            "Customer service",
+            "Customer satisfaction"
+        ],
+        "answer": "Customer satisfaction"
     },
     {
-        "question": "What tool is primarily used for chopping wood and clearing thick vegetation?",
-        "choices": ["Bolo", "Pick-Mattock", "Trowel", "Hand Fork"],
-        "answer": "Bolo"
+        "question": "In a client feedback form, which response confirms that the therapist followed the agreed session plan?",
+        "choices": [
+            "My overall experience was excellent, and I would return.",
+            "My massage therapist started and ended the session on time.",
+            "My massage therapist was friendly, knowledgeable, and professional.",
+            "The overall atmosphere, cleanliness, and quality of the facility were professional and relaxing."
+        ],
+        "answer": "My massage therapist started and ended the session on time."
     },
     {
-        "question": "What tool is used for shaping and sharpening other tools?",
-        "choices": ["Grindstone", "Trowel", "Hand Fork", "Shovel"],
-        "answer": "Grindstone"
+        "question": "Under which Health and Safety at Work Act are employers legally required to provide a safe working environment, including accommodations for individuals with disabilities?",
+        "choices": [
+            "Act of 1972",
+            "Act of 1973",
+            "Act of 1974",
+            "Act of 1975"
+        ],
+        "answer": "Act of 1974"
     },
     {
-        "question": "Which tool is essential for marking straight lines in soil for planting?",
-        "choices": ["String Line", "Pick-Mattock", "Bolo", "Spade"],
-        "answer": "String Line"
+        "question": "How can a massage clinic ensure client safety?",
+        "choices": [
+            "Reusing towels or sheets previously used by another client",
+            "Washing linens with soap and cold water, then storing them in an open cabinet",
+            "Seldom washing hands between clients and before treatment",
+            "Thoroughly sterilizing tables, headrests, equipment, and tools between clients"
+        ],
+        "answer": "Thoroughly sterilizing tables, headrests, equipment, and tools between clients"
     },
     {
-        "question": "What is the best tool for watering plants evenly?",
-        "choices": ["Sprinkler", "Shovel", "Rake", "Weeding Knife"],
-        "answer": "Sprinkler"
+        "question": "What is the standard procedure for proper draping during a wellness massage?",
+        "choices": [
+            "Ask the client to bring their own draping",
+            "Use minimal draping for better movement",
+            "Skip draping to avoid interference with techniques",
+            "Use a sheet to cover the body, exposing only the area being massaged"
+        ],
+        "answer": "Use a sheet to cover the body, exposing only the area being massaged"
     },
     {
-        "question": "Which tool is used to measure distances on a farm?",
-        "choices": ["Measuring Tape", "Pruning Shears", "Trowel", "Hand Fork"],
-        "answer": "Measuring Tape"
+        "question": "What is the first step in draping for an anterior pelvic massage?",
+        "choices": [
+            "After the breast drape is in place, pull the main drape down to expose the abdominal muscles",
+            "Align the fold of the main drape with the bottom edge of a hand towel or pillowcase",
+            "As the main drape is pulled down, the hand towel or pillowcase becomes the pelvic drape",
+            "Tuck the bottom section of the pelvic drape between the legs while maintaining a safe distance from the genitals"
+        ],
+        "answer": "Align the fold of the main drape with the bottom edge of a hand towel or pillowcase"
     },
     {
-        "question": "A farmer needs to transport compost and fertilizers across the field. What tool should be used?",
-        "choices": ["Wheelbarrow", "Bolo", "Pick-Mattock", "Spade"],
-        "answer": "Wheelbarrow"
+        "question": "A client arrives at the spa with dirty and smelly feet. How should you handle the situation?",
+        "choices": [
+            "Proceed with the massage as planned",
+            "Offer the client a clean pair of socks",
+            "Apply extra lotion or oil to mask the odor",
+            "Politely ask the client to wash their feet before the massage"
+        ],
+        "answer": "Politely ask the client to wash their feet before the massage"
     },
     {
-        "question": "Which tool is commonly used to secure plants to stakes for support?",
-        "choices": ["Twine", "Hand Fork", "Shovel", "Rake"],
-        "answer": "Twine"
+        "question": "What is the correct sequence when preparing for a massage session?",
+        "choices": [
+            "1. Greetings 2. Tour 3. Interview 4. Transition to massage 5. Therapist preparation",
+            "2. Tour 3. Interview 4. Transition to massage 5. Therapist preparation 1. Greetings",
+            "3. Interview 4. Transition to massage 5. Therapist preparation 1. Greetings 2. Tour",
+            "4. Transition to massage 5. Therapist preparation 1. Greetings 2. Tour 3. Interview"
+        ],
+        "answer": "1. Greetings 2. Tour 3. Interview 4. Transition to massage 5. Therapist preparation"
     },
     {
-        "question": "What is the best tool for mixing soil and compost before planting?",
-        "choices": ["Spade", "Trowel", "Hand Fork", "Rake"],
-        "answer": "Rake"
+        "question": "What is the correct order of strokes in Swedish massage?",
+        "choices": [
+            "Effleurage, petrissage, friction, tapotement",
+            "Tapotement, friction, effleurage, petrissage",
+            "Petrissage, tapotement, effleurage, friction",
+            "Friction, effleurage, petrissage, tapotement"
+        ],
+        "answer": "Effleurage, petrissage, friction, tapotement"
     },
     {
-        "question": "Which tool is best for removing small weeds between plants?",
-        "choices": ["Weeding Knife", "Bolo", "Spade", "Hand Fork"],
-        "answer": "Weeding Knife"
+        "question": "In a one-hour full-body massage, how many minutes should be spent massaging the right leg?",
+        "choices": [
+            "5 minutes",
+            "6 minutes",
+            "7 minutes",
+            "8 minutes"
+        ],
+        "answer": "7 minutes"
     },
     {
-        "question": "Which tool is essential for harvesting crops like rice or wheat?",
-        "choices": ["Sickle", "Shovel", "Pruning Shears", "Trowel"],
-        "answer": "Sickle"
+        "question": "Why do massage therapists scan a client’s body before a session?",
+        "choices": [
+            "To check for bruises or injuries",
+            "To diagnose medical conditions",
+            "To locate areas of tension or discomfort",
+            "To assess overall fitness level"
+        ],
+        "answer": "To locate areas of tension or discomfort"
     },
     {
-        "question": "What tool is commonly used to create small furrows in soil for planting seeds?",
-        "choices": ["Dibber", "Trowel", "Hand Fork", "Spade"],
-        "answer": "Dibber"
+        "question": "Which massage technique applies pressure to specific points to balance the body and promote healing?",
+        "choices": [
+            "Reflexology",
+            "Hot stone massage",
+            "Deep tissue massage",
+            "Aromatherapy massage"
+        ],
+        "answer": "Reflexology"
+    },
+    {
+        "question": "Which standard operating procedure requires all spas to have a clear dress code policy?",
+        "choices": [
+            "Staff appearance",
+            "Client consultation",
+            "Service procedures",
+            "Telephone procedures"
+        ],
+        "answer": "Staff appearance"
+    },
+    {
+        "question": "If a client falls asleep during a massage session, what should you do?",
+        "choices": [
+            "End the session immediately",
+            "Continue with the massage as usual",
+            "Take a break and return when the client wakes up",
+            "Wake the client and ask if they want to continue or end the session"
+        ],
+        "answer": "Continue with the massage as usual"
+    },
+    {
+        "question": "What type of diet is recommended after a wellness massage?",
+        "choices": [
+            "High-fat, low-carb diet",
+            "High-carb, low-fat diet",
+            "No specific diet is recommended",
+            "A balanced diet with plenty of fruits and vegetables"
+        ],
+        "answer": "A balanced diet with plenty of fruits and vegetables"
+    },
+    {
+        "question": "A client with a stiff neck has just received a massage. What should they do to prevent stiffness from returning?",
+        "choices": [
+            "Apply ice to the area",
+            "Apply heat to the area",
+            "Avoid stretching the neck",
+            "Avoid using a pillow while sleeping"
+        ],
+        "answer": "Apply heat to the area"
+    },
+    {
+        "question": "After a massage, how should a therapist monitor a client with high blood pressure?",
+        "choices": [
+            "Check the client’s blood pressure after the massage",
+            "Advise the client to drink coffee to relax",
+            "Tell the client to take a hot bath immediately",
+            "Instruct the client to avoid physical activity for the day"
+        ],
+        "answer": "Check the client’s blood pressure after the massage"
+    },
+    {
+        "question": "Which of the following are considered aftercare products?",
+        "choices": [
+            "1. Body oils, 2. Exercise programs",
+            "3. Herbal products, 4. Herbal baths and scrubs",
+            "1. Body oils, 3. Herbal products",
+            "2. Exercise programs, 4. Herbal baths and scrubs"
+        ],
+        "answer": "1. Body oils, 3. Herbal products"
+    },
+    {
+        "question": "How many hours should you wait before bathing after a massage?",
+        "choices": [
+            "At least 5 hours",
+            "At least 6 hours",
+            "At least 7 hours",
+            "At least 8 hours"
+        ],
+        "answer": "At least 6 hours"
+    },
+    {
+        "question": "What does relaxation mean in aftercare massage?",
+        "choices": [
+            "Being free from tension and anxiety",
+            "A technique where pressure is applied to the feet and then released",
+            "Visualizing pleasant and calming scenarios",
+            "Allowing the client time to settle and release tension"
+        ],
+        "answer": "Being free from tension and anxiety"
+    },
+    {
+        "question": "What should a client do after a massage session?",
+        "choices": [
+            "Drink alcohol",
+            "Go for a long run",
+            "Take a hot shower",
+            "Rest and relax for at least 30 minutes"
+        ],
+        "answer": "Rest and relax for at least 30 minutes"
+    },
+    {
+        "question": "A client expresses satisfaction after a massage and wants to book another session. What is the best response?",
+        "choices": [
+            "Ignore the request and clean the massage area",
+            "Note the client’s preferred date and time but don’t confirm availability",
+            "Thank the client and ask them to call when ready to book",
+            "Ask for their preferred date and time, check availability, and confirm the booking"
+        ],
+        "answer": "Ask for their preferred date and time, check availability, and confirm the booking"
     }
 ]
