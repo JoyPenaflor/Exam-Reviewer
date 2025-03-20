@@ -2,7 +2,7 @@
 const settings = {
     numberOfItems: 50, // Number of questions to display in the exam
     passingScorePercentage: 75, // Percentage score required to pass the exam
-    timeInMinutes: 30, // Time allowed for the exam
+    timeInMinutes: 20, // Time allowed for the exam
     remedial: {
         numberOfItems: 40, // Number of questions for the remedial exam
         passingScorePercentage: 75, // Percentage score required to pass the remedial exam
