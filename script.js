@@ -286,3 +286,11 @@ function shuffleArray(array) {
 document.addEventListener("DOMContentLoaded", () => {
     toggleElementDisplay("reviewSection", "block");
 });
+
+// Visibility change handling to reset the exam if the user switches away
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === 'hidden') {
+        alert('You have switched away from the exam. The exam will now reset.');
+        location.reload(); // Reload the page to reset the exam
+    }
+});
