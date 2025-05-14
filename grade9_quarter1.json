@@ -1,202 +1,102 @@
 [
-    {
-        "question": "What tool is specifically used to draw vertical and oblique lines?",
-        "choices": ["Triangle", "Divider", "Tape rule/Pull-push rule", "Baluster detail"],
-        "answer": "Triangle"
-    },
-    {
-        "question": "Which instrument allows you to divide lines or distances into equal parts?",
-        "choices": ["AutoCAD computer", "Divider", "Masking tape", "Medium"],
-        "answer": "Divider"
-    },
-    {
-        "question": "To mark distances and measure, which tool would you use?",
-        "choices": ["Medium", "Technical Pen", "Tape rule/Pull-push rule", "Templates"],
-        "answer": "Tape rule/Pull-push rule"
-    },
-    {
-        "question": "Identify the flat plastic guide with standard symbols used for drawing plans.",
-        "choices": ["Triangle", "Protractor", "Elevation", "Templates"],
-        "answer": "Templates"
-    },
-    {
-        "question": "What device is used to secure drawing paper on a drawing board?",
-        "choices": ["AutoCAD computer", "Masking tape", "Medium", "Compass"],
-        "answer": "Masking tape"
-    },
-    {
-        "question": "What is the standard grade of pencil typically used in architectural drawings?",
-        "choices": ["Elevation", "Masking tape", "Medium", "Parallel rule"],
-        "answer": "Medium"
-    },
-    {
-        "question": "Which instrument is ideal for drawing arcs and circles?",
-        "choices": ["T-square", "Protractor", "Medium", "Compass"],
-        "answer": "Compass"
-    },
-    {
-        "question": "What tool is employed to draw horizontal lines and assist with triangle guides?",
-        "choices": ["T-square", "Masking tape", "Medium", "Protractor"],
-        "answer": "T-square"
-    },
-    {
-        "question": "What type of transparent paper is used for blueprint reproduction?",
-        "choices": ["Tracing paper", "Triangular scale", "Parallel rule", "AutoCAD computer"],
-        "answer": "Tracing paper"
-    },
-    {
-        "question": "For adjusting the scale of measurements and transferring them to drawing paper, which tool is used?",
-        "choices": ["Tracing paper", "Triangular scale", "Masking tape", "Compass"],
-        "answer": "Triangular scale"
-    },
-    {
-        "question": "What instrument can be used instead of the standard drawing board and T-square?",
-        "choices": ["Compass", "Triangular scale", "Parallel rule", "AutoCAD computer"],
-        "answer": "Parallel rule"
-    },
-    {
-        "question": "What is a high-tech device used for drawing purposes?",
-        "choices": ["Tracing paper", "Triangular scale", "Compass", "AutoCAD computer"],
-        "answer": "AutoCAD computer"
-    },
-    {
-        "question": "What tool is utilized to clean smudges of pencil and ink lines?",
-        "choices": ["Eraser", "Technical Pen", "Protractor", "Penknife or Pencil Sharpener"],
-        "answer": "Eraser"
-    },
-    {
-        "question": "Which instrument is employed for inking mechanical lines?",
-        "choices": ["Eraser", "Technical Pen", "Divider", "Compass"],
-        "answer": "Technical Pen"
-    },
-    {
-        "question": "What is used to measure angles in degrees?",
-        "choices": ["Eraser", "Technical Pen", "Protractor", "French curve"],
-        "answer": "Protractor"
-    },
-    {
-        "question": "Which tool is designed for sharpening pencils to the desired lead point?",
-        "choices": ["Eraser", "Divider", "Protractor", "Penknife or Pencil Sharpener"],
-        "answer": "Penknife or Pencil Sharpener"
-    },
-    {
-        "question": "What is a thin metal sheet used to protect other drawing lines while erasing pencil and inked lines?",
-        "choices": ["Erasing shield", "Sandpaper block", "French curve", "Leroy lettering pen"],
-        "answer": "Erasing shield"
-    },
-    {
-        "question": "Which instrument assists in shaping pencil lead into a conical point?",
-        "choices": ["Divider", "Sandpaper block", "Compass", "Leroy lettering pen"],
-        "answer": "Sandpaper block"
-    },
-    {
-        "question": "What tool is used to set a line degree angle?",
-        "choices": ["Baluster detail", "Sandpaper block", "French curve", "Leroy lettering pen"],
-        "answer": "French curve"
-    },
-    {
-        "question": "What alternative tool can be used for sharpening a pencil to the desired point?",
-        "choices": ["Perspective", "Sandpaper block", "French curve", "Leroy lettering pen"],
-        "answer": "Sandpaper block"
-    },
-    {
-        "question": "What type of diagram illustrates the arrangement of rooms, doors, windows, and other features in a building?",
-        "choices": ["Elevation", "Floor plan", "Perspective", "Location plan"],
-        "answer": "Floor plan"
-    },
-    {
-        "question": "What view provides the top perspective of the site or lot for the proposed construction?",
-        "choices": ["Roof plan", "Floor plan", "Perspective", "Location plan"],
-        "answer": "Location plan"
-    },
-    {
-        "question": "What drawing provides the outline and dimensions of the proposed building along with its placement on the property?",
-        "choices": ["Baluster detail", "Floor plan", "Site development plan", "Location plan"],
-        "answer": "Site development plan"
-    },
-    {
-        "question": "What drawing shows the front or side view of a building, including its design, height, and materials?",
-        "choices": ["Elevation", "Floor plan", "Perspective", "Location plan"],
-        "answer": "Elevation"
-    },
-    {
-        "question": "What type of drawing shows the interior of the building in either cross-section or longitudinal section?",
-        "choices": ["Section", "Roof plan", "Reflected ceiling plan", "Elevation"],
-        "answer": "Section"
-    },
-    {
-        "question": "What plan indicates the placement and positioning of lighting fixtures in a house?",
-        "choices": ["Elevation", "Roof plan", "Reflected ceiling plan", "Baluster detail"],
-        "answer": "Reflected ceiling plan"
-    },
-    {
-        "question": "What detail represents the vertical railing along a staircase or balcony?",
-        "choices": ["Perspective", "Divider", "Reflected ceiling plan", "Baluster detail"],
-        "answer": "Baluster detail"
-    },
-    {
-        "question": "What drawing provides the complete design plan of a house's ceiling?",
-        "choices": ["Section", "Roof plan", "Reflected ceiling plan", "Baluster detail"],
-        "answer": "Reflected ceiling plan"
-    },
-    {
-        "question": "What plan outlines the roof and indicates major lines such as ridges, valleys, hips, and openings?",
-        "choices": ["Roof plan", "Doors and windows schedule", "Kitchen detail", "Toilet and bath detail"],
-        "answer": "Roof plan"
-    },
-    {
-        "question": "What schedule details the complete specifications of doors and windows, including their width, height, type, materials, and quantity?",
-        "choices": ["Kitchen detail", "Doors and windows schedule", "Elevation", "Insulation"],
-        "answer": "Doors and windows schedule"
-    },
-    {
-        "question": "What drawing depicts the kitchen floor plan with all necessary specifications?",
-        "choices": ["Kitchen detail", "Elevation", "Insulation", "Blueprint"],
-        "answer": "Kitchen detail"
-    },
-    {
-        "question": "Which diagram illustrates the toilet and bath with complete details of their features?",
-        "choices": ["Location plan", "Doors and windows schedule", "Toilet and bath detail", "Perspective"],
-        "answer": "Toilet and bath detail"
-    },
-    {
-        "question": "What term refers to a reproduced version of architectural plans and layouts?",
-        "choices": ["Kitchen detail", "Location plan", "Elevation drawing", "Blueprint"],
-        "answer": "Blueprint"
-    },
-    {
-        "question": "What describes the overhead surface of a room or the material used to cover it?",
-        "choices": ["Scaling", "Elevation drawing", "Ceiling", "Code"],
-        "answer": "Ceiling"
-    },
-    {
-        "question": "What is the term for a set of accepted laws and regulations that guide procedures or behaviors in specific situations or professions?",
-        "choices": ["Perspective", "Elevation drawing", "Elevation", "Code"],
-        "answer": "Code"
-    },
-    {
-        "question": "What term describes the exterior and interior details of a building, often shown as a perpendicular projection from the floor plan to reveal vertical details?",
-        "choices": ["Scaling", "Elevation drawing", "Ceiling", "Perspective"],
-        "answer": "Elevation drawing"
-    },
-    {
-        "question": "What term is used for the process of enlarging or reducing a drawing with an architect’s scale?",
-        "choices": ["Scaling", "Insulation", "Location plan", "Kitchen detail"],
-        "answer": "Scaling"
-    },
-    {
-        "question": "One of the first things an architect must do before designing a building is to read the building codes. Why?",
-        "choices": ["To make your design futuristic", "To give good luck to the owner of the house", "To meet the requirements of zoning laws", "All of the above"],
-        "answer": "To meet the requirements of zoning laws"
-    },
-    {
-        "question": "Why should walls with window openings not be less than 2.00 m from the lot line of the fence?",
-        "choices": ["Adjacent houses should not be at least 4.00 m apart", "To maintain good airflow", "To give more natural sunlight", "All of the above"],
-        "answer": "All of the above"
-    },
-    {
-        "question": "For constructing a one-story wooden or frame house, why is it that the height of the floor plan from the ground should not be less than 1.50 m?",
-        "choices": ["It is because of the building code", "It is because most designers made it that way", "It is because most people like to have this kind of design", "All of the above"],
-        "answer": "It is because of the building code"
-    }
+  {
+    "question": "What is a floor plan?",
+    "choices": ["A side view of a building", "A 3D model of a house", "A top view of house", "A plumbing diagram only"],
+    "answer": "A top view of house"
+  },
+  {
+    "question": "Which of the following is commonly found in a floor plan?",
+    "choices": ["Electrical circuits", "Room layout with measurements", "Furniture design", "Internet connection layout"],
+    "answer": "Room layout with measurements"
+  },
+  {
+    "question": "What color is commonly used to represent water supply lines in a plumbing layout?",
+    "choices": ["Red", "Blue", "Green", "Black"],
+    "answer": "Blue"
+  },
+  {
+    "question": "What does a plumbing layout show?",
+    "choices": ["Roof structure only", "Location of plumbing fixtures and pipe routes", "Door and window designs", "Electrical wire placement"],
+    "answer": "Location of plumbing fixtures and pipe routes"
+  },
+  {
+    "question": "Which symbol is commonly used to represent a toilet in a plumbing plan?",
+    "choices": ["“S”", "“WC”", "“T”", "“F”"],
+    "answer": "“WC”"
+  },
+  {
+    "question": "Why is it important to keep plumbing fixtures close to each other?",
+    "choices": ["To reduce pipe length and cost", "To save water", "For design symmetry", "To match electrical layout"],
+    "answer": "For design symmetry"
+  },
+  {
+    "question": "What is the main purpose of a drain pipe?",
+    "choices": ["To provide clean water", "To hold water for future use", "To connect to the electric heater", "To remove wastewater"],
+    "answer": "To remove wastewater"
+  },
+  {
+    "question": "What tool is most useful for measuring dimensions in drafting?",
+    "choices": ["Ruler", "Paintbrush", "Scissors", "Thermometer"],
+    "answer": "Ruler"
+  },
+  {
+    "question": "In plumbing layout, what does a “T” junction represent?",
+    "choices": ["A connection of pipes", "A furniture layout", "A window opening", "A toilet fixture"],
+    "answer": "A connection of pipes"
+  },
+  {
+    "question": "Why is slope important in drainage pipes?",
+    "choices": ["For water pressure", "To keep the pipe in place", "For water to go upward", "To allow gravity flow"],
+    "answer": "To allow gravity flow"
+  },
+  {
+    "question": "What room usually contains the most plumbing fixtures?",
+    "choices": ["Bedroom", "Bathroom", "Living room", "Dining room"],
+    "answer": "Bathroom"
+  },
+  {
+    "question": "What is the standard top view angle for drawing a floor plan?",
+    "choices": ["Aerial view", "45°", "90°", "Side view"],
+    "answer": "Aerial view"
+  },
+  {
+    "question": "What symbol is typically used for a sink in a plumbing plan?",
+    "choices": ["“F”", "“S”", "“WC”", "“L”"],
+    "answer": "“S”"
+  },
+  {
+    "question": "In drafting, what does “legend” mean?",
+    "choices": ["Symbols used in the layout", "List of materials used", "Title of the drawing", "Measurements of the plan"],
+    "answer": "Symbols used in the layout"
+  },
+  {
+    "question": "Which line type is usually used to show water supply?",
+    "choices": ["Dashed line", "Zigzag line", "Solid line", "Dotted line"],
+    "answer": "Solid line"
+  },
+  {
+    "question": "The main source of water in a plumbing layout is connected to:",
+    "choices": ["Toilet only", "Kitchen only", "All water fixtures", "Only to the drainage"],
+    "answer": "All water fixtures"
+  },
+  {
+    "question": "What is the first step in drafting a floor plan?",
+    "choices": ["Drawing the water lines", "Sketching the roof", "Coloring the plan", "Outlining the room layout"],
+    "answer": "Outlining the room layout"
+  },
+  {
+    "question": "Which of the following should not be part of a plumbing layout?",
+    "choices": ["Electrical outlets", "Drain pipes", "Water heaters", "Faucets"],
+    "answer": "Electrical outlets"
+  },
+  {
+    "question": "In most houses, where is the vent pipe connected?",
+    "choices": ["To the roof", "To the electrical line", "To the water line", "To the kitchen cabinet"],
+    "answer": "To the roof"
+  },
+  {
+    "question": "Why is it important to label all fixtures in a plumbing layout?",
+    "choices": ["To make the drawing longer", "To confuse plumbers", "For clarity reference", "For decoration only"],
+    "answer": "For clarity reference"
+  }
 ]
