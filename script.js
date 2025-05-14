@@ -14,7 +14,7 @@ const settings = {
         quarter2: false,
         quarter3: false,
         quarter4: false,
-        remedial: true
+        remedial: false
     }
 };
 
