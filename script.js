@@ -10,7 +10,7 @@ const settings = {
     },
     enableQuarters: true, // Enable or disable the exam quarter selection
     enabledQuarters: { // Enable or disable specific quarters
-        quarter1: false,
+        quarter1: true,
         quarter2: false,
         quarter3: false,
         quarter4: false,
