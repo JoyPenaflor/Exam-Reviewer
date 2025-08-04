@@ -100,8 +100,6 @@ function proceedToName() {
 }
 
 async function startExam() {
-    console.log("Start Exam function triggered");
-    
     selectedGradeLevel = document.getElementById("gradeLevel").value;
     selectedQuarter = document.getElementById("quarter").value;
     examTakerName = document.getElementById("fullName").value.trim();
@@ -127,8 +125,14 @@ async function startExam() {
             return;
         }
 
+        // Add debugging logs here
+        console.log("settings.numberOfItems:", settings.numberOfItems);
+        console.log("allQuestions.length:", allQuestions.length);
+
         shuffleArray(allQuestions);
         selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
+
+        console.log("selectedQuestions.length (after slice):", selectedQuestions.length);
     }
 
     toggleElementDisplay("nameSection", "none");
@@ -140,7 +144,6 @@ async function startExam() {
 
     displayQuestion();
 }
-
 async function fetchRemedialQuestions() {
     const quarters = ["quarter1", "quarter2", "quarter3", "quarter4"];
     const allQuestions = [];
