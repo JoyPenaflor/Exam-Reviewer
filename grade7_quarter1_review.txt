@@ -1,47 +1,42 @@
 Grade 7 - Quarter 1 Review
-
-- A business plan provides direction and strategy for a company.  
-- A competitive advantage is gained by offering unique products or services.  
-- A financial plan is essential for managing cash flow and expenses.  
-- A market study provides valuable insights into customer preferences and trends.  
-- A self-rating assessment helps evaluate one's entrepreneurial strengths and weaknesses, not as a tool for wealth acquisition.  
-- A key characteristic of a successful entrepreneur is adaptability.  
-- A person who is effective in communication and builds good relationships possesses people skills.  
-- A person who works diligently can be described as hardworking.  
-- A self-rating assessment helps evaluate one's entrepreneurial strengths and weaknesses, not as a tool for wealth acquisition.  
-- A successful entrepreneur must be creative to develop and implement new ideas.  
-- An entrepreneur is someone who accepts the risk of starting and running a business.  
-- An individual who sticks to a plan is considered disciplined.  
-- Assessing one's PECs before starting a business helps in identifying strengths and weaknesses.  
-- Being self-confident allows entrepreneurs to take calculated risks.  
-- Business sustainability relies on ethical and responsible practices.  
-- Decision-making is important because it allows entrepreneurs to take responsibility for their choices.  
-- Entrepreneurs adapt to market changes by continuously learning and innovating.  
-- Entrepreneurs maintain a competitive edge by being creative and innovative.  
-- Entrepreneurs must be creative to develop and implement new ideas.  
-- Entrepreneurs who are deeply committed to growing their business exhibit commitment.  
-- Actively searching for business trends and customer needs is an example of opportunity-seeking behavior.  
-- Adaptability helps entrepreneurs navigate changing markets.  
-- Branding differentiates a business from competitors.  
-- Business ethics helps build trust with customers.  
-- Continuous learning keeps entrepreneurs updated on industry trends.  
-- Customer feedback is essential for improving products and services.  
-- Customer loyalty leads to increased repeat purchases.  
-- Customer satisfaction enhances customer loyalty and retention.  
-- Digital marketing expands a business’s market reach.  
-- Effective leadership inspires and motivates employees.  
-- Financial literacy is crucial for effectively managing business finances.  
-- Innovation is key to maintaining business competitiveness.  
-- Lack of persistence is not a characteristic of a successful entrepreneur.  
-- Market demand is a key factor influencing business success.  
-- Networking helps entrepreneurs build valuable relationships and business opportunities.  
-- Setting goals provides entrepreneurs with a clear direction for their business.  
-- Sticking to a plan is a sign of being disciplined, a key entrepreneurial trait.  
-- Strong business ethics is a key factor in entrepreneurial success.  
-- Taking calculated risks helps entrepreneurs seize opportunities.  
-- The acronym PECs stands for Personal Entrepreneurial Competencies.  
-- The primary motivation for starting a business is to make money and satisfy customer needs.  
-- The best way to manage business risks is by taking calculated risks.  
-- Time management boosts productivity and efficiency in business.  
-- Tracking cash flow is a vital financial practice for entrepreneurs.  
+ A contact center agent belongs to the telecommunications sector.
+ A decimal number consists of a whole number and a fractional part separated by a point.
+ A hazard in an ICT environment is any potential source of harm.
+ A page break is used to force content to start on a new page.
+ A slippery floor is an example of a physical hazard in ICT environments.
+ Auto TOC can be used with page breaks to improve document navigation.
+ Entrepreneurs set goals and create plans to achieve them.
+ Graphic illustrators like Mr. Manuel belong to the Visual Arts ICT sector.
+ ICT sectors provide manufacturing services, business opportunities, and income for the economy.
+ In MS Word, the auto table of contents feature creates a structured list of topics with page numbers.
+ In organizing ICT environments, "Seiso" means cleanliness.
+ Inserting a page number does not require a page break.
+ Knowing the location of fire extinguishers helps determine which one to use for different types of fire.
+ Liquids must be kept away from computers and working areas to prevent accidents.
+ Page breaks are commonly used to separate chapters or sections in a document.
+ Risk-taking in entrepreneurship means trying new things even if they might not succeed.
+ Successful entrepreneurs often show open-mindedness.
+ The auto TOC updates dynamically based on headings and subheadings.
+ The binary number 1010 equals 10 in decimal.
+ The binary number system uses only the digits 0 and 1.
+ The decimal number 27 is represented as 1B in hexadecimal.
+ The decimal number 50 is represented in hexadecimal as 32.
+ The hexadecimal A4 equals 164 in decimal.
+ The hexadecimal equivalent of the decimal number 27 is 1B.
+ The ICT sector refers to the manufacturing and services sectors that primarily use new technologies or ICT in their operations.
+ The number 95 is written as 5D in hexadecimal.
+ The octal equivalent of the binary number 101011 is 53.
+ The octal number system uses 8 unique digits (0 to 7).
+ The page break feature is accessed through the “References” tab in MS Word.
+ The remainders in each division step are used to form the octal number.
+ To convert a decimal to octal, divide the number by 8.
+ To prevent ESD (electrostatic discharge), computer components should be handled by the edges.
+ Using both TOC and page breaks improves the layout and reading experience of a document.
+ Web and game development fall under the programming sector of ICT.
+ When the divisor reaches zero, the octal conversion is complete.
+ When working in a computer lab, one must always discharge or ground themselves for safety.
+ “Seiso” in ICT maintenance refers to the value of cleanliness.
+ “TOC” helps readers quickly understand the document’s structure and topics.
+ “Touching the ICs directly” should be avoided when handling computer components.
+ “Visual representation” of topics is achieved through an auto-generated table of contents.
 - Understanding financial literacy helps manage business finances effectively.  
