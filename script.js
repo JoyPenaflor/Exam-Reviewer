@@ -4,9 +4,9 @@ const settings = {
     passingScorePercentage: 75, // Percentage score required to pass the exam
     timeInMinutes: 10, // Time allowed for the exam
     remedial: {
-        numberOfItems: 40, // Number of questions for the remedial exam
+        numberOfItems: 20, // Number of questions for the remedial exam
         passingScorePercentage: 75, // Percentage score required to pass the remedial exam
-        timeInMinutes: 15 // Time allowed for the remedial exam
+        timeInMinutes: 10 // Time allowed for the remedial exam
     },
     enableQuarters: true, // Enable or disable the exam quarter selection
     enabledQuarters: { // Enable or disable specific quarters
