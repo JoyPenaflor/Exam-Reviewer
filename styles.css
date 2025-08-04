@@ -4,7 +4,7 @@ body {
     background-image: url('school_logo.png'); /* Path to your logo image */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 1in;
 }
 
 h1, h2 {
