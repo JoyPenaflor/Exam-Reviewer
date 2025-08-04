@@ -1,6 +1,6 @@
 // Global settings for the exam
 const settings = {
-    numberOfItems: 25, // Number of questions to display in the exam
+    numberOfItems: 20, // Number of questions to display in the exam (change to test!)
     passingScorePercentage: 75, // Percentage score required to pass the exam
     timeInMinutes: 10, // Time allowed for the exam
     remedial: {
@@ -24,6 +24,7 @@ let timerInterval;
 let selectedGradeLevel = "";
 let selectedQuarter = "";
 let userAnswers = {}; 
+let examTakerName = "";
 
 document.getElementById("loadReviewButton").addEventListener("click", loadReview);
 document.getElementById("proceedToNameButton").addEventListener("click", proceedToName);
@@ -99,7 +100,10 @@ function proceedToName() {
     toggleElementDisplay("nameSection", "block");
 }
 
+// MAIN EXAM START LOGIC WITH DEBUGGING
 async function startExam() {
+    console.log("Start Exam function triggered");
+    
     selectedGradeLevel = document.getElementById("gradeLevel").value;
     selectedQuarter = document.getElementById("quarter").value;
     examTakerName = document.getElementById("fullName").value.trim();
@@ -125,14 +129,19 @@ async function startExam() {
             return;
         }
 
-        // Add debugging logs here
-        console.log("settings.numberOfItems:", settings.numberOfItems);
-        console.log("allQuestions.length:", allQuestions.length);
+        console.log(`[DEBUG] settings.numberOfItems: ${settings.numberOfItems}`);
+        console.log(`[DEBUG] allQuestions.length: ${allQuestions.length}`);
 
         shuffleArray(allQuestions);
+
+        // Warn if not enough questions
+        if (allQuestions.length < settings.numberOfItems) {
+            alert(`Warning: Only ${allQuestions.length} questions available, but you requested ${settings.numberOfItems}.`);
+        }
+
         selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
 
-        console.log("selectedQuestions.length (after slice):", selectedQuestions.length);
+        console.log(`[DEBUG] selectedQuestions.length (after slice): ${selectedQuestions.length}`);
     }
 
     toggleElementDisplay("nameSection", "none");
@@ -144,6 +153,8 @@ async function startExam() {
 
     displayQuestion();
 }
+
+// REMEDIAL EXAM LOGIC WITH DEBUGGING
 async function fetchRemedialQuestions() {
     const quarters = ["quarter1", "quarter2", "quarter3", "quarter4"];
     const allQuestions = [];
@@ -151,7 +162,7 @@ async function fetchRemedialQuestions() {
     for (const quarter of quarters) {
         const fileName = `${selectedGradeLevel}_${quarter}.json`;
         const questions = await fetchQuestions(fileName);
-        console.log(`Fetched ${questions.length} questions from ${fileName}`);
+        console.log(`[DEBUG] Fetched ${questions.length} questions from ${fileName}`);
         if (questions.length > 0) {
             shuffleArray(questions);
             allQuestions.push(...questions.slice(0, 10));
@@ -160,7 +171,7 @@ async function fetchRemedialQuestions() {
 
     shuffleArray(allQuestions);
     selectedQuestions = allQuestions.slice(0, settings.remedial.numberOfItems);
-    console.log(`Total selected questions: ${selectedQuestions.length}`);
+    console.log(`[DEBUG] Total selected remedial questions: ${selectedQuestions.length}`);
 }
 
 function startTimer(duration, display) {
