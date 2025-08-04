@@ -1,6 +1,6 @@
 // Global settings for the exam
 const settings = {
-    numberOfItems: 20, // Number of questions to display in the exam
+    numberOfItems: 25, // Number of questions to display in the exam
     passingScorePercentage: 75, // Percentage score required to pass the exam
     timeInMinutes: 10, // Time allowed for the exam
     remedial: {
