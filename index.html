@@ -1,105 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>TTVHS REMEDIAL EXAM FOR TLE 2025-2026</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="TTVHS Remedial Exam for TLE 2025–2026" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Take the TTVHS TLE exam and see how you score." />
 </head>
 <body>
-    <div id="reviewSection" class="review-container">
-        <h1>Review Materials</h1>
-        <label for="reviewGradeLevel">Select Grade Level:</label>
-        <select id="reviewGradeLevel" required aria-label="Review Grade Level">
-            <option value="grade7">Grade 7</option>
-            <option value="grade8">Grade 8</option>
-            <option value="grade9">Grade 9</option>
-            <option value="grade10">Grade 10</option>
+  <noscript>
+    <p class="center-text">This exam requires JavaScript to run. Please enable JavaScript and reload.</p>
+  </noscript>
+
+  <!-- REVIEW SECTION -->
+  <div id="reviewSection" class="review-container" style="display: none;">
+    <h1>Review Materials</h1>
+    <label for="reviewGradeLevel">Select Grade Level:</label>
+    <select id="reviewGradeLevel" required aria-label="Review Grade Level">
+      <option value="grade7">Grade 7</option>
+      <option value="grade8">Grade 8</option>
+      <option value="grade9">Grade 9</option>
+      <option value="grade10">Grade 10</option>
+    </select>
+    <br /><br />
+    <label for="reviewQuarter">Select Quarter:</label>
+    <select id="reviewQuarter" required aria-label="Review Quarter">
+      <option value="quarter1">Quarter 1</option>
+      <option value="quarter2">Quarter 2</option>
+      <option value="quarter3">Quarter 3</option>
+      <option value="quarter4">Quarter 4</option>
+    </select>
+    <br /><br />
+    <button type="button" id="loadReviewButton">Load Review</button>
+    <div id="reviewContent" class="review-content" aria-live="polite"></div>
+    <button type="button" id="proceedToNameButton" style="display: none;">Proceed to Exam</button>
+  </div>
+
+  <!-- NAME SECTION -->
+  <div id="nameSection" class="name-container" style="display: none;">
+    <h1>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</h1>
+    <h2>Welcome! Enter your name, select your grade level and quarter to proceed.</h2>
+    <form id="examForm" novalidate>
+      <div id="nameInput" class="center-text">
+        <label for="fullName">Enter your full name:</label>
+        <input type="text" id="fullName" required aria-label="Full Name" autocomplete="name" />
+        <br /><br />
+        <label for="gradeLevel">Select Grade Level:</label>
+        <select id="gradeLevel" required aria-label="Grade Level">
+          <option value="grade7">Grade 7</option>
+          <option value="grade8">Grade 8</option>
+          <option value="grade9">Grade 9</option>
+          <option value="grade10">Grade 10</option>
         </select>
-        <br><br>
-        <label for="reviewQuarter">Select Quarter:</label>
-        <select id="reviewQuarter" required aria-label="Review Quarter">
-            <option value="quarter1" id="quarter1">Quarter 1</option>
-            <option value="quarter2" id="quarter2">Quarter 2</option>
-            <option value="quarter3" id="quarter3">Quarter 3</option>
-            <option value="quarter4" id="quarter4">Quarter 4</option>
+        <br /><br />
+        <label for="quarter">Select Quarter:</label>
+        <select id="quarter" required aria-label="Quarter">
+          <option value="quarter1" id="quarter1">Quarter 1</option>
+          <option value="quarter2" id="quarter2">Quarter 2</option>
+          <option value="quarter3" id="quarter3">Quarter 3</option>
+          <option value="quarter4" id="quarter4">Quarter 4</option>
+          <option value="remedial" id="remedial">REMEDIAL EXAM</option>
         </select>
-        <br><br>
-        <button type="button" id="loadReviewButton">Load Review</button>
-        <div id="reviewContent" class="review-content"></div>
-        <button type="button" id="proceedToNameButton" style="display: none;">Proceed to Exam</button>
+        <br /><br />
+        <button type="button" id="startButton">Start Exam</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- EXAM SECTION -->
+  <div id="examSection" class="exam-container" style="display: none;">
+    <h1>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</h1>
+    <h2>Directions: Select your answer, then click Next/Submit to proceed.</h2>
+    <div id="timer" class="center-text" aria-live="polite">
+      Time remaining: <span id="countdown">00:00</span>
     </div>
-
-    <div id="nameSection" class="name-container" style="display: none;">
-        <h1>TTVHS REMEDIAL EXAM FOR TLE 2025-2026</h1>
-        <h2>Welcome to the TTVHS REMEDIAL EXAM FOR TLE 2025-2026. Please enter your name and select your grade level and quarter to proceed.</h2>
-        <form id="examForm">
-            <div id="nameInput" class="center-text">
-                <label for="fullName">Enter your full name: </label>
-                <input type="text" id="fullName" required aria-label="Full Name">
-                <br><br>
-                <label for="gradeLevel">Select Grade Level:</label>
-                <select id="gradeLevel" required aria-label="Grade Level">
-                    <option value="grade7">Grade 7</option>
-                    <option value="grade8">Grade 8</option>
-                    <option value="grade9">Grade 9</option>
-                    <option value="grade10">Grade 10</option>
-                </select>
-                <br><br>
-                <label for="quarter">Select Quarter:</label>
-                <select id="quarter" required aria-label="Quarter">
-                    <option value="quarter1" id="quarter1">Quarter 1</option>
-                    <option value="quarter2" id="quarter2">Quarter 2</option>
-                    <option value="quarter3" id="quarter3">Quarter 3</option>
-                    <option value="quarter4" id="quarter4">Quarter 4</option>
-                    <option value="remedial" id="remedial">REMEDIAL EXAM</option>
-                </select>
-                <br><br>
-                <button type="button" id="startButton">Start Exam</button>
-            </div>
-        </form>
+    <div id="questionContainer" class="question-container" role="group" aria-label="Exam question"></div>
+    <div class="navigation-buttons center-text">
+      <button type="button" id="prevButton" disabled>Previous</button>
+      <button type="button" id="nextButton">Next</button>
+      <div id="submitContainer" style="display: none;">
+        <input type="button" value="Submit" id="submitButton" />
+      </div>
     </div>
+  </div>
 
-    <div id="examSection" class="exam-container" style="display: none;">
-        <h1>TTVHS REMEDIAL EXAM FOR TLE 2025-2026</h1>
-        <h2>Directions: Select your answer and click on it. Then, click Next/Submit to proceed.</h2>
-        <div id="timer" class="center-text">Time remaining: <span id="countdown">5</span> minutes</div>
-        <div id="questionContainer" class="question-container">
-            <!-- Single question will be displayed here dynamically -->
-        </div>
-        <div class="navigation-buttons center-text">
-            <button type="button" id="prevButton" disabled>Previous</button>
-            <button type="button" id="nextButton">Next</button>
-            <div id="submitContainer" style="display: none;">
-                <input type="button" value="Submit" id="submitButton">
-            </div>
-        </div>
+  <!-- RESULTS SECTION -->
+  <div id="results" class="results-container center-text" style="display: none;">
+    <h2>Your Score:</h2>
+    <p id="score">Score will be displayed here</p>
+    <p id="message"></p>
+    <p id="timestamp" class="timestamp">Date and Time:</p>
+    <div class="button-container">
+      <button id="retakeButton">Take Another Exam</button>
+      <!-- Replaced Share with Save Image -->
+      <button id="shareResultBtn">Save Result Image</button>
+      <button id="viewResultsBtn" style="display:none;">View All Results</button>
+      <button id="downloadResultsBtn" style="display:none;">Download Results (CSV)</button>
     </div>
+    <div id="allResults" class="all-results-container" style="display: none;"></div>
+  </div>
 
-    <div id="results" style="display: none;" class="results-container center-text">
-        <h2>Your Score:</h2>
-        <p id="score">Score will be displayed here</p>
-        <p id="message"></p>
-        <p id="timestamp" class="timestamp">Date and Time: </p>
-        <div class="button-container">
-            <button id="retakeButton">Take Another Exam</button>
-            <!-- New: Share and View Results buttons -->
-            <button id="shareResultBtn">Share Result</button>
-            <button id="viewResultsBtn">View All Results</button>
-            <button id="downloadResultsBtn">Download Results (CSV)</button>
-        </div>
-        <!-- New: Display all results (hidden by default) -->
-        <div id="allResults" style="display:none;" class="all-results-container"></div>
-    </div>
+  <!-- Videos -->
+  <video id="passVideo" controls class="hidden-video" style="display:none;">
+    <source src="pass.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video id="failVideo" controls class="hidden-video" style="display:none;">
+    <source src="fail.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-    <video id="passVideo" controls class="hidden-video">
-        <source src="pass.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- html2canvas for screenshot (loaded on demand by script too, this is optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
 
-    <video id="failVideo" controls class="hidden-video">
-        <source src="fail.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
