@@ -1,6 +1,6 @@
 // ===== Global Exam Settings =====
 const settings = {
-  numberOfItems: 20,
+  numberOfItems: 40,
   passingScorePercentage: 75,
   timeInMinutes: 10,
   remedial: { numberOfItems: 20, passingScorePercentage: 75, timeInMinutes: 10 },
