@@ -27,7 +27,43 @@ let selectedQuarter = "";
 let userAnswers = {};
 let examTakerName = "";
 let examActive = false;
-let lastResultPassed = null; // NEW: remember pass/fail for the stamp
+let lastResultPassed = null; // remember pass/fail for the stamp
+
+// ===== Toast UI (lightweight, no CSS file needed) =====
+let toastEl = null;
+function ensureToast() {
+  if (toastEl) return toastEl;
+  toastEl = document.createElement("div");
+  toastEl.id = "toast";
+  Object.assign(toastEl.style, {
+    position: "fixed",
+    bottom: "16px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    maxWidth: "90%",
+    padding: "10px 14px",
+    background: "rgba(0,0,0,0.85)",
+    color: "#fff",
+    borderRadius: "10px",
+    fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+    fontSize: "14px",
+    zIndex: "10000",
+    opacity: "0",
+    transition: "opacity 160ms ease-in-out",
+    pointerEvents: "none",
+    textAlign: "center",
+  });
+  document.body.appendChild(toastEl);
+  return toastEl;
+}
+let toastTimer = null;
+function showToast(msg, duration = 1500) {
+  const el = ensureToast();
+  el.textContent = msg;
+  el.style.opacity = "1";
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.style.opacity = "0"; }, duration);
+}
 
 // ===== Init =====
 document.addEventListener("DOMContentLoaded", () => {
@@ -283,28 +319,27 @@ async function generateAndSaveResultImage() {
     return;
   }
 
-  // Temporarily ensure results are visible for capture
+  // user feedback
+  showToast("Rendering image…", 1200);
+
   const prevDisplay = resultsEl.style.display;
   resultsEl.style.display = "block";
 
-  // Render to canvas
   const canvas = await html2canvas(resultsEl, {
     scale: window.devicePixelRatio > 1 ? 2 : 1,
     backgroundColor: "#ffffff",
     useCORS: true
   });
 
-  // Overlay PASSED/FAILED
   const ctx = canvas.getContext("2d");
   const label = lastResultPassed ? "PASSED" : "FAILED";
   const color = lastResultPassed ? "rgba(0, 128, 0, 0.75)" : "rgba(200, 0, 0, 0.75)";
 
-  // Dynamic font size relative to width
   const base = canvas.width;
   const fontSize = Math.max(36, Math.floor(base * 0.07));
   ctx.save();
   ctx.translate(canvas.width / 2, canvas.height / 2);
-  ctx.rotate(-Math.PI / 8); // slight diagonal
+  ctx.rotate(-Math.PI / 8);
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.font = `bold ${fontSize}px system-ui, -apple-system, Segoe UI, Roboto, Arial`;
@@ -315,7 +350,6 @@ async function generateAndSaveResultImage() {
   ctx.fillText(label, 0, 0);
   ctx.restore();
 
-  // Add small footer watermark with date
   ctx.save();
   ctx.textAlign = "right";
   ctx.textBaseline = "bottom";
@@ -325,12 +359,15 @@ async function generateAndSaveResultImage() {
   ctx.fillText(`TTVHS TLE | ${dateStr}`, canvas.width - 16, canvas.height - 12);
   ctx.restore();
 
-  // Restore visibility state
   resultsEl.style.display = prevDisplay || "block";
 
-  // Save / open image
   const dataURL = canvas.toDataURL("image/png");
-  downloadDataURL(dataURL, makeResultFilename());
+
+  showToast("Saving image…", 1200);
+
+  await downloadDataURL(dataURL, makeResultFilename());
+
+  showToast("Saved to Downloads.", 1600);
 }
 
 function makeResultFilename() {
@@ -340,26 +377,42 @@ function makeResultFilename() {
   return `${safeName}_TLE_Result_${Date.now()}.png`;
 }
 
-function downloadDataURL(dataURL, filename) {
-  const a = document.createElement("a");
-  a.href = dataURL;
-  a.download = filename;
+async function downloadDataURL(dataURL, filename) {
+  const response = await fetch(dataURL);
+  const blob = await response.blob();
 
-  // Some iOS/Android browsers ignore a.download. Fallback: open the image so user can long-press/save.
-  const supportsDownload = "download" in a;
-  if (supportsDownload) {
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  } else {
-    const win = window.open();
-    if (win) {
-      win.document.write(`<iframe src="${dataURL}" frameborder="0" style="border:0; top:0; left:0; bottom:0; right:0; width:100%; height:100%;" allowfullscreen></iframe>`);
-    } else {
-      // Worst case: prompt the raw URL
-      prompt("Copy this image URL to save:", dataURL);
+  // Best: native file picker (usually defaults to Downloads)
+  if (window.showSaveFilePicker) {
+    try {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: filename,
+        types: [{ description: "PNG Image", accept: { "image/png": [".png"] } }],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(blob);
+      await writable.close();
+      return;
+    } catch (err) {
+      // User canceled or blocked—fallback below
+      console.log("Save dialog canceled/blocked, falling back:", err);
     }
   }
+
+  // Legacy Edge
+  if (navigator.msSaveOrOpenBlob) {
+    navigator.msSaveOrOpenBlob(blob, filename);
+    return;
+  }
+
+  // Standard anchor download (most browsers → Downloads)
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
 }
 
 function loadScript(src) {

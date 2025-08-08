@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</title>
   <link rel="stylesheet" href="styles.css" />
   <meta property="og:title" content="TTVHS Remedial Exam for TLE 2025–2026" />
@@ -25,6 +25,7 @@
       <option value="grade10">Grade 10</option>
     </select>
     <br /><br />
+
     <label for="reviewQuarter">Select Quarter:</label>
     <select id="reviewQuarter" required aria-label="Review Quarter">
       <option value="quarter1">Quarter 1</option>
@@ -33,6 +34,7 @@
       <option value="quarter4">Quarter 4</option>
     </select>
     <br /><br />
+
     <button type="button" id="loadReviewButton">Load Review</button>
     <div id="reviewContent" class="review-content" aria-live="polite"></div>
     <button type="button" id="proceedToNameButton" style="display: none;">Proceed to Exam</button>
@@ -47,6 +49,7 @@
         <label for="fullName">Enter your full name:</label>
         <input type="text" id="fullName" required aria-label="Full Name" autocomplete="name" />
         <br /><br />
+
         <label for="gradeLevel">Select Grade Level:</label>
         <select id="gradeLevel" required aria-label="Grade Level">
           <option value="grade7">Grade 7</option>
@@ -55,6 +58,7 @@
           <option value="grade10">Grade 10</option>
         </select>
         <br /><br />
+
         <label for="quarter">Select Quarter:</label>
         <select id="quarter" required aria-label="Quarter">
           <option value="quarter1" id="quarter1">Quarter 1</option>
@@ -64,6 +68,7 @@
           <option value="remedial" id="remedial">REMEDIAL EXAM</option>
         </select>
         <br /><br />
+
         <button type="button" id="startButton">Start Exam</button>
       </div>
     </form>
@@ -73,10 +78,13 @@
   <div id="examSection" class="exam-container" style="display: none;">
     <h1>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</h1>
     <h2>Directions: Select your answer, then click Next/Submit to proceed.</h2>
+
     <div id="timer" class="center-text" aria-live="polite">
       Time remaining: <span id="countdown">00:00</span>
     </div>
+
     <div id="questionContainer" class="question-container" role="group" aria-label="Exam question"></div>
+
     <div class="navigation-buttons center-text">
       <button type="button" id="prevButton" disabled>Previous</button>
       <button type="button" id="nextButton">Next</button>
@@ -92,13 +100,15 @@
     <p id="score">Score will be displayed here</p>
     <p id="message"></p>
     <p id="timestamp" class="timestamp">Date and Time:</p>
+
     <div class="button-container">
       <button id="retakeButton">Take Another Exam</button>
-      <!-- Replaced Share with Save Image -->
+      <!-- Save Result Image -->
       <button id="shareResultBtn">Save Result Image</button>
       <button id="viewResultsBtn" style="display:none;">View All Results</button>
       <button id="downloadResultsBtn" style="display:none;">Download Results (CSV)</button>
     </div>
+
     <div id="allResults" class="all-results-container" style="display: none;"></div>
   </div>
 
@@ -112,7 +122,7 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- html2canvas for screenshot (loaded on demand by script too, this is optional) -->
+  <!-- Optional: preload html2canvas; we also lazy-load in JS if missing -->
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
 
   <script src="script.js" defer></script>

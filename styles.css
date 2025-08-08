@@ -12,14 +12,14 @@ body {
   font-family: Arial, sans-serif;
   padding: 1rem;
   background-image: url('school_logo.png'); /* Path to your logo image */
-  background-size: cover;               /* keep your full-bleed look */
+  background-size: cover;               /* full-bleed look */
   background-repeat: no-repeat;
-  background-position: center 120px;    /* avoid using `1in` (mobile can treat it oddly) */
+  background-position: center 120px;    /* avoid using in units on mobile */
   /* If the background looks too zoomed-in on some phones, try:
      background-size: contain;  */
 }
 
-/* Headings: keep your look but scale fluidly on smaller screens */
+/* Headings: scale fluidly on smaller screens */
 h1, h2 {
   text-align: center;
   font-size: clamp(1.6rem, 5vw, 2.5rem);
@@ -28,7 +28,7 @@ h1, h2 {
   margin: 0.5rem 0;
 }
 
-/* Constrain the width to prevent the "zoomed" feel on mobile */
+/* Constrain width to prevent the "zoomed" feel on mobile */
 .review-container, .name-container, .exam-container, .results-container, .all-results-container {
   width: min(100%, 900px);
   margin: 0 auto 1rem auto;
