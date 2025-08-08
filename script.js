@@ -3,7 +3,7 @@ const settings = {
   numberOfItems: 40, // <- change here for regular quarters
   passingScorePercentage: 75,
   timeInMinutes: 10,
-  remedial: { numberOfItems: 8, passingScorePercentage: 75, timeInMinutes: 10 }, // <- change here for remedial
+  remedial: { numberOfItems: 40, passingScorePercentage: 75, timeInMinutes: 10 }, // <- change here for remedial
   enableQuarters: true,
   enabledQuarters: { quarter1: true, quarter2: true, quarter3: true, quarter4: true, remedial: true }
 };
