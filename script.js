@@ -86,11 +86,42 @@ async function fetchFromGitHub(fileName, type) {
 
 // ===== UI helpers =====
 function toggleElementDisplay(id, style) { const el = document.getElementById(id); if (el) el.style.display = style; }
+
+// Improved: robust video handler that hides the other video, resets, and plays.
 function handleVideoPlay(videoId) {
-  const video = document.getElementById(videoId); if (!video) return;
-  video.pause(); video.currentTime = 0; video.style.display = "block";
-  video.play().catch(() => console.log(`Playback failed: ${videoId}`));
+  const passV = document.getElementById("passVideo");
+  const failV = document.getElementById("failVideo");
+  const all = [passV, failV].filter(Boolean);
+
+  // Hide both first
+  all.forEach(v => {
+    v.pause();
+    v.currentTime = 0;
+    v.style.display = "none";
+  });
+
+  const video = document.getElementById(videoId);
+  if (!video) return;
+
+  // Ensure visible & ready
+  video.controls = true;
+  video.muted = false;           // user just interacted (submit), autoplay should be allowed
+  video.playsInline = true;
+  video.style.display = "block";
+
+  // Try to load then play
+  try { video.load(); } catch (e) {}
+  video.play()
+    .then(() => {
+      // Scroll video into view for user
+      try { video.scrollIntoView({ behavior: "smooth", block: "center" }); } catch (e) {}
+    })
+    .catch(err => {
+      console.log(`${videoId} playback failed:`, err);
+      showToast("Tap the video to play.", 1600);
+    });
 }
+
 function displayFormattedDate() { const ts = document.getElementById("timestamp"); if (ts) ts.textContent = `Date and Time: ${new Date().toLocaleString()}`; }
 
 // ===== Review flow =====
@@ -112,7 +143,7 @@ async function startExam() {
   if (!examTakerName) { alert("Please enter your full name. Example: Dan B. Penaflor"); return; }
   if (settings.enabledQuarters[selectedQuarter] === false) { alert("This quarter is disabled."); return; }
 
-  // NEW: read desired item count from UI; fall back to defaults
+  // Read desired item count from UI; fall back to defaults
   const uiNum = parseInt(document.getElementById("numItems")?.value, 10);
   const desiredCount = Number.isFinite(uiNum) && uiNum > 0 ? uiNum : (selectedQuarter === "remedial" ? settings.remedial.numberOfItems : settings.numberOfItems);
   console.log("[Exam] Desired number of items:", desiredCount);
@@ -227,8 +258,13 @@ function calculateScore() {
   lastResultPassed = percentage >= passingScore;
 
   let messageHTML = "";
-  if (lastResultPassed) { messageHTML = `<h3>Congratulations, ${examTakerName}!</h3><p>You passed the exam in ${gradeText} ${quarterText}.</p>`; handleVideoPlay("passVideo"); }
-  else { messageHTML = `<h3>Hi ${examTakerName}, here are the questions you missed in ${gradeText} ${quarterText}:</h3><ul>${incorrect.map(q => `<li>${q}</li>`).join("")}</ul>`; handleVideoPlay("failVideo"); }
+  if (lastResultPassed) {
+    messageHTML = `<h3>Congratulations, ${examTakerName}!</h3><p>You passed the exam in ${gradeText} ${quarterText}.</p>`;
+    handleVideoPlay("passVideo");
+  } else {
+    messageHTML = `<h3>Hi ${examTakerName}, here are the questions you missed in ${gradeText} ${quarterText}:</h3><ul>${incorrect.map(q => `<li>${q}</li>`).join("")}</ul>`;
+    handleVideoPlay("failVideo");
+  }
 
   document.getElementById("message").innerHTML = messageHTML;
   toggleElementDisplay("results", "block"); toggleElementDisplay("examSection", "none");
@@ -236,7 +272,7 @@ function calculateScore() {
   examActive = false; hideExamBanner();
 }
 
-// ===== Save Result Image =====
+// ===== Save Result Image (bigger centered PASSED/FAILED) =====
 async function generateAndSaveResultImage() {
   if (typeof html2canvas === "undefined") await loadScript("https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js");
   const resultsEl = document.getElementById("results"); if (!resultsEl) { alert("Results are not visible yet."); return; }
@@ -246,13 +282,29 @@ async function generateAndSaveResultImage() {
 
   const ctx = canvas.getContext("2d");
   const label = lastResultPassed ? "PASSED" : "FAILED";
-  const color = lastResultPassed ? "rgba(0, 128, 0, 0.75)" : "rgba(200, 0, 0, 0.75)";
-  const base = canvas.width; const fontSize = Math.max(36, Math.floor(base * 0.07));
-  ctx.save(); ctx.translate(canvas.width/2, canvas.height/2); ctx.rotate(-Math.PI/8); ctx.textAlign="center"; ctx.textBaseline="middle";
-  ctx.font = `bold ${fontSize}px system-ui, -apple-system, Segoe UI, Roboto, Arial`; ctx.fillStyle = color; ctx.strokeStyle="rgba(255,255,255,0.9)"; ctx.lineWidth = Math.max(6, Math.floor(fontSize*0.12));
-  ctx.strokeText(label, 0, 0); ctx.fillText(label, 0, 0); ctx.restore();
-  ctx.save(); ctx.textAlign="right"; ctx.textBaseline="bottom"; ctx.font = `500 ${Math.max(14, Math.floor(fontSize*0.35))}px system-ui, Arial`; ctx.fillStyle="rgba(0,0,0,0.6)";
-  const dateStr = new Date().toLocaleString(); ctx.fillText(`TTVHS TLE | ${dateStr}`, canvas.width-16, canvas.height-12); ctx.restore();
+  const base = Math.min(canvas.width, canvas.height);
+  const fontSize = Math.max(64, Math.floor(base * 0.16)); // bigger
+  ctx.save();
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.font = `900 ${fontSize}px system-ui, -apple-system, Segoe UI, Roboto, Arial`;
+  // Outline first for strong contrast, then fill
+  ctx.lineWidth = Math.max(8, Math.floor(fontSize * 0.12));
+  ctx.strokeStyle = "rgba(0,0,0,0.85)";
+  ctx.strokeText(label, canvas.width / 2, canvas.height / 2);
+  ctx.fillStyle = lastResultPassed ? "rgba(0,180,0,0.88)" : "rgba(220,0,0,0.9)";
+  ctx.fillText(label, canvas.width / 2, canvas.height / 2);
+  ctx.restore();
+
+  // Footer watermark
+  ctx.save();
+  ctx.textAlign="right"; ctx.textBaseline="bottom";
+  ctx.font = `500 ${Math.max(14, Math.floor(fontSize * 0.3))}px system-ui, Arial`;
+  ctx.fillStyle="rgba(0,0,0,0.6)";
+  const dateStr = new Date().toLocaleString();
+  ctx.fillText(`TTVHS TLE | ${dateStr}`, canvas.width-16, canvas.height-12);
+  ctx.restore();
+
   resultsEl.style.display = prevDisplay || "block";
 
   const dataURL = canvas.toDataURL("image/png"); showToast("Saving image…", 1200);
