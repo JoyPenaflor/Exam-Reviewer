@@ -1,109 +1,100 @@
+
+/* -----------------------------
+   Responsive Theme (Fixed Zoom)
+   ----------------------------- */
+
+/* Let browsers adjust text size and avoid forced zoom */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+
+/* Background image (logo) */
 body {
-    font-family: Arial, sans-serif;
-    padding: 1rem;
-    background-image: url('school_logo.png'); /* Path to your logo image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 1in;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-image: url('school_logo.png'); /* Path to your logo image */
+  background-size: cover;               /* keep your full-bleed look */
+  background-repeat: no-repeat;
+  background-position: center 120px;    /* avoid using `1in` (mobile can treat it oddly) */
+  /* If the background looks too zoomed-in on some phones, try:
+     background-size: contain;  */
 }
 
+/* Headings: keep your look but scale fluidly on smaller screens */
 h1, h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: yellow !important; /* Change text color for better visibility on dark background */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Stronger outline for better contrast */
+  text-align: center;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  color: yellow !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  margin: 0.5rem 0;
 }
 
+/* Constrain the width to prevent the "zoomed" feel on mobile */
+.review-container, .name-container, .exam-container, .results-container, .all-results-container {
+  width: min(100%, 900px);
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+/* Semi-transparent dark cards for readability over the bg */
 .review-container, .name-container, .exam-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for readability */
-    border-radius: 10px;
-    color: white; /* Adjust color for better visibility */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
+/* Light results card */
 .results-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Light background */
-    border-radius: 10px;
-    color: black !important; /* Ensure text is visible */
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black !important;
 }
 
-#score, #message, #timestamp {
-    color: black !important; /* Force black text */
+/* Ensure these stay dark on the light card */
+#score, #message, #timestamp { color: black !important; }
+
+/* Media should never overflow the viewport width */
+img, video, iframe, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.button-container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-#results, #message {
-    font-size: 1.5rem;
-}
-
-label, input[type="text"], select {
-    font-size: 1.5rem;
-}
-
+/* Typography (fluid) */
+#results, #message { font-size: clamp(1rem, 2.5vw, 1.5rem); }
+label, input[type="text"], select { font-size: clamp(1rem, 2.8vw, 1.5rem); }
 button, input[type="button"] {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+  font-size: clamp(1rem, 2.8vw, 1.5rem);
+  padding: 1rem 2rem;
 }
+.question-container { font-size: clamp(1.1rem, 3.2vw, 2rem); }
+#timer { font-size: clamp(1.2rem, 3.5vw, 2rem); color: white; }
+.timestamp { font-size: clamp(0.95rem, 2.2vw, 1.2rem); color: gray; }
 
-video {
-    display: none;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-#timer {
-    font-size: 2rem;
-    color: white; /* Adjust color for better visibility */
-}
-
-select {
-    max-width: 300px;
-    max-height: 100px;
-    overflow-y: auto;
-}
-
-.center-text {
-    text-align: center;
-    color: white; /* Restore original text color */
-}
-
-.hidden-video {
-    display: none;
-}
-
-.question-container {
-    font-size: 2rem;
-    color: white; /* Adjust color for better visibility */
-}
-
-.timestamp {
-    font-size: 1.2rem;
-    color: gray;
-}
-
+/* Controls */
+.button-container { text-align: center; margin-top: 2rem; }
+.center-text { text-align: center; color: white; }
 .navigation-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
+/* Scrollable dropdowns (long lists) */
+select { max-width: 300px; max-height: 100px; overflow-y: auto; }
+
+/* Hidden videos by default */
+video, .hidden-video { display: none; }
+
+/* Review text box */
 .review-content {
-    margin-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    white-space: pre-wrap; /* Preserve formatting with line breaks */
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  white-space: pre-wrap;
 }
+
+/* Keep the banner from causing horizontal scroll */
+#examBanner { word-break: break-word; }
