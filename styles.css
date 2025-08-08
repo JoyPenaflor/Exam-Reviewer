@@ -1,100 +1,73 @@
 
-/* -----------------------------
-   Responsive Theme (Fixed Zoom)
-   ----------------------------- */
-
-/* Let browsers adjust text size and avoid forced zoom */
+/* -------- Normal HTML-ish sizing, responsive, no zoom bugs -------- */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 html, body { margin: 0; padding: 0; overflow-x: hidden; }
-
-/* Background image (logo) */
 body {
   font-family: Arial, sans-serif;
-  padding: 1rem;
-  background-image: url('school_logo.png'); /* Path to your logo image */
-  background-size: cover;               /* full-bleed look */
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 16px;
+  background-image: url('school_logo.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 120px;    /* avoid using in units on mobile */
-  /* If the background looks too zoomed-in on some phones, try:
-     background-size: contain;  */
+  background-position: center 120px;
+  color: #111;
 }
 
-/* Headings: scale fluidly on smaller screens */
 h1, h2 {
   text-align: center;
-  font-size: clamp(1.6rem, 5vw, 2.5rem);
   color: yellow !important;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-  margin: 0.5rem 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  margin: 8px 0;
 }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; }
 
-/* Constrain width to prevent the "zoomed" feel on mobile */
 .review-container, .name-container, .exam-container, .results-container, .all-results-container {
   width: min(100%, 900px);
-  margin: 0 auto 1rem auto;
-  padding: 1rem;
+  margin: 0 auto 16px auto;
+  padding: 16px;
   border-radius: 10px;
   overflow-wrap: anywhere;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-/* Semi-transparent dark cards for readability over the bg */
 .review-container, .name-container, .exam-container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.5);
   color: white;
 }
 
-/* Light results card */
 .results-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255,255,255,0.9);
   color: black !important;
 }
 
-/* Ensure these stay dark on the light card */
 #score, #message, #timestamp { color: black !important; }
 
-/* Media should never overflow the viewport width */
-img, video, iframe, canvas {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+img, video, iframe, canvas { max-width: 100%; height: auto; display: block; }
 
-/* Typography (fluid) */
-#results, #message { font-size: clamp(1rem, 2.5vw, 1.5rem); }
-label, input[type="text"], select { font-size: clamp(1rem, 2.8vw, 1.5rem); }
-button, input[type="button"] {
-  font-size: clamp(1rem, 2.8vw, 1.5rem);
-  padding: 1rem 2rem;
-}
-.question-container { font-size: clamp(1.1rem, 3.2vw, 2rem); }
-#timer { font-size: clamp(1.2rem, 3.5vw, 2rem); color: white; }
-.timestamp { font-size: clamp(0.95rem, 2.2vw, 1.2rem); color: gray; }
+#results, #message { font-size: 1rem; }
+label, input[type="text"], select { font-size: 1rem; }
+button, input[type="button"] { font-size: 1rem; padding: 10px 14px; }
+.question-container { font-size: 1rem; }
+#timer { font-size: 1.125rem; color: white; }
+.timestamp { font-size: 0.95rem; color: gray; }
 
-/* Controls */
-.button-container { text-align: center; margin-top: 2rem; }
+.button-container { text-align: center; margin-top: 24px; }
 .center-text { text-align: center; color: white; }
-.navigation-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
+.navigation-buttons { display: flex; justify-content: center; align-items: center; gap: 12px; }
 
-/* Scrollable dropdowns (long lists) */
 select { max-width: 300px; max-height: 100px; overflow-y: auto; }
 
-/* Hidden videos by default */
 video, .hidden-video { display: none; }
 
-/* Review text box */
 .review-content {
-  margin-top: 1rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 12px;
+  background-color: rgba(255,255,255,0.85);
   color: black;
-  padding: 1rem;
+  padding: 12px;
   border-radius: 10px;
   white-space: pre-wrap;
 }
 
-/* Keep the banner from causing horizontal scroll */
 #examBanner { word-break: break-word; }
