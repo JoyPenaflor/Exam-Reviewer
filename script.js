@@ -1,11 +1,11 @@
 // ===== Global Exam Settings =====
 const settings = {
-  numberOfItems: 40,
+  numberOfItems: 10, // <- change here for regular quarters
   passingScorePercentage: 75,
   timeInMinutes: 10,
-  remedial: { numberOfItems: 20, passingScorePercentage: 75, timeInMinutes: 10 },
+  remedial: { numberOfItems: 8, passingScorePercentage: 75, timeInMinutes: 10 }, // <- change here for remedial
   enableQuarters: true,
-  enabledQuarters: { quarter1: true, quarter2: false, quarter3: false, quarter4: false, remedial: false }
+  enabledQuarters: { quarter1: true, quarter2: true, quarter3: true, quarter4: true, remedial: true }
 };
 
 // ===== Globals =====
@@ -18,7 +18,7 @@ let userAnswers = {};
 let examTakerName = "";
 let examActive = false;
 let lastResultPassed = null;
-let violationHandled = false; // NEW: prevent duplicate resets
+let violationHandled = false;
 
 // ===== Toast =====
 let toastEl = null;
@@ -55,15 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveImgBtn = document.getElementById("shareResultBtn");
   if (saveImgBtn) saveImgBtn.addEventListener("click", generateAndSaveResultImage);
 
-  // Enable/disable quarters
-  if (!settings.enableQuarters) {
-    document.getElementById("quarter").disabled = true;
-  } else {
-    for (const quarter in settings.enabledQuarters) {
-      if (!settings.enabledQuarters[quarter]) {
-        const opt = document.getElementById(quarter);
-        if (opt) opt.disabled = true;
-      }
+  // Enable/disable quarters from settings
+  const quarterSelect = document.getElementById("quarter");
+  if (quarterSelect) {
+    for (const q of Array.from(quarterSelect.options)) {
+      const key = q.value;
+      if (settings.enabledQuarters[key] === false) q.disabled = true;
     }
   }
 
@@ -112,7 +109,7 @@ async function startExam() {
   examTakerName = document.getElementById("fullName").value.trim();
 
   if (!examTakerName) { alert("Please enter your full name. Example: Dan B. Penaflor"); return; }
-  if (!settings.enabledQuarters[selectedQuarter]) { alert("This quarter is disabled."); return; }
+  if (settings.enabledQuarters[selectedQuarter] === false) { alert("This quarter is disabled."); return; }
 
   if (selectedQuarter === "remedial") { await fetchRemedialQuestions(); } else { await loadQuarterQuestions(); }
 
@@ -127,26 +124,39 @@ async function startExam() {
   displayQuestion();
 }
 
+// Regular quarter questions
 async function loadQuarterQuestions() {
   const fileName = `${selectedGradeLevel}_${selectedQuarter}.json`;
-  const allQuestions = await fetchQuestions(fileName);
+  let allQuestions = await fetchQuestions(fileName);
+  console.log("[Exam] Loaded questions:", allQuestions.length, "requested:", settings.numberOfItems);
   if (allQuestions.length === 0) { alert("No questions available."); return; }
   shuffleArray(allQuestions);
   if (allQuestions.length < settings.numberOfItems) {
     alert(`Warning: Only ${allQuestions.length} questions available, but ${settings.numberOfItems} were requested.`);
   }
   selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
+  console.log("[Exam] Using", selectedQuestions.length, "questions for", selectedQuarter);
 }
+
+// Remedial mixes from all quarters
 async function fetchRemedialQuestions() {
   const quarters = ["quarter1", "quarter2", "quarter3", "quarter4"];
-  let allQuestions = [];
+  const desired = settings.remedial.numberOfItems;
+  const perQuarter = Math.max(1, Math.ceil(desired / quarters.length));
+  let pool = [];
+
   for (const q of quarters) {
     const fileName = `${selectedGradeLevel}_${q}.json`;
     const questions = await fetchQuestions(fileName);
-    if (questions.length) { shuffleArray(questions); allQuestions.push(...questions.slice(0, 10)); }
+    console.log(`[Remedial] ${q}: loaded ${questions.length}`);
+    if (questions.length) {
+      shuffleArray(questions);
+      pool.push(...questions.slice(0, perQuarter));
+    }
   }
-  shuffleArray(allQuestions);
-  selectedQuestions = allQuestions.slice(0, settings.remedial.numberOfItems);
+  shuffleArray(pool);
+  selectedQuestions = pool.slice(0, desired);
+  console.log("[Remedial] Built pool:", pool.length, "Using:", selectedQuestions.length, "requested:", desired);
 }
 
 // ===== Timer =====
@@ -165,11 +175,15 @@ function startTimer(duration, display) {
 function displayQuestion() {
   const questionObj = selectedQuestions[currentQuestionIndex];
   const shuffledChoices = shuffleArray([...questionObj.choices]);
-  document.getElementById("questionContainer").innerHTML = `
-    <h3>${questionObj.question}</h3>
+  const container = document.getElementById("questionContainer");
+  container.innerHTML = `
+    <div id="progress" style="margin:8px 0 6px; font-size:.95rem; opacity:.85;">
+      Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}
+    </div>
+    <h3 style="margin:6px 0 10px;">${questionObj.question}</h3>
     ${shuffledChoices.map(choice => `
-      <label>
-        <input type="radio" name="question" value="${choice}" style="transform: scale(1.1); margin-right: 10px;"
+      <label style="display:inline-flex; align-items:center; gap:8px; padding:6px 4px;">
+        <input type="radio" name="question" value="${choice}" style="transform: scale(1.1); margin-right: 6px;"
           ${userAnswers[currentQuestionIndex] === choice ? "checked" : ""}>
         ${choice}
       </label><br>
@@ -268,34 +282,25 @@ function createExamBanner(){
 function showExamBanner(){ if(!examBannerEl) return; examBannerEl.style.display="block"; const spacer=document.getElementById("examBannerSpacer"); if(spacer) spacer.style.height=examBannerEl.offsetHeight+"px"; }
 function hideExamBanner(){ if(!examBannerEl) return; examBannerEl.style.display="none"; const spacer=document.getElementById("examBannerSpacer"); if(spacer) spacer.style.height="0px"; }
 
-// ===== Strong anti-switch enforcement (multi-event) =====
+// ===== Anti-switch enforcement =====
 function handleFocusViolation(reason){
   if (!examActive || violationHandled) return;
   violationHandled = true;
   alert(`Exam reset: ${reason}`);
   location.reload();
 }
-
-// Fires when tab visibility changes
 document.addEventListener("visibilitychange", () => {
   if (!examActive) return;
   if (document.visibilityState !== "visible") handleFocusViolation("you left the exam screen");
 });
-
-// Fires when window loses focus (switch tab/app, open keyboard shortcuts, etc.)
 window.addEventListener("blur", () => {
   if (!examActive) return;
-  // tiny delay so normal button clicks don't trigger false positives
   setTimeout(() => { if (!document.hasFocus()) handleFocusViolation("window lost focus"); }, 100);
 });
-
-// Safari/iOS reliably fires pagehide on app switch or back swipe
 window.addEventListener("pagehide", () => {
   if (!examActive) return;
   handleFocusViolation("page was hidden");
 });
-
-// Leave/refresh guard (kept)
 window.addEventListener("beforeunload", (e) => {
   if (!examActive) return;
   e.preventDefault(); e.returnValue = "";

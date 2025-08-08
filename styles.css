@@ -1,5 +1,5 @@
 
-/* -------- Normal HTML-ish sizing, responsive, no zoom bugs -------- */
+/* Normal HTML sizing + responsive layout */
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 html, body { margin: 0; padding: 0; overflow-x: hidden; }
 body {
@@ -32,16 +32,8 @@ h2 { font-size: 1.25rem; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.review-container, .name-container, .exam-container {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-}
-
-.results-container {
-  background-color: rgba(255,255,255,0.9);
-  color: black !important;
-}
-
+.review-container, .name-container, .exam-container { background-color: rgba(0,0,0,0.5); color: white; }
+.results-container { background-color: rgba(255,255,255,0.9); color: black !important; }
 #score, #message, #timestamp { color: black !important; }
 
 img, video, iframe, canvas { max-width: 100%; height: auto; display: block; }
