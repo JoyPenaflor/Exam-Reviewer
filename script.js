@@ -1,9 +1,10 @@
 // ===== Global Exam Settings =====
 const settings = {
-  numberOfItems: 40, // <- change here for regular quarters
+  // defaults (can still be overridden by UI input)
+  numberOfItems: 20,
   passingScorePercentage: 75,
   timeInMinutes: 10,
-  remedial: { numberOfItems: 40, passingScorePercentage: 75, timeInMinutes: 10 }, // <- change here for remedial
+  remedial: { numberOfItems: 20, passingScorePercentage: 75, timeInMinutes: 10 },
   enableQuarters: true,
   enabledQuarters: { quarter1: true, quarter2: true, quarter3: true, quarter4: true, remedial: true }
 };
@@ -111,7 +112,12 @@ async function startExam() {
   if (!examTakerName) { alert("Please enter your full name. Example: Dan B. Penaflor"); return; }
   if (settings.enabledQuarters[selectedQuarter] === false) { alert("This quarter is disabled."); return; }
 
-  if (selectedQuarter === "remedial") { await fetchRemedialQuestions(); } else { await loadQuarterQuestions(); }
+  // NEW: read desired item count from UI; fall back to defaults
+  const uiNum = parseInt(document.getElementById("numItems")?.value, 10);
+  const desiredCount = Number.isFinite(uiNum) && uiNum > 0 ? uiNum : (selectedQuarter === "remedial" ? settings.remedial.numberOfItems : settings.numberOfItems);
+  console.log("[Exam] Desired number of items:", desiredCount);
+
+  if (selectedQuarter === "remedial") { await fetchRemedialQuestions(desiredCount); } else { await loadQuarterQuestions(desiredCount); }
 
   toggleElementDisplay("nameSection", "none");
   toggleElementDisplay("examSection", "block");
@@ -125,37 +131,39 @@ async function startExam() {
 }
 
 // Regular quarter questions
-async function loadQuarterQuestions() {
+async function loadQuarterQuestions(desired) {
   const fileName = `${selectedGradeLevel}_${selectedQuarter}.json`;
   let allQuestions = await fetchQuestions(fileName);
-  console.log("[Exam] Loaded questions:", allQuestions.length, "requested:", settings.numberOfItems);
+  console.log("[Exam] Loaded questions:", allQuestions.length, "requested:", desired);
   if (allQuestions.length === 0) { alert("No questions available."); return; }
   shuffleArray(allQuestions);
-  if (allQuestions.length < settings.numberOfItems) {
-    alert(`Warning: Only ${allQuestions.length} questions available, but ${settings.numberOfItems} were requested.`);
+  if (allQuestions.length < desired) {
+    alert(`Only ${allQuestions.length} questions found in ${fileName}, but you requested ${desired}. Using available ${allQuestions.length}.`);
   }
-  selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
+  selectedQuestions = allQuestions.slice(0, Math.min(desired, allQuestions.length));
   console.log("[Exam] Using", selectedQuestions.length, "questions for", selectedQuarter);
 }
 
 // Remedial mixes from all quarters
-async function fetchRemedialQuestions() {
+async function fetchRemedialQuestions(desired) {
   const quarters = ["quarter1", "quarter2", "quarter3", "quarter4"];
-  const desired = settings.remedial.numberOfItems;
-  const perQuarter = Math.max(1, Math.ceil(desired / quarters.length));
+  // Try to pull evenly from each quarter but use what's available
   let pool = [];
-
+  const perQuarterTarget = Math.ceil(desired / quarters.length);
   for (const q of quarters) {
     const fileName = `${selectedGradeLevel}_${q}.json`;
     const questions = await fetchQuestions(fileName);
     console.log(`[Remedial] ${q}: loaded ${questions.length}`);
     if (questions.length) {
       shuffleArray(questions);
-      pool.push(...questions.slice(0, perQuarter));
+      pool.push(...questions.slice(0, Math.min(perQuarterTarget, questions.length)));
     }
   }
+  if (pool.length < desired) {
+    alert(`Remedial pool has only ${pool.length} questions available across quarters; requested ${desired}. Using available ${pool.length}.`);
+  }
   shuffleArray(pool);
-  selectedQuestions = pool.slice(0, desired);
+  selectedQuestions = pool.slice(0, Math.min(desired, pool.length));
   console.log("[Remedial] Built pool:", pool.length, "Using:", selectedQuestions.length, "requested:", desired);
 }
 

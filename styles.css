@@ -39,7 +39,7 @@ h2 { font-size: 1.25rem; }
 img, video, iframe, canvas { max-width: 100%; height: auto; display: block; }
 
 #results, #message { font-size: 1rem; }
-label, input[type="text"], select { font-size: 1rem; }
+label, input[type="text"], select, input[type="number"] { font-size: 1rem; }
 button, input[type="button"] { font-size: 1rem; padding: 10px 14px; }
 .question-container { font-size: 1rem; }
 #timer { font-size: 1.125rem; color: white; }
@@ -49,7 +49,7 @@ button, input[type="button"] { font-size: 1rem; padding: 10px 14px; }
 .center-text { text-align: center; color: white; }
 .navigation-buttons { display: flex; justify-content: center; align-items: center; gap: 12px; }
 
-select { max-width: 300px; max-height: 100px; overflow-y: auto; }
+select, input[type="number"] { max-width: 300px; }
 
 video, .hidden-video { display: none; }
 

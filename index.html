@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</title>
-  <link rel="stylesheet" href="styles.css?v=20250808-2" />
+  <link rel="stylesheet" href="styles.css?v=20250808-3" />
   <meta property="og:title" content="TTVHS Remedial Exam for TLE 2025–2026" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Take the TTVHS TLE exam and see how you score." />
@@ -43,7 +43,7 @@
   <!-- NAME SECTION -->
   <div id="nameSection" class="name-container" style="display: none;">
     <h1>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</h1>
-    <h2>Welcome! Enter your name, select your grade level and quarter to proceed.</h2>
+    <h2>Welcome! Enter your details to proceed.</h2>
     <form id="examForm" novalidate>
       <div id="nameInput" class="center-text">
         <label for="fullName">Enter your full name:</label>
@@ -68,6 +68,14 @@
           <option value="remedial" id="remedial">REMEDIAL EXAM</option>
         </select>
         <br /><br />
+
+        <!-- NEW: choose number of items -->
+        <label for="numItems">Number of questions:</label>
+        <input type="number" id="numItems" min="1" max="200" step="1" value="20" aria-label="Number of questions" />
+        <div style="font-size:.9rem; opacity:.8; margin-top:6px;">
+          Tip: This applies to both regular and remedial exams.
+        </div>
+        <br />
 
         <button type="button" id="startButton">Start Exam</button>
       </div>
@@ -112,6 +120,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
-  <script src="script.js?v=20250808-2" defer></script>
+  <script src="script.js?v=20250808-3" defer></script>
 </body>
 </html>
