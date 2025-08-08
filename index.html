@@ -81,7 +81,13 @@
         <p id="timestamp" class="timestamp">Date and Time: </p>
         <div class="button-container">
             <button id="retakeButton">Take Another Exam</button>
+            <!-- New: Share and View Results buttons -->
+            <button id="shareResultBtn">Share Result</button>
+            <button id="viewResultsBtn">View All Results</button>
+            <button id="downloadResultsBtn">Download Results (CSV)</button>
         </div>
+        <!-- New: Display all results (hidden by default) -->
+        <div id="allResults" style="display:none;" class="all-results-container"></div>
     </div>
 
     <video id="passVideo" controls class="hidden-video">
