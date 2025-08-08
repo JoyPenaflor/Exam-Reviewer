@@ -1,15 +1,15 @@
-// Global settings for the exam
+// ===== Global Exam Settings =====
 const settings = {
-    numberOfItems: 20, // Number of questions to display in the exam (change to test!)
-    passingScorePercentage: 75, // Percentage score required to pass the exam
-    timeInMinutes: 10, // Time allowed for the exam
+    numberOfItems: 20,
+    passingScorePercentage: 75,
+    timeInMinutes: 10,
     remedial: {
-        numberOfItems: 20, // Number of questions for the remedial exam
-        passingScorePercentage: 75, // Percentage score required to pass the remedial exam
-        timeInMinutes: 10 // Time allowed for the remedial exam
+        numberOfItems: 20,
+        passingScorePercentage: 75,
+        timeInMinutes: 10
     },
-    enableQuarters: true, // Enable or disable the exam quarter selection
-    enabledQuarters: { // Enable or disable specific quarters
+    enableQuarters: true,
+    enabledQuarters: {
         quarter1: true,
         quarter2: false,
         quarter3: false,
@@ -18,18 +18,21 @@ const settings = {
     }
 };
 
+// ===== Global Variables =====
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
 let timerInterval;
 let selectedGradeLevel = "";
 let selectedQuarter = "";
-let userAnswers = {}; 
+let userAnswers = {};
 let examTakerName = "";
+let examActive = false; // NEW: controls anti-switch and close warning
 
-// DOMContentLoaded ensures all elements are available before attaching listeners
+// ===== Initialization =====
 document.addEventListener("DOMContentLoaded", () => {
     toggleElementDisplay("reviewSection", "block");
 
+    // Main buttons
     document.getElementById("loadReviewButton").addEventListener("click", loadReview);
     document.getElementById("proceedToNameButton").addEventListener("click", proceedToName);
     document.getElementById("startButton").addEventListener("click", startExam);
@@ -38,166 +41,148 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("submitButton").addEventListener("click", calculateScore);
     document.getElementById("retakeButton").addEventListener("click", retakeExam);
 
-    // Facebook share result button event listener
-    document.getElementById('shareResultBtn').addEventListener('click', function () {
-        // Get the score details
-        const name = examTakerName || "Someone";
-        const score = document.getElementById('score').textContent || "";
-        const gradeText = selectedGradeLevel.replace("grade", "Grade ");
-        const quarterText = selectedQuarter === "remedial" ? "REMEDIAL EXAM" : selectedQuarter.replace("quarter", "Quarter ");
-        const shareMessage = `${name} just completed the exam! ${score} (${gradeText} ${quarterText}). Try it yourself!`;
-        const shareText = encodeURIComponent(shareMessage);
-        const shareUrl = encodeURIComponent(window.location.href);
+    // Facebook share
+    const shareBtn = document.getElementById("shareResultBtn");
+    if (shareBtn) shareBtn.addEventListener("click", shareResultOnFacebook);
 
-        // Facebook sharer URL (adds a quote/message)
-        const fbSharer = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}&quote=${shareText}`;
-        window.open(fbSharer, '_blank');
-    });
-
-    // Quarters enable/disable logic
+    // Enable/disable quarters
     if (!settings.enableQuarters) {
         document.getElementById("quarter").disabled = true;
     } else {
         for (const quarter in settings.enabledQuarters) {
             if (!settings.enabledQuarters[quarter]) {
-                document.getElementById(quarter).disabled = true;
+                const opt = document.getElementById(quarter);
+                if (opt) opt.disabled = true;
             }
         }
     }
+
+    // Create the "Exam in progress" banner
+    createExamBanner();
 });
 
-// Fetch exam questions from GitHub
+// ===== Fetch helpers =====
 async function fetchQuestions(fileName) {
-    try {
-        const response = await fetch(`https://raw.githubusercontent.com/JoyPenaflor/Exam-Reviewer/main/${fileName}`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return await response.json();
-    } catch (error) {
-        console.error("Failed to load questions:", error);
-        alert("Failed to load exam data. Please check your GitHub link or file permissions and try again.");
-        return [];
-    }
+    return fetchFromGitHub(fileName, "json");
 }
-
-// Fetch review material from GitHub
 async function fetchReview(fileName) {
+    return fetchFromGitHub(fileName, "text");
+}
+async function fetchFromGitHub(fileName, type) {
     try {
-        const response = await fetch(`https://raw.githubusercontent.com/JoyPenaflor/Exam-Reviewer/main/${fileName}`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return await response.text();
+        const url = `https://raw.githubusercontent.com/JoyPenaflor/Exam-Reviewer/main/${fileName}`;
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return type === "json" ? await response.json() : await response.text();
     } catch (error) {
-        console.error("Failed to load review content:", error);
-        alert("Failed to load review content. Please check your GitHub link or file permissions and try again.");
-        return "";
+        console.error(`Failed to load ${fileName}:`, error);
+        alert(`Failed to load ${fileName}. Please check the GitHub link or file permissions.`);
+        return type === "json" ? [] : "";
     }
 }
 
-// Toggle element display
-function toggleElementDisplay(element, displayStyle) {
-    document.getElementById(element).style.display = displayStyle;
+// ===== UI helpers =====
+function toggleElementDisplay(id, style) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = style;
 }
-
-// Play pass/fail video
 function handleVideoPlay(videoId) {
     const video = document.getElementById(videoId);
+    if (!video) return;
     video.pause();
     video.currentTime = 0;
     video.style.display = "block";
-    video.play().catch(() => console.log(`${videoId} playback failed.`));
+    video.play().catch(() => console.log(`Playback failed: ${videoId}`));
 }
-
-// Display formatted date/time
 function displayFormattedDate() {
-    const dateTime = new Date();
-    const formattedDateTime = dateTime.toLocaleString();
-    document.getElementById("timestamp").textContent = `Date and Time: ${formattedDateTime}`;
+    const ts = document.getElementById("timestamp");
+    if (ts) ts.textContent = `Date and Time: ${new Date().toLocaleString()}`;
 }
 
-// Load review material
+// ===== Review flow =====
 async function loadReview() {
-    const gradeLevel = document.getElementById("reviewGradeLevel").value;
+    const grade = document.getElementById("reviewGradeLevel").value;
     const quarter = document.getElementById("reviewQuarter").value;
-    const fileName = `${gradeLevel}_${quarter}_review.txt`;
-    const reviewContent = await fetchReview(fileName);
-    document.getElementById("reviewContent").textContent = reviewContent;
+    const fileName = `${grade}_${quarter}_review.txt`;
+    document.getElementById("reviewContent").textContent = await fetchReview(fileName);
     toggleElementDisplay("proceedToNameButton", "block");
 }
-
-// Proceed to name entry section
 function proceedToName() {
     toggleElementDisplay("reviewSection", "none");
     toggleElementDisplay("nameSection", "block");
 }
 
-// Start the main exam
+// ===== Exam flow =====
 async function startExam() {
-    console.log("Start Exam function triggered");
     selectedGradeLevel = document.getElementById("gradeLevel").value;
     selectedQuarter = document.getElementById("quarter").value;
     examTakerName = document.getElementById("fullName").value.trim();
 
-    if (examTakerName === "") {
+    if (!examTakerName) {
         alert("Please enter your full name. Example: Dan B. Penaflor");
         return;
     }
     if (!settings.enabledQuarters[selectedQuarter]) {
-        alert("This quarter is disabled and cannot be selected for the exam.");
+        alert("This quarter is disabled.");
         return;
     }
+
     if (selectedQuarter === "remedial") {
         await fetchRemedialQuestions();
     } else {
-        const fileName = `${selectedGradeLevel}_${selectedQuarter}.json`;
-        const allQuestions = await fetchQuestions(fileName);
-        if (allQuestions.length === 0) {
-            alert("No questions available. Please check the source file.");
-            return;
-        }
-        console.log(`[DEBUG] settings.numberOfItems: ${settings.numberOfItems}`);
-        console.log(`[DEBUG] allQuestions.length: ${allQuestions.length}`);
-        shuffleArray(allQuestions);
-        if (allQuestions.length < settings.numberOfItems) {
-            alert(`Warning: Only ${allQuestions.length} questions available, but you requested ${settings.numberOfItems}.`);
-        }
-        selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
-        console.log(`[DEBUG] selectedQuestions.length (after slice): ${selectedQuestions.length}`);
+        await loadQuarterQuestions();
     }
 
     toggleElementDisplay("nameSection", "none");
     toggleElementDisplay("examSection", "block");
 
-    const display = document.querySelector("#countdown");
-    const timeLimit = selectedQuarter === "remedial" ? settings.remedial.timeInMinutes : settings.timeInMinutes;
-    startTimer(timeLimit * 60, display);
+    // Start timer
+    const minutes = selectedQuarter === "remedial" ? settings.remedial.timeInMinutes : settings.timeInMinutes;
+    startTimer(minutes * 60, document.querySelector("#countdown"));
+
+    // Mark active & show banner
+    examActive = true;
+    showExamBanner();
 
     displayQuestion();
 }
 
-// Fetch remedial questions from all quarters
+async function loadQuarterQuestions() {
+    const fileName = `${selectedGradeLevel}_${selectedQuarter}.json`;
+    const allQuestions = await fetchQuestions(fileName);
+    if (allQuestions.length === 0) {
+        alert("No questions available.");
+        return;
+    }
+    shuffleArray(allQuestions);
+    if (allQuestions.length < settings.numberOfItems) {
+        alert(`Warning: Only ${allQuestions.length} questions available, but ${settings.numberOfItems} were requested.`);
+    }
+    selectedQuestions = allQuestions.slice(0, settings.numberOfItems);
+}
 async function fetchRemedialQuestions() {
     const quarters = ["quarter1", "quarter2", "quarter3", "quarter4"];
-    const allQuestions = [];
-    for (const quarter of quarters) {
-        const fileName = `${selectedGradeLevel}_${quarter}.json`;
+    let allQuestions = [];
+    for (const q of quarters) {
+        const fileName = `${selectedGradeLevel}_${q}.json`;
         const questions = await fetchQuestions(fileName);
-        console.log(`[DEBUG] Fetched ${questions.length} questions from ${fileName}`);
-        if (questions.length > 0) {
+        if (questions.length) {
             shuffleArray(questions);
             allQuestions.push(...questions.slice(0, 10));
         }
     }
     shuffleArray(allQuestions);
     selectedQuestions = allQuestions.slice(0, settings.remedial.numberOfItems);
-    console.log(`[DEBUG] Total selected remedial questions: ${selectedQuestions.length}`);
 }
 
-// Start the countdown timer
+// ===== Timer =====
 function startTimer(duration, display) {
     let timer = duration;
+    clearInterval(timerInterval);
     timerInterval = setInterval(() => {
-        const minutes = Math.floor(timer / 60).toString().padStart(2, "0");
-        const seconds = (timer % 60).toString().padStart(2, "0");
-        display.textContent = `${minutes}:${seconds}`;
+        const minutes = String(Math.floor(timer / 60)).padStart(2, "0");
+        const seconds = String(timer % 60).padStart(2, "0");
+        if (display) display.textContent = `${minutes}:${seconds}`;
         if (--timer < 0) {
             clearInterval(timerInterval);
             calculateScore();
@@ -205,29 +190,25 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-// Display the current question
+// ===== Questions =====
 function displayQuestion() {
-    const questionContainer = document.getElementById("questionContainer");
     const questionObj = selectedQuestions[currentQuestionIndex];
-    const shuffledChoices = [...questionObj.choices];
-    shuffleArray(shuffledChoices);
-
-    questionContainer.innerHTML = `
+    const shuffledChoices = shuffleArray([...questionObj.choices]);
+    document.getElementById("questionContainer").innerHTML = `
         <h3>${questionObj.question}</h3>
         ${shuffledChoices.map(choice => `
             <label style="font-size: 1.2em;">
-                <input type="radio" name="question" value="${choice}" style="transform: scale(1.1); margin-right: 10px;" ${userAnswers[currentQuestionIndex] === choice ? "checked" : ""}>
+                <input type="radio" name="question" value="${choice}" 
+                    ${userAnswers[currentQuestionIndex] === choice ? "checked" : ""}>
                 ${choice}
             </label><br>
         `).join("")}
     `;
-
     document.getElementById("prevButton").disabled = currentQuestionIndex === 0;
     document.getElementById("nextButton").disabled = currentQuestionIndex === selectedQuestions.length - 1;
-    document.getElementById("submitContainer").style.display = currentQuestionIndex === selectedQuestions.length - 1 ? "block" : "none";
+    document.getElementById("submitContainer").style.display =
+        currentQuestionIndex === selectedQuestions.length - 1 ? "block" : "none";
 }
-
-// Go to next question
 function nextQuestion() {
     saveAnswer();
     if (currentQuestionIndex < selectedQuestions.length - 1) {
@@ -235,8 +216,6 @@ function nextQuestion() {
         displayQuestion();
     }
 }
-
-// Go to previous question
 function prevQuestion() {
     saveAnswer();
     if (currentQuestionIndex > 0) {
@@ -244,82 +223,103 @@ function prevQuestion() {
         displayQuestion();
     }
 }
-
-// Save answer for current question
 function saveAnswer() {
-    const selectedAnswer = document.querySelector('input[name="question"]:checked');
-    if (selectedAnswer) {
-        userAnswers[currentQuestionIndex] = selectedAnswer.value;
-    }
+    const selected = document.querySelector('input[name="question"]:checked');
+    if (selected) userAnswers[currentQuestionIndex] = selected.value;
 }
 
-// Calculate score and display result
+// ===== Score =====
 function calculateScore() {
     clearInterval(timerInterval);
     saveAnswer();
-
     let score = 0;
-    const incorrectQuestions = [];
-    selectedQuestions.forEach((question, index) => {
-        if (userAnswers[index] === question.answer) {
-            score++;
-        } else {
-            incorrectQuestions.push(question.question);
-        }
+    const incorrect = [];
+    selectedQuestions.forEach((q, i) => {
+        if (userAnswers[i] === q.answer) score++;
+        else incorrect.push(q.question);
     });
-
+    const percentage = (score / selectedQuestions.length) * 100;
     const gradeText = selectedGradeLevel.replace("grade", "Grade ");
     const quarterText = selectedQuarter === "remedial" ? "REMEDIAL EXAM" : selectedQuarter.replace("quarter", "Quarter ");
-    const scorePercentage = (score / selectedQuestions.length) * 100;
-    const scoreDisplay = document.getElementById("score");
-    const messageDisplay = document.getElementById("message");
-    const incorrectDisplay = document.createElement("div");
-
-    scoreDisplay.textContent = `${examTakerName}, you scored: ${score} out of ${selectedQuestions.length} (${scorePercentage.toFixed(2)}%) in ${gradeText} ${quarterText}.`;
+    document.getElementById("score").textContent =
+        `${examTakerName}, you scored: ${score} out of ${selectedQuestions.length} (${percentage.toFixed(2)}%) in ${gradeText} ${quarterText}.`;
     displayFormattedDate();
-
     const passingScore = selectedQuarter === "remedial" ? settings.remedial.passingScorePercentage : settings.passingScorePercentage;
-
-    if (scorePercentage >= passingScore) {
-        incorrectDisplay.innerHTML = `
-            <h3>Congratulations, ${examTakerName}!</h3>
-            <p>You passed the exam in ${gradeText} ${quarterText}.</p>
-        `;
+    if (percentage >= passingScore) {
+        document.getElementById("message").innerHTML = `<h3>Congratulations, ${examTakerName}!</h3><p>You passed.</p>`;
         handleVideoPlay("passVideo");
     } else {
-        incorrectDisplay.innerHTML = `
-            <h3>Hi ${examTakerName}, here are the questions you missed in ${gradeText} ${quarterText}:</h3>
-            <ul>
-                ${incorrectQuestions.map(q => `<li>${q}</li>`).join("")}
-            </ul>
-        `;
+        document.getElementById("message").innerHTML =
+            `<h3>Hi ${examTakerName}, here are the questions you missed:</h3><ul>${incorrect.map(q => `<li>${q}</li>`).join("")}</ul>`;
         handleVideoPlay("failVideo");
     }
-    messageDisplay.innerHTML = "";
-    messageDisplay.appendChild(incorrectDisplay);
-
     toggleElementDisplay("results", "block");
     toggleElementDisplay("examSection", "none");
+
+    // Exam over: disable protections
+    examActive = false;
+    hideExamBanner();
 }
 
-// Retake/reload exam
+// ===== Misc =====
 function retakeExam() {
-    location.reload(); // Reload the page to bring the user back to the main page
+    location.reload();
 }
-
-// Fisher-Yates shuffle
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+        [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-    return array;
+    return arr;
+}
+function shareResultOnFacebook() {
+    const name = examTakerName || "Someone";
+    const score = document.getElementById("score")?.textContent || "";
+    const gradeText = selectedGradeLevel.replace("grade", "Grade ");
+    const quarterText = selectedQuarter === "remedial" ? "REMEDIAL EXAM" : selectedQuarter.replace("quarter", "Quarter ");
+    const shareMessage = `${name} just completed the exam! ${score} (${gradeText} ${quarterText}). Try it yourself!`;
+    const fbSharer = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent(shareMessage)}`;
+    window.open(fbSharer, "_blank");
 }
 
-// Visibility change handling to reset the exam if the user switches away
+// ===== Banner =====
+let examBannerEl = null;
+function createExamBanner() {
+    examBannerEl = document.createElement("div");
+    examBannerEl.id = "examBanner";
+    examBannerEl.style.position = "fixed";
+    examBannerEl.style.top = "0";
+    examBannerEl.style.left = "0";
+    examBannerEl.style.right = "0";
+    examBannerEl.style.zIndex = "9999";
+    examBannerEl.style.padding = "10px 16px";
+    examBannerEl.style.textAlign = "center";
+    examBannerEl.style.fontWeight = "600";
+    examBannerEl.style.fontFamily = "system-ui, Arial, sans-serif";
+    examBannerEl.style.background = "#fff3cd";
+    examBannerEl.style.borderBottom = "1px solid #f1d58a";
+    examBannerEl.style.display = "none";
+    examBannerEl.textContent = "Exam in progress — please do not switch tabs or apps. Switching will reset your exam.";
+    document.body.appendChild(examBannerEl);
+}
+function showExamBanner() {
+    if (examBannerEl) examBannerEl.style.display = "block";
+}
+function hideExamBanner() {
+    if (examBannerEl) examBannerEl.style.display = "none";
+}
+
+// ===== Restrictions =====
 document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === 'hidden') {
-        alert('You have switched away from the exam. The exam will now reset.');
-        location.reload(); // Reload the page to reset the exam
+    if (!examActive) return;
+    if (document.visibilityState === "hidden") {
+        alert("You have switched away from the exam. The exam will now reset.");
+        location.reload();
     }
+});
+// Warn on tab close/reload while exam is active
+window.addEventListener("beforeunload", (e) => {
+    if (!examActive) return;
+    e.preventDefault();
+    e.returnValue = "";
 });
