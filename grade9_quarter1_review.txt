@@ -1,45 +1,40 @@
 Grade 9 - Quarter 1 Review
 
-- All of the above is the reason why walls with window openings should not be less than 2.00 m from the lot line of the fence.  
-- All of the above is the correct answer to why an architect must read building codes before designing a building.  
-- All of the above is the reason why the height of the floor plan from the ground should not be less than 1.50 m for a one-story wooden house.  
-- AutoCAD computer is a high-tech device used for drawing purposes.  
-- Baluster detail represents the vertical railing along a staircase or balcony.  
-- Blueprint refers to a reproduced version of architectural plans and layouts.  
-- Ceiling describes the overhead surface of a room or the material used to cover it.  
-- Code is a set of accepted laws and regulations that guide procedures in specific professions.  
-- Compass is ideal for drawing arcs and circles.  
-- Divider allows you to divide lines or distances into equal parts.  
-- Doors and windows schedule details the complete specifications of doors and windows.  
-- Elevation shows the front or side view of a building, including its design and height.  
-- Elevation drawing provides exterior and interior details, shown as a perpendicular projection from the floor plan.  
-- Eraser is used to clean smudges of pencil and ink lines.  
-- Erasing shield is a thin metal sheet used to protect drawing lines while erasing.  
-- Floor plan illustrates the arrangement of rooms, doors, and windows in a building.  
-- French curve is used to set a line degree angle.  
-- Insulation is not a schedule detailing doors and windows but is important in home energy efficiency.  
-- Kitchen detail depicts the kitchen floor plan with all necessary specifications.  
-- Leroy lettering pen is not an alternative tool for sharpening pencils, but a lettering tool.  
-- Location plan provides the top view of the site or lot for proposed construction.  
-- Masking tape secures drawing paper on a drawing board.  
-- Medium is the standard grade of pencil used in architectural drawings.  
-- Parallel rule can replace the standard drawing board and T-square.  
-- Penknife or Pencil Sharpener is designed to sharpen pencils to the desired lead point.  
-- Perspective is not a type of vertical projection, but a pictorial representation of a design.  
-- Protractor measures angles in degrees.  
-- Reflected ceiling plan provides the complete design plan of a house’s ceiling.  
-- Roof plan outlines the roof and major lines such as ridges, valleys, and hips.  
-- Sandpaper block shapes pencil lead into a conical point.  
-- Scaling refers to the process of enlarging or reducing a drawing with an architect’s scale.  
-- Section drawings show the interior of a building in either cross-section or longitudinal section.  
-- Site development plan provides the outline and dimensions of a building and its placement on the property.  
-- Tape rule/Pull-push rule is used to mark distances and take measurements.  
-- Technical pen is used for inking mechanical lines.  
-- Templates are flat plastic guides with standard symbols for drawing plans.  
-- T-square helps draw horizontal lines and assists with triangle guides.  
-- Tracing paper is a transparent paper used for blueprint reproduction.  
-- Triangle is used for drawing vertical and oblique lines.  
-- Triangular scale adjusts scale measurements and transfers them to drawing paper.  
-- Toilet and bath detail illustrates the complete layout of a bathroom with all specifications.  
-
-
+* A nursery is used for propagating young plants before they are transplanted.
+* A plough is used to turn and loosen soil before planting.
+* A viable plant material is one that can grow successfully.
+* Asexual propagation produces plants identical to the parent.
+* Bagging is the process of placing media and plants into containers.
+* Cocopeat improves water retention in growing media.
+* Compost provides nutrients in a growing media mix.
+* Establishing a nursery includes selecting the site and designing the layout.
+* Firming the soil around the plant helps keep it stable after potting.
+* For a school garden with poor soil and a low budget, a good mix is equal parts soil, compost, and sand.
+* Gloves help protect the hands and ensure safety while working in the nursery.
+* Healthy plant material is free from disease.
+* In flood-prone areas, raise seedbeds and improve drainage in all parts of the nursery.
+* In the ragdoll method, seeds should be kept moist regularly.
+* In the water method, bad seeds float.
+* Manual tools are those operated by hand without any motorized power.
+* Maintenance in the nursery includes fixing tools and irrigation lines.
+* Materials in farming are items that are used up during the process, such as seeds, fertilizers, and pesticides.
+* Media is the material that holds and nourishes plants in containers.
+* Nets are used to cover nursery plants and provide shade.
+* OSHS (Occupational Safety and Health Standards) guidelines help ensure worker and plant safety.
+* Propagation is the process of multiplying new plants.
+* Record-keeping on a farm is important for tracking items, activities, and operations.
+* Regular maintenance helps prevent equipment breakdowns.
+* Sand improves drainage in growing media.
+* Seed testing helps determine seed quality.
+* Sexual propagation is done using seeds.
+* Stems are commonly used in asexual plant propagation.
+* The petri dish method is another way to test seeds.
+* The ragdoll method is practical for testing a small number of seeds in limited space.
+* The ragdoll method uses a rolled moist paper towel to test seeds.
+* The tray method involves sowing seeds in soil-filled trays.
+* Tracking tool use, condition, and the person responsible helps avoid losses and extra expenses.
+* Variation refers to differences between parent and offspring in sexual propagation.
+* Water the plant immediately after potting.
+* Walkways should be kept clear to avoid accidents in the nursery.
+* Winnowing uses wind to clean seeds.
+* Using stems or cuttings ensures new plants have the same traits as the parent.
