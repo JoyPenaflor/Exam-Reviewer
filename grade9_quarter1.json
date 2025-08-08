@@ -1,102 +1,402 @@
 [
   {
-    "question": "What is a floor plan?",
-    "choices": ["A side view of a building", "A 3D model of a house", "A top view of house", "A plumbing diagram only"],
-    "answer": "A top view of house"
+    "question": "What is the main purpose of record-keeping on a farm?",
+    "choices": [
+      "Cleaning",
+      "Cooking",
+      "Planting",
+      "Tracking"
+    ],
+    "answer": "Tracking"
   },
   {
-    "question": "Which of the following is commonly found in a floor plan?",
-    "choices": ["Electrical circuits", "Room layout with measurements", "Furniture design", "Internet connection layout"],
-    "answer": "Room layout with measurements"
+    "question": "Which type of item is described as being \"used up\" in the farming process?",
+    "choices": [
+      "Tools",
+      "Machinery",
+      "Materials",
+      "Equipment"
+    ],
+    "answer": "Materials"
   },
   {
-    "question": "What color is commonly used to represent water supply lines in a plumbing layout?",
-    "choices": ["Red", "Blue", "Green", "Black"],
-    "answer": "Blue"
+    "question": "What type of equipment is used to turn and loosen soil before planting?",
+    "choices": [
+      "Harrow",
+      "Planter",
+      "Sprayer",
+      "Plough"
+    ],
+    "answer": "Plough"
   },
   {
-    "question": "What does a plumbing layout show?",
-    "choices": ["Roof structure only", "Location of plumbing fixtures and pipe routes", "Door and window designs", "Electrical wire placement"],
-    "answer": "Location of plumbing fixtures and pipe routes"
+    "question": "Which word best describes tools operated by hand?",
+    "choices": [
+      "Tractor",
+      "Manual",
+      "Powered",
+      "Sprayer"
+    ],
+    "answer": "Manual"
   },
   {
-    "question": "Which symbol is commonly used to represent a toilet in a plumbing plan?",
-    "choices": ["“S”", "“WC”", "“T”", "“F”"],
-    "answer": "“WC”"
+    "question": "What is scheduled to prevent equipment breakdowns?",
+    "choices": [
+      "Harvest",
+      "Shopping",
+      "Maintenance",
+      "Marketing"
+    ],
+    "answer": "Maintenance"
   },
   {
-    "question": "Why is it important to keep plumbing fixtures close to each other?",
-    "choices": ["To reduce pipe length and cost", "To save water", "For design symmetry", "To match electrical layout"],
-    "answer": "For design symmetry"
+    "question": "What should be recorded along with the date and quantity of an item?",
+    "choices": [
+      "Owner",
+      "Remarks",
+      "Price",
+      "Weight"
+    ],
+    "answer": "Remarks"
   },
   {
-    "question": "What is the main purpose of a drain pipe?",
-    "choices": ["To provide clean water", "To hold water for future use", "To connect to the electric heater", "To remove wastewater"],
-    "answer": "To remove wastewater"
+    "question": "What farm tool is used for planting seeds at correct depth and spacing?",
+    "choices": [
+      "Harrow",
+      "Sprayer",
+      "Plough",
+      "Planter"
+    ],
+    "answer": "Planter"
   },
   {
-    "question": "What tool is most useful for measuring dimensions in drafting?",
-    "choices": ["Ruler", "Paintbrush", "Scissors", "Thermometer"],
-    "answer": "Ruler"
+    "question": "What strategy would be most effective in avoiding tool losses and unnecessary expenses on a farm?",
+    "choices": [
+      "Label each item with colored tags for easy identification",
+      "Track tool use, condition, and responsible person in a written log",
+      "Limit tool use to supervisors and trusted personnel only",
+      "Store tools in a separate locked room after each workday"
+    ],
+    "answer": "Track tool use, condition, and responsible person in a written log"
   },
   {
-    "question": "In plumbing layout, what does a “T” junction represent?",
-    "choices": ["A connection of pipes", "A furniture layout", "A window opening", "A toilet fixture"],
-    "answer": "A connection of pipes"
+    "question": "What is the main purpose of a nursery?",
+    "choices": [
+      "Cooking",
+      "Cleaning",
+      "Planting",
+      "Propagating"
+    ],
+    "answer": "Propagating"
   },
   {
-    "question": "Why is slope important in drainage pipes?",
-    "choices": ["For water pressure", "To keep the pipe in place", "For water to go upward", "To allow gravity flow"],
-    "answer": "To allow gravity flow"
+    "question": "Which operation includes choosing a site and designing layout?",
+    "choices": [
+      "Selling",
+      "Harvest",
+      "Reporting",
+      "Establishing"
+    ],
+    "answer": "Establishing"
   },
   {
-    "question": "What room usually contains the most plumbing fixtures?",
-    "choices": ["Bedroom", "Bathroom", "Living room", "Dining room"],
-    "answer": "Bathroom"
+    "question": "What should be worn to ensure safety in the nursery?",
+    "choices": [
+      "Caps",
+      "Jeans",
+      "Aprons",
+      "Gloves"
+    ],
+    "answer": "Gloves"
   },
   {
-    "question": "What is the standard top view angle for drawing a floor plan?",
-    "choices": ["Aerial view", "45°", "90°", "Side view"],
-    "answer": "Aerial view"
+    "question": "What is used to cover nursery plants and provide shade?",
+    "choices": [
+      "Tarp",
+      "Net",
+      "Pole",
+      "Roof"
+    ],
+    "answer": "Net"
   },
   {
-    "question": "What symbol is typically used for a sink in a plumbing plan?",
-    "choices": ["“F”", "“S”", "“WC”", "“L”"],
-    "answer": "“S”"
+    "question": "What nursery task includes fixing tools and irrigation lines?",
+    "choices": [
+      "Building",
+      "Transport",
+      "Maintenance",
+      "Watering"
+    ],
+    "answer": "Maintenance"
   },
   {
-    "question": "In drafting, what does “legend” mean?",
-    "choices": ["Symbols used in the layout", "List of materials used", "Title of the drawing", "Measurements of the plan"],
-    "answer": "Symbols used in the layout"
+    "question": "What must be kept clear to avoid nursery accidents?",
+    "choices": [
+      "Walkways",
+      "Plants",
+      "Seeds",
+      "Sacks"
+    ],
+    "answer": "Walkways"
   },
   {
-    "question": "Which line type is usually used to show water supply?",
-    "choices": ["Dashed line", "Zigzag line", "Solid line", "Dotted line"],
-    "answer": "Solid line"
+    "question": "Which guideline promotes worker and plant safety?",
+    "choices": [
+      "OSHS",
+      "BIR",
+      "FDA",
+      "DOLE"
+    ],
+    "answer": "OSHS"
   },
   {
-    "question": "The main source of water in a plumbing layout is connected to:",
-    "choices": ["Toilet only", "Kitchen only", "All water fixtures", "Only to the drainage"],
-    "answer": "All water fixtures"
+    "question": "How can you best maintain a nursery located in a flood-prone area while following safety guidelines?",
+    "choices": [
+      "Build the nursery close to the nearest water source",
+      "Raise seedbeds and improve drainage in all corners",
+      "Avoid using chemicals and rely only on natural compost",
+      "Cover all plants with plastic sheets during rainy days"
+    ],
+    "answer": "Raise seedbeds and improve drainage in all corners"
   },
   {
-    "question": "What is the first step in drafting a floor plan?",
-    "choices": ["Drawing the water lines", "Sketching the roof", "Coloring the plan", "Outlining the room layout"],
-    "answer": "Outlining the room layout"
+    "question": "What is the process of multiplying new plants called?",
+    "choices": [
+      "Propagation",
+      "Cultivation",
+      "Harvesting",
+      "Irrigation"
+    ],
+    "answer": "Propagation"
   },
   {
-    "question": "Which of the following should not be part of a plumbing layout?",
-    "choices": ["Electrical outlets", "Drain pipes", "Water heaters", "Faucets"],
-    "answer": "Electrical outlets"
+    "question": "Which plant part is commonly used in asexual propagation?",
+    "choices": [
+      "Seed",
+      "Bud",
+      "Pod",
+      "Stem"
+    ],
+    "answer": "Stem"
   },
   {
-    "question": "In most houses, where is the vent pipe connected?",
-    "choices": ["To the roof", "To the electrical line", "To the water line", "To the kitchen cabinet"],
-    "answer": "To the roof"
+    "question": "What characteristic means the plant material can grow?",
+    "choices": [
+      "Viable",
+      "Soft",
+      "Fragile",
+      "Tall"
+    ],
+    "answer": "Viable"
   },
   {
-    "question": "Why is it important to label all fixtures in a plumbing layout?",
-    "choices": ["To make the drawing longer", "To confuse plumbers", "For clarity reference", "For decoration only"],
-    "answer": "For clarity reference"
+    "question": "What method of propagation uses seeds?",
+    "choices": [
+      "Sexual",
+      "Asexual",
+      "Cutting",
+      "Layering"
+    ],
+    "answer": "Sexual"
+  },
+  {
+    "question": "Which method produces identical plants to the parent?",
+    "choices": [
+      "Fertilization",
+      "Asexual",
+      "Mutation",
+      "Variation"
+    ],
+    "answer": "Asexual"
+  },
+  {
+    "question": "What is the term for differences between parent and offspring in sexual propagation?",
+    "choices": [
+      "Variation",
+      "Stability",
+      "Damage",
+      "Growth"
+    ],
+    "answer": "Variation"
+  },
+  {
+    "question": "What characteristic means the plant material is free from disease?",
+    "choices": [
+      "Moist",
+      "Sticky",
+      "Bitter",
+      "Healthy"
+    ],
+    "answer": "Healthy"
+  },
+  {
+    "question": "Which method is most suitable if a farmer wants identical traits in all new plants?",
+    "choices": [
+      "Plant seeds from a healthy mother plant",
+      "Mix both seed and cutting propagation techniques",
+      "Use parts like stems or cuttings to produce clones",
+      "Buy seedlings from different local sources"
+    ],
+    "answer": "Use parts like stems or cuttings to produce clones"
+  },
+  {
+    "question": "What does seed testing help determine?",
+    "choices": [
+      "Quality",
+      "Price",
+      "Color",
+      "Weight"
+    ],
+    "answer": "Quality"
+  },
+  {
+    "question": "What method uses a rolled moist paper towel to test seeds?",
+    "choices": [
+      "Floating",
+      "Winnowing",
+      "Ragdoll",
+      "Sowing"
+    ],
+    "answer": "Ragdoll"
+  },
+  {
+    "question": "Which seed testing method uses a petri dish?",
+    "choices": [
+      "Grafting",
+      "Layering",
+      "Cutting",
+      "Petri"
+    ],
+    "answer": "Petri"
+  },
+  {
+    "question": "What happens to bad seeds in the water method?",
+    "choices": [
+      "Float",
+      "Sink",
+      "Freeze",
+      "Dry"
+    ],
+    "answer": "Float"
+  },
+  {
+    "question": "Which traditional method uses wind to clean seeds?",
+    "choices": [
+      "Threshing",
+      "Winnowing",
+      "Spraying",
+      "Scooping"
+    ],
+    "answer": "Winnowing"
+  },
+  {
+    "question": "Which method involves filling a tray with soil and sowing seeds?",
+    "choices": [
+      "Petri",
+      "Water",
+      "Tray",
+      "Spray"
+    ],
+    "answer": "Tray"
+  },
+  {
+    "question": "What should be done regularly to seeds in the ragdoll method?",
+    "choices": [
+      "Dry",
+      "Peel",
+      "Moist",
+      "Smash"
+    ],
+    "answer": "Moist"
+  },
+  {
+    "question": "You have only a few seeds and limited space. What is the most practical test to assess germination?",
+    "choices": [
+      "Scatter seeds in garden soil and observe growth",
+      "Soak seeds in water to sort by weight",
+      "Use a folded moist towel and track sprouting",
+      "Place seeds under sunlight for one full day"
+    ],
+    "answer": "Use a folded moist towel and track sprouting"
+  },
+  {
+    "question": "What holds and nourishes plants in containers?",
+    "choices": [
+      "Plastic",
+      "Media",
+      "Clay",
+      "Spray"
+    ],
+    "answer": "Media"
+  },
+  {
+    "question": "What substrate is mainly responsible for drainage?",
+    "choices": [
+      "Compost",
+      "Cocopeat",
+      "Sand",
+      "Soil"
+    ],
+    "answer": "Sand"
+  },
+  {
+    "question": "Which material improves water retention in growing media?",
+    "choices": [
+      "Pebble",
+      "Cocopeat",
+      "Gravel",
+      "Shovel"
+    ],
+    "answer": "Cocopeat"
+  },
+  {
+    "question": "What is the function of compost in a growing media mix?",
+    "choices": [
+      "Structure",
+      "Color",
+      "Drainage",
+      "Nutrients"
+    ],
+    "answer": "Nutrients"
+  },
+  {
+    "question": "What is the process of placing media and plants into containers called?",
+    "choices": [
+      "Bagging",
+      "Peeling",
+      "Stacking",
+      "Wrapping"
+    ],
+    "answer": "Bagging"
+  },
+  {
+    "question": "What should be done around the plant after placing it in the container?",
+    "choices": [
+      "Shake",
+      "Lift",
+      "Firm",
+      "Cut"
+    ],
+    "answer": "Firm"
+  },
+  {
+    "question": "What step is done after potting a seedling?",
+    "choices": [
+      "Water",
+      "Wash",
+      "Weigh",
+      "Wrap"
+    ],
+    "answer": "Water"
+  },
+  {
+    "question": "What is the most practical growing media mix for a school garden with poor soil and low budget?",
+    "choices": [
+      "Combine soil, compost, and sand in equal parts",
+      "Use only rice hulls to increase drainage",
+      "Fill bags with clay soil collected from nearby fields",
+      "Use garden soil mixed with dried leaves only"
+    ],
+    "answer": "Combine soil, compost, and sand in equal parts"
   }
 ]
