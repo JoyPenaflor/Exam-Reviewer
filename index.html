@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>TTVHS REMEDIAL EXAM FOR TLE 2025–2026</title>
-  <link rel="stylesheet" href="styles.css?v=20250808-3" />
+  <link rel="stylesheet" href="styles.css?v=20250808-5" />
   <meta property="og:title" content="TTVHS Remedial Exam for TLE 2025–2026" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Take the TTVHS TLE exam and see how you score." />
@@ -69,7 +69,7 @@
         </select>
         <br /><br />
 
-        <!-- NEW: choose number of items -->
+        <!-- Number of items -->
         <label for="numItems">Number of questions:</label>
         <input type="number" id="numItems" min="1" max="200" step="1" value="20" aria-label="Number of questions" />
         <div style="font-size:.9rem; opacity:.8; margin-top:6px;">
@@ -109,6 +109,9 @@
     <p id="message"></p>
     <p id="timestamp" class="timestamp">Date and Time:</p>
 
+    <!-- Fallback play button if autoplay is blocked -->
+    <button id="playResultVideoBtn" style="display:none; margin:10px auto;">▶ Play Result Video</button>
+
     <div class="button-container">
       <button id="retakeButton">Take Another Exam</button>
       <button id="shareResultBtn">Save Result Image</button>
@@ -119,7 +122,17 @@
     <div id="allResults" class="all-results-container" style="display: none;"></div>
   </div>
 
+  <!-- Videos (present and ready; visibility controlled by .hidden-video) -->
+  <video id="passVideo" class="hidden-video" controls preload="auto" playsinline webkit-playsinline>
+    <source src="pass.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video id="failVideo" class="hidden-video" controls preload="auto" playsinline webkit-playsinline>
+    <source src="fail.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
-  <script src="script.js?v=20250808-3" defer></script>
+  <script src="script.js?v=20250808-5" defer></script>
 </body>
 </html>

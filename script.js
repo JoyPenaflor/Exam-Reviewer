@@ -1,6 +1,5 @@
 // ===== Global Exam Settings =====
 const settings = {
-  // defaults (can still be overridden by UI input)
   numberOfItems: 20,
   passingScorePercentage: 75,
   timeInMinutes: 10,
@@ -65,6 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Fallback manual play button
+  const playBtn = document.getElementById("playResultVideoBtn");
+  if (playBtn) {
+    playBtn.addEventListener("click", () => {
+      if (lastResultPassed === null) return;
+      const id = lastResultPassed ? "passVideo" : "failVideo";
+      handleVideoPlay(id, true);
+      playBtn.style.display = "none";
+    });
+  }
+
   createExamBanner();
 });
 
@@ -87,39 +97,44 @@ async function fetchFromGitHub(fileName, type) {
 // ===== UI helpers =====
 function toggleElementDisplay(id, style) { const el = document.getElementById(id); if (el) el.style.display = style; }
 
-// Improved: robust video handler that hides the other video, resets, and plays.
-function handleVideoPlay(videoId) {
+// Robust video handler: show one, hide the other, and try play; show fallback button if needed
+function handleVideoPlay(videoId, userGesture = false) {
   const passV = document.getElementById("passVideo");
   const failV = document.getElementById("failVideo");
   const all = [passV, failV].filter(Boolean);
 
-  // Hide both first
+  // Hide both
   all.forEach(v => {
-    v.pause();
+    try { v.pause(); } catch(e) {}
     v.currentTime = 0;
-    v.style.display = "none";
+    v.classList.add("hidden-video");
   });
 
   const video = document.getElementById(videoId);
   if (!video) return;
 
-  // Ensure visible & ready
+  video.classList.remove("hidden-video");
   video.controls = true;
-  video.muted = false;           // user just interacted (submit), autoplay should be allowed
+  video.muted = false;
   video.playsInline = true;
-  video.style.display = "block";
 
-  // Try to load then play
-  try { video.load(); } catch (e) {}
-  video.play()
-    .then(() => {
-      // Scroll video into view for user
+  // Attempt to play; if autoplay blocked and no user gesture, show the fallback button
+  const playPromise = video.play();
+  if (playPromise && typeof playPromise.then === "function") {
+    playPromise.then(() => {
       try { video.scrollIntoView({ behavior: "smooth", block: "center" }); } catch (e) {}
-    })
-    .catch(err => {
-      console.log(`${videoId} playback failed:`, err);
-      showToast("Tap the video to play.", 1600);
+      const btn = document.getElementById("playResultVideoBtn");
+      if (btn) btn.style.display = "none";
+    }).catch(err => {
+      console.log(videoId, "autoplay blocked:", err);
+      const btn = document.getElementById("playResultVideoBtn");
+      if (btn) btn.style.display = "inline-block";
+      if (userGesture) {
+        // If this was from a user gesture and still fails, guide the user
+        showToast("Tap the video to play.", 1600);
+      }
     });
+  }
 }
 
 function displayFormattedDate() { const ts = document.getElementById("timestamp"); if (ts) ts.textContent = `Date and Time: ${new Date().toLocaleString()}`; }
@@ -260,19 +275,23 @@ function calculateScore() {
   let messageHTML = "";
   if (lastResultPassed) {
     messageHTML = `<h3>Congratulations, ${examTakerName}!</h3><p>You passed the exam in ${gradeText} ${quarterText}.</p>`;
-    handleVideoPlay("passVideo");
   } else {
     messageHTML = `<h3>Hi ${examTakerName}, here are the questions you missed in ${gradeText} ${quarterText}:</h3><ul>${incorrect.map(q => `<li>${q}</li>`).join("")}</ul>`;
-    handleVideoPlay("failVideo");
   }
 
   document.getElementById("message").innerHTML = messageHTML;
-  toggleElementDisplay("results", "block"); toggleElementDisplay("examSection", "none");
+  toggleElementDisplay("results", "block");
+  toggleElementDisplay("examSection", "none");
 
-  examActive = false; hideExamBanner();
+  // Now that results are visible, play the appropriate video
+  const targetVideo = lastResultPassed ? "passVideo" : "failVideo";
+  handleVideoPlay(targetVideo);
+
+  examActive = false;
+  hideExamBanner();
 }
 
-// ===== Save Result Image (bigger centered PASSED/FAILED) =====
+// ===== Save Result Image (big centered PASSED/FAILED) =====
 async function generateAndSaveResultImage() {
   if (typeof html2canvas === "undefined") await loadScript("https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js");
   const resultsEl = document.getElementById("results"); if (!resultsEl) { alert("Results are not visible yet."); return; }
@@ -283,12 +302,11 @@ async function generateAndSaveResultImage() {
   const ctx = canvas.getContext("2d");
   const label = lastResultPassed ? "PASSED" : "FAILED";
   const base = Math.min(canvas.width, canvas.height);
-  const fontSize = Math.max(64, Math.floor(base * 0.16)); // bigger
+  const fontSize = Math.max(64, Math.floor(base * 0.16));
   ctx.save();
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.font = `900 ${fontSize}px system-ui, -apple-system, Segoe UI, Roboto, Arial`;
-  // Outline first for strong contrast, then fill
   ctx.lineWidth = Math.max(8, Math.floor(fontSize * 0.12));
   ctx.strokeStyle = "rgba(0,0,0,0.85)";
   ctx.strokeText(label, canvas.width / 2, canvas.height / 2);

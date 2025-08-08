@@ -36,7 +36,10 @@ h2 { font-size: 1.25rem; }
 .results-container { background-color: rgba(255,255,255,0.9); color: black !important; }
 #score, #message, #timestamp { color: black !important; }
 
-img, video, iframe, canvas { max-width: 100%; height: auto; display: block; }
+img, iframe, canvas { max-width: 100%; height: auto; display: block; }
+video { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+
+.hidden-video { display: none; }
 
 #results, #message { font-size: 1rem; }
 label, input[type="text"], select, input[type="number"] { font-size: 1rem; }
@@ -50,8 +53,6 @@ button, input[type="button"] { font-size: 1rem; padding: 10px 14px; }
 .navigation-buttons { display: flex; justify-content: center; align-items: center; gap: 12px; }
 
 select, input[type="number"] { max-width: 300px; }
-
-video, .hidden-video { display: none; }
 
 .review-content {
   margin-top: 12px;
