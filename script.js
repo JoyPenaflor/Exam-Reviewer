@@ -5,7 +5,7 @@ const settings = {
   timeInMinutes: 10,
   remedial: { numberOfItems: 20, passingScorePercentage: 75, timeInMinutes: 10 },
   enableQuarters: true,
-  enabledQuarters: { quarter1: true, quarter2: true, quarter3: true, quarter4: true, remedial: true }
+  enabledQuarters: { quarter1: false, quarter2: true, quarter3: true, quarter4: true, remedial: true }
 };
 
 // ===== Globals =====
