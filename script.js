@@ -1,11 +1,11 @@
 // ===== Global Exam Settings =====
 const settings = {
-  numberOfItems: 20,
+  numberOfItems: 40,
   passingScorePercentage: 75,
   timeInMinutes: 10,
-  remedial: { numberOfItems: 20, passingScorePercentage: 75, timeInMinutes: 10 },
+  remedial: { numberOfItems: 40, passingScorePercentage: 75, timeInMinutes: 10 },
   enableQuarters: true,
-  enabledQuarters: { quarter1: false, quarter2: true, quarter3: true, quarter4: true, remedial: true }
+  enabledQuarters: { quarter1: true, quarter2: false, quarter3: false, quarter4: false, remedial: false }
 };
 
 // ===== Globals =====
