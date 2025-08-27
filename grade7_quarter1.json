@@ -7,7 +7,7 @@
             "Throw it away",
             "Place it on top of computers"
         ],
-        "answer": "A"
+        "answer": "Take it away from the working area"
     },
     {
         "question": "Which of the following sectors can a contact center agent be included in?",
@@ -17,7 +17,7 @@
             "CSS",
             "Programming"
         ],
-        "answer": "A"
+        "answer": "Telecommunication"
     },
     {
         "question": "What feature might be used along with a page break to help navigate a lengthy document easily?",
@@ -27,7 +27,7 @@
             "Auto Summarize",
             "Auto Table of Contents"
         ],
-        "answer": "D"
+        "answer": "Auto Table of Contents"
     },
     {
         "question": "What is the primary benefit of utilizing both page breaks and an auto table of contents in a document?",
@@ -37,7 +37,7 @@
             "Providing a visual representation of data in the document",
             "Adding animations to the text"
         ],
-        "answer": "A"
+        "answer": "Organizing the document layout and structure for a better reading experience"
     },
     {
         "question": "What happens when the divisor becomes 0?",
@@ -47,7 +47,7 @@
             "You multiply the octal number by 8",
             "You start over with a new decimal number"
         ],
-        "answer": "A"
+        "answer": "The process is complete"
     },
     {
         "question": "How should computer components be handled to avoid damage from electrostatic discharge (ESD)?",
@@ -57,7 +57,7 @@
             "Use excessive force",
             "Hold them tightly"
         ],
-        "answer": "A"
+        "answer": "Hold by the edges"
     },
     {
         "question": "In the context of entrepreneurship, what does \"Risk-taking\" entail?",
@@ -67,7 +67,7 @@
             "Generating new ideas",
             "Being open to new ideas"
         ],
-        "answer": "B"
+        "answer": "Trying new things even if they might not work out"
     },
     {
         "question": "What is the octal equivalent of the binary number 101011?",
@@ -77,7 +77,7 @@
             "73",
             "53"
         ],
-        "answer": "C"
+        "answer": "73"
     },
     {
         "question": "What is the decimal value of the hexadecimal number A4?",
@@ -87,7 +87,7 @@
             "161",
             "164"
         ],
-        "answer": "A"
+        "answer": "166"
     },
     {
         "question": "What does \"Seiso\" stand for in the context of organizing ICT environments?",
@@ -97,7 +97,7 @@
             "Planning",
             "Standardize"
         ],
-        "answer": "A"
+        "answer": "Cleanliness"
     },
     {
         "question": "What precaution should individuals take when working in a computer laboratory?",
@@ -107,7 +107,7 @@
             "Stand on concrete floor with bare feet",
             "Always ground or discharge oneself"
         ],
-        "answer": "D"
+        "answer": "Always ground or discharge oneself"
     },
     {
         "question": "How does an auto table of contents benefit the reader of a document?",
@@ -117,7 +117,7 @@
             "It changes the document's font style",
             "It increases the document's word count"
         ],
-        "answer": "B"
+        "answer": "It provides a quick overview of the document's structure and topics"
     },
     {
         "question": "Mr. Manuel is a graphic illustrator. Which of the following ICT sectors does he belong to?",
@@ -127,7 +127,7 @@
             "Visual Arts",
             "Programming"
         ],
-        "answer": "C"
+        "answer": "Visual Arts"
     },
     {
         "question": "How many unique digits are used in the octal number system?",
@@ -137,7 +137,7 @@
             "10",
             "16"
         ],
-        "answer": "A"
+        "answer": "8"
     },
     {
         "question": "Which of the following is a correct hexadecimal representation of the decimal number 50?",
@@ -147,7 +147,7 @@
             "35",
             "32"
         ],
-        "answer": "D"
+        "answer": "32"
     },
     {
         "question": "Which of the following statements is true about the auto table of contents feature?",
@@ -157,7 +157,7 @@
             "It can only be added manually to a document",
             "It adjusts the document's margins"
         ],
-        "answer": "A"
+        "answer": "It dynamically updates based on the document's headings and subheadings"
     },
     {
         "question": "In what order should the digits of the octal number be written?",
@@ -167,7 +167,7 @@
             "From smallest to large",
             "In reverse order"
         ],
-        "answer": "D"
+        "answer": "In reverse order"
     },
     {
         "question": "What ICT sector are web development and game development from?",
@@ -177,7 +177,7 @@
             "Telecommunication",
             "Visual Arts"
         ],
-        "answer": "A"
+        "answer": "Programming"
     },
     {
         "question": "Which of the following best describes the function of an auto table of contents feature in a document?",
@@ -187,7 +187,7 @@
             "Automatically generates a list of page numbers in a document",
             "Adds shapes to the document"
         ],
-        "answer": "B"
+        "answer": "Creates a structured list of topics and corresponding page numbers"
     },
     {
         "question": "What is the significance of different ICT Sectors?",
@@ -197,7 +197,7 @@
             "None of the above",
             "It provides income for our economy"
         ],
-        "answer": "C"
+        "answer": "None of the above"
     },
     {
         "question": "What is the hexadecimal equivalent of the decimal number 27?",
@@ -207,7 +207,7 @@
             "1B",
             "2E"
         ],
-        "answer": "C"
+        "answer": "1B"
     },
     {
         "question": "Convert the decimal number 95 to hexadecimal.",
@@ -217,7 +217,7 @@
             "5D",
             "60"
         ],
-        "answer": "C"
+        "answer": "5D"
     },
     {
         "question": "What is a hazard in the context of ICT environments?",
@@ -227,7 +227,7 @@
             "Risk prevention method",
             "Training tool"
         ],
-        "answer": "B"
+        "answer": "Potential source of harm"
     },
     {
         "question": "What do you call the number that consists of a whole number and a fractional part separated by a point?",
@@ -237,7 +237,7 @@
             "Octal",
             "Decimal"
         ],
-        "answer": "D"
+        "answer": "Decimal"
     },
     {
         "question": "What is the main advantage of utilizing automated features like page breaks and auto table of contents in a document?",
@@ -247,7 +247,7 @@
             "Decreasing readability for the audience",
             "Improving organization and accessibility of the content"
         ],
-        "answer": "D"
+        "answer": "Improving organization and accessibility of the content"
     },
     {
         "question": "Which of the following is the hexadecimal representation of the decimal number 27?",
@@ -257,7 +257,7 @@
             "1B",
             "1A"
         ],
-        "answer": "C"
+        "answer": "1B"
     },
     {
         "question": "Which of the following is an example of a physical hazard in ICT environments?",
@@ -267,7 +267,7 @@
             "Slippery floor",
             "Cleaning chemicals"
         ],
-        "answer": "C"
+        "answer": "Slippery floor"
     },
     {
         "question": "When should a page break be used in a document?",
@@ -277,7 +277,7 @@
             "When inserting images",
             "At the end of each sentence"
         ],
-        "answer": "A"
+        "answer": "To separate chapters or sections"
     },
     {
         "question": "In a document, how can you access the auto table of contents feature to automatically generate the content list?",
@@ -287,7 +287,7 @@
             "Changing the document's font size",
             "Accessing the \"References\" tab and selecting the \"Table of Contents\" option"
         ],
-        "answer": "D"
+        "answer": "Accessing the \"References\" tab and selecting the \"Table of Contents\" option"
     },
     {
         "question": "Which of the following is a quality associated with successful entrepreneurs?",
@@ -297,7 +297,7 @@
             "Laziness",
             "Open-mindedness"
         ],
-        "answer": "D"
+        "answer": "Open-mindedness"
     },
     {
         "question": "Which of the following actions does NOT require a page break?",
@@ -307,7 +307,7 @@
             "Inserting a page number",
             "Including an image"
         ],
-        "answer": "C"
+        "answer": "Inserting a page number"
     },
     {
         "question": "What is the purpose of using a page break in a document?",
@@ -317,7 +317,7 @@
             "To increase font size",
             "To force content to start on a new page"
         ],
-        "answer": "D"
+        "answer": "To force content to start on a new page"
     },
     {
         "question": "How do you determine the digits of the octal number?",
@@ -327,7 +327,7 @@
             "The quotients of the divisions",
             "The remainders of the divisions"
         ],
-        "answer": "D"
+        "answer": "The remainders of the divisions"
     },
     {
         "question": "What do you call the manufacturing and services sectors where the major operations are carried out widely by the use of the new technology or ICT?",
@@ -337,7 +337,7 @@
             "ICT Sectors",
             "AFA Sector"
         ],
-        "answer": "C"
+        "answer": "ICT Sectors"
     },
     {
         "question": "What do you do with the remainder of each division step?",
@@ -347,7 +347,7 @@
             "Add it to the next division",
             "Multiply it by 8"
         ],
-        "answer": "B"
+        "answer": "Use it to form the octal number"
     },
     {
         "question": "What do entrepreneurs do in terms of planning?",
@@ -357,7 +357,7 @@
             "Avoid setting objectives",
             "Set goals and make plans to reach them"
         ],
-        "answer": "D"
+        "answer": "Set goals and make plans to reach them"
     },
     {
         "question": "Why is it important to know the location of fire extinguishers?",
@@ -367,7 +367,7 @@
             "To know which one to use for different fires",
             "To find an escape route"
         ],
-        "answer": "C"
+        "answer": "To know which one to use for different fires"
     },
     {
         "question": "Which of the following best describes the binary number system?",
@@ -377,7 +377,7 @@
             "A number system that uses 0-7",
             "A number system that uses 0-F"
         ],
-        "answer": "A"
+        "answer": "A number system that uses 0-1"
     },
     {
         "question": "What is the decimal equivalent of the binary number 1010?",
@@ -387,7 +387,7 @@
             "5",
             "8"
         ],
-        "answer": "A"
+        "answer": "10"
     },
     {
         "question": "What is the first step in converting a decimal number to an octal?",
@@ -397,6 +397,6 @@
             "Divide the decimal number by 8",
             "Multiply the decimal number by 8"
         ],
-        "answer": "C"
+        "answer": "Divide the decimal number by 8"
     }
 ]
